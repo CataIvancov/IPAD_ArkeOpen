@@ -5,3 +5,4 @@ node_modules/
 coverage/
 *.pyc
 __pycache__/
+arke-platform/data/google-drive-pdfs/
