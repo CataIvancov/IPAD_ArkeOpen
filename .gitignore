@@ -6,3 +6,7 @@ coverage/
 *.pyc
 __pycache__/
 arke-platform/data/google-drive-pdfs/
+
+# Exclude large Google Drive folders
+arke-platform/data/google-drive-pdfs/
+arke-platform/data/google-drive-text/
