@@ -1,0 +1,49 @@
+Candidates: 16401
+Candidates with coordinates: 42
+Unique site names: 5376
+Top coordinate systems:
+  decimal_pair: 30
+  wgs84_dms: 8
+  utm: 2
+  wgs84_decimal: 2
+Sample site names:
+  A B Tabon Cave
+  A Burial Site
+  A Cave
+  A Complex Site
+  A Frequentation Cave
+  A Hopi Petroglyph Site
+  A Key Site
+  A Late Pleistocene Human Fossil Site
+  A Lower Palaeolithic Site
+  A Lower Paleolithic Site
+  A Middle Paleolithic Site
+  A Middle Pleistocene Hominid Site
+  A Middle Stone Age Site
+  A Neolithic Mound Site
+  A Neolithic Site
+  A New Acheulian Site
+  A New Dentate-Stamped Pottery Site
+  A New Late Pleistocene Paleoanthropological Site
+  A New Middle Pleistocene Hominid Site
+  A Nubian Complex
+  A Palaeolithic Site
+  A Paleoindian Complex
+  A Pebble-Tool Complex
+  A Pleistocene Cave Site
+  A Pleistocene Site
+  A Pleistocene- Early Holocene Archaeological Site
+  A Pleistocene-Early Holocene Archaeological Site
+  A Pliocene Site
+  A Potential World Heritage Site
+  A Pre-Sriwijayan Site
+  A Prehistoric Village Site
+  A Rock Art Site
+  A Shell Midden Analysis Pamwak Rockshelter
+  A Shell Working Site
+  A T N AGP Jar Burial Caves
+  A. Archaeological Site
+  A. Prehistoric Cave
+  AD Suco Lor Site
+  ANALISIS KERUSAKAN DAN UPAYA PENANGGULANGANNYA Archaeological Sites
+  ARON MAZEL Heritage Site

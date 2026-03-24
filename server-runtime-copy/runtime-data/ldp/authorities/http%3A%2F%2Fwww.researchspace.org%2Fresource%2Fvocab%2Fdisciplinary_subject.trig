@@ -1,0 +1,248 @@
+
+<http://www.researchspace.org/resource/vocab/disciplinary_subject> {
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/vocab/disciplinary_subject>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "conservation science" .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/vocab/disciplinary_subject>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "archeology";
+    <http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/vocab/disciplinary_subject>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "social science" .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/primary_appellation>
+    a <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Disciplinary subject";
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/primary_appellation> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology> .
+  
+  <http://www.researchspace.org/resource/user/admin> <http://www.cidoc-crm.org/cidoc-crm/P14i_performed>
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/conservation_science/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject> a <http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document>;
+    <http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <http://www.researchspace.org/resource/vocab/disciplinary_subject/primary_appellation> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/vocab/disciplinary_subject>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "art history" .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/art_history/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/vocab/disciplinary_subject>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Heritage Management" .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record/entity_formRecord_creation/at_some_time_within>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Heritage_Management/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2025-03-03T23:56:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2025-03-03T23:56:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record/entity_formRecord_creation/at_some_time_within>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record/entity_formRecord_creation/at_some_time_within>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/vocab/disciplinary_subject>;
+    <http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Early Human Evolution" .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record/entity_formRecord_creation>
+    a <http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record/entity_formRecord_creation/at_some_time_within>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "UNESCO Early Human Evolution nomination";
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/vocab/disciplinary_subject>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/UNESCO_Early_Human_Evolution_nomination/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Early_Human_Evolution/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2025-03-04T09:45:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <http://www.researchspace.org/resource/vocab/disciplinary_subject/archeology>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/vocab/disciplinary_subject>;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "Deep History";
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Prehistory";
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record>
+    a <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>;
+    <http://www.ics.forth.gr/isl/CRMdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/social_science/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://www.researchspace.org/resource/vocab/disciplinary_subject/Prehistory/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2025-03-04T09:46:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+}

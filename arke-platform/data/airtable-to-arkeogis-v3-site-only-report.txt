@@ -1,0 +1,27 @@
+Airtable -> ArkeoGIS v3 site-only conversion report
+
+Input file: /Users/cataivancov/IdeaProjects/arke-platform/data/Imported table-Grid view.csv
+Output file: /Users/cataivancov/IdeaProjects/arke-platform/data/airtable-to-arkeogis-v3-site-only.csv
+Rows written: 256
+
+MAIN_CHARAC counts:
+- Production: 3
+- Realestate: 253
+
+Excluded object/find-like subtype tokens:
+- Sarcophagus: 14
+- Lithic: 14
+- Artefact: 13
+- Shards: 5
+- Urn: 2
+- Jar: 2
+- Statue: 2
+- Stone Mortar: 1
+- Pottery production: 1
+- Ceramics: 1
+
+Unresolved chronology labels:
+- none
+
+Unresolved site characterisation values:
+- none

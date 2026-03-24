@@ -1,0 +1,12 @@
+
+<http://www.researchspace.org/resource/system/user/admin/setContainer/context> {
+  <http://www.researchspace.org/resource/system/user/admin/setContainer> a <http://www.w3.org/ns/ldp#Container>,
+      <http://www.researchspace.org/resource/system/setContainer>, <http://www.w3.org/ns/prov#Entity>,
+      <http://www.w3.org/ns/ldp#Resource>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Set container of user 'admin'";
+    <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.w3.org/ns/prov#generatedAtTime> "2025-06-07T04:39:04.910Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.researchspace.org/resource/system/userSetContainer> <http://www.w3.org/ns/ldp#contains>
+      <http://www.researchspace.org/resource/system/user/admin/setContainer> .
+}

@@ -1,0 +1,10 @@
+Normalized candidates: 8
+Top labels:
+  Toalean: 349 matches across 28 sources
+  Hoabinhian: 277 matches across 27 sources
+  Pacitanian: 180 matches across 17 sources
+  Acheulian: 127 matches across 22 sources
+  Dong Son: 91 matches across 24 sources
+  Levallois: 47 matches across 12 sources
+  Sampungian: 13 matches across 7 sources
+  Cabengian: 6 matches across 4 sources

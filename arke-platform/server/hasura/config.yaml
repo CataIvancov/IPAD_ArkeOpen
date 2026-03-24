@@ -1,0 +1,7 @@
+version: 3
+endpoint: http://localhost:40022
+admin_secret: change-me
+metadata_directory: metadata
+actions:
+  kind: synchronous
+

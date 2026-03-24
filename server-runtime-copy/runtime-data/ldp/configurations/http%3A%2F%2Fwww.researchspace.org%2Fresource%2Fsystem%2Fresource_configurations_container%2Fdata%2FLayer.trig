@@ -1,0 +1,124 @@
+
+<http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer> {
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer>
+    a <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>, <http://www.researchspace.org/resource/system/resource_configuration>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_search_view_type>
+      <http://www.researchspace.org/resource/system/vocab/search_view_type/chart>, <http://www.researchspace.org/resource/system/vocab/search_view_type/list>,
+      <http://www.researchspace.org/resource/system/vocab/search_view_type/grid>, <http://www.researchspace.org/resource/system/vocab/search_view_type/timeline>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_membership_property>
+      <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_order_sparql_pattern>
+      "OPTIONAL { ?this crm:P43_has_dimension ?depth . } ?this rdfs:label ?label . ORDER BY xsd:decimal(?depth) LCASE(?label)";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_ontology_class>
+      <http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Layer configuration";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_search_listView_column>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/resource_search_listView_column/2>,
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/resource_search_listView_column/1>,
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/resource_search_listView_column/3>,
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/resource_search_listView_column/4>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_broader_property>
+      <http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_name>
+      "Layer";
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/system/resource_configurations_container>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_search_facet_kpCategory>
+      <http://www.researchspace.org/resource/system/category/thing>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_card_icon>
+      "line_style";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_list_in_authority>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/list_in_authority>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_in_finder>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/navigation_item/48164255-fc49-4f70-a312-c945be412c71/resource_in_finder>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_description>
+      "Stratigraphic layer or excavation unit (ROCEEH Table_Layer)";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_label_sparql_pattern>
+      "?this rdfs:label ?name . OPTIONAL { ?this crm:P53_has_former_or_current_location ?site . ?site rdfs:label ?siteLabel . } BIND(CONCAT(STR(?name), \" (\", STR(?siteLabel), \")\") AS ?label)" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/resource_search_listView_column/2>
+    a <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>;
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_sparql_pattern>
+      "?this crm:P53_has_former_or_current_location ?site . ?site rdfs:label ?siteLabel . BIND(?siteLabel AS ?label)";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/title>
+      "Site";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/order>
+      "2";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_type>
+      "text" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/resource_search_listView_column/4>
+    a <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>;
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_sparql_pattern>
+      "OPTIONAL { ?this rdfs:comment ?desc1 . } OPTIONAL { ?this crm:P3_has_note ?desc2 . } BIND(COALESCE(?desc1, ?desc2) AS ?desc)";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_type>
+      "text";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/title>
+      "Description";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/order>
+      "4" .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_modification/9ab4f10a-68ac-4e16-ac6f-ee8e6a5d9c63>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_modification>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/user/admin> <http://www.cidoc-crm.org/cidoc-crm/P14i_performed>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/navigation_item/48164255-fc49-4f70-a312-c945be412c71>
+    a <http://www.researchspace.org/resource/system/FinderNavigationItem>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Finder/navigation_menu>;
+    <http://www.researchspace.org/pattern/system/navigation_item/menu_section_type> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system>;
+    <http://www.researchspace.org/pattern/system/navigation_item/resource_icon> "line_style";
+    <http://www.researchspace.org/pattern/system/navigation_item/broader_resource_configuration>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Site>;
+    <http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer>;
+    <http://www.researchspace.org/pattern/system/navigation_item/order_in_menu_section>
+      3 .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11i_was_output_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_modification/9ab4f10a-68ac-4e16-ac6f-ee8e6a5d9c63>,
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer> .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/resource_search_listView_column/3>
+    a <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>;
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_type>
+      "number";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/order>
+      "3";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_sparql_pattern>
+      "?this crm:P43_has_dimension ?dimension . ?dimension crm:P90_has_value ?depth . OPTIONAL { ?dimension crm:P91_has_unit ?unit . ?unit rdfs:label ?unitLabel . } BIND(CONCAT(STR(?depth), \" \", COALESCE(?unitLabel, \"m\")) AS ?label)";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/title>
+      "Depth" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/resource_search_listView_column/1>
+    a <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>;
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/order>
+      "1";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/title>
+      "Layer ID" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_creation>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2025-10-10T00:06:47.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_modification>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Layer/entity_form_record/entity_formRecord_modification/9ab4f10a-68ac-4e16-ac6f-ee8e6a5d9c63> .
+}

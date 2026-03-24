@@ -1,0 +1,14 @@
+
+<http://www.researchspace.org/resource/system/user/admin/setContainer/Uncategorized/context> {
+  <http://www.researchspace.org/resource/system/user/admin/setContainer/Uncategorized>
+    a <http://www.w3.org/ns/ldp#Container>, <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>,
+      <http://www.researchspace.org/resource/system/Set>, <http://www.w3.org/ns/prov#Entity>,
+      <http://www.w3.org/ns/ldp#Resource>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Uncategorized";
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/set>;
+    <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.w3.org/ns/prov#generatedAtTime> "2025-06-07T04:39:05.205Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.researchspace.org/resource/system/user/admin/setContainer> <http://www.w3.org/ns/ldp#contains>
+      <http://www.researchspace.org/resource/system/user/admin/setContainer/Uncategorized> .
+}

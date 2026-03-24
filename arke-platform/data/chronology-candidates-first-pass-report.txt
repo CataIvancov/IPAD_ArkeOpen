@@ -1,0 +1,37 @@
+Candidates: 7487
+Candidates with dates: 835
+By category:
+  archaeological: 3138
+  geological: 3363
+  historical: 986
+Top labels:
+  Pleistocene: 971
+  Prehistoric: 859
+  Prehistory: 515
+  Late Pleistocene: 485
+  Paleolithic: 425
+  Neolithic: 404
+  Historical: 390
+  Holocene: 377
+  Middle Pleistocene: 360
+  Quaternary: 352
+  Islamic: 250
+  Early Pleistocene: 237
+  Megalithic: 229
+  Historic: 153
+  Early Holocene: 129
+  Palaeolithic: 118
+  Late Holocene: 99
+  Upper Paleolithic: 83
+  Pliocene: 78
+  Bronze Age: 77
+  Mesolithic: 76
+  Colonial: 72
+  Middle Paleolithic: 71
+  Middle Holocene: 68
+  Late Pliocene: 65
+  Last Glacial Maximum: 55
+  Lower Paleolithic: 45
+  Upper Palaeolithic: 42
+  Lower Palaeolithic: 32
+  Late Miocene: 30

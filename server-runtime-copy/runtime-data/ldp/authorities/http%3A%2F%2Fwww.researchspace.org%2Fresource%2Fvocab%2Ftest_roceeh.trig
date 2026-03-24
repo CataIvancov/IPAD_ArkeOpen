@@ -1,0 +1,58 @@
+
+<http://www.researchspace.org/resource/vocab/test_roceeh> {
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/vocab/test_roceeh> a <http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document>;
+    <http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of> <http://www.researchspace.org/resource/vocab/test_roceeh/PC102_has_title/a5ee8a6b-54e7-4c2a-a4c4-292b8d01e683>;
+    <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <http://www.researchspace.org/resource/vocab/test_roceeh/primary_appellation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/vocab/authority_document_type/conceptual_reference_model>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/user/admin> <http://www.cidoc-crm.org/cidoc-crm/P14i_performed>
+      <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_creation>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_creation/at_some_time_within>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin> .
+  
+  <http://www.researchspace.org/resource/vocab/test_roceeh/PC102_has_title/a5ee8a6b-54e7-4c2a-a4c4-292b8d01e683>
+    a <http://www.cidoc-crm.org/cidoc-crm/PC102_has_title>;
+    <http://www.cidoc-crm.org/cidoc-crm/P02_has_range> <http://www.researchspace.org/resource/title/b37eebcf-4dc8-4fea-b137-0a1b05ba3e16>;
+    <http://www.cidoc-crm.org/cidoc-crm/P01_has_domain> <http://www.researchspace.org/resource/vocab/test_roceeh> .
+  
+  <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record> a <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11i_was_output_of> <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_modification/2e9caa81-1392-4915-b405-c9360aebeadc>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/vocab/test_roceeh> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/vocab/authority_document_type/conceptual_reference_model>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/vocab/test_roceeh> .
+  
+  <http://www.researchspace.org/resource/title/b37eebcf-4dc8-4fea-b137-0a1b05ba3e16>
+    <http://www.cidoc-crm.org/cidoc-crm/P02i_is_range_of> <http://www.researchspace.org/resource/vocab/test_roceeh/PC102_has_title/a5ee8a6b-54e7-4c2a-a4c4-292b8d01e683> .
+  
+  <http://www.researchspace.org/resource/vocab/test_roceeh/primary_appellation> a <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Test ROCEEH";
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/primary_appellation> .
+  
+  <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2025-10-09T21:47:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_modification/2e9caa81-1392-4915-b405-c9360aebeadc>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_modification> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_modification>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/vocab/test_roceeh/entity_form_record/entity_formRecord_modification/2e9caa81-1392-4915-b405-c9360aebeadc> .
+}

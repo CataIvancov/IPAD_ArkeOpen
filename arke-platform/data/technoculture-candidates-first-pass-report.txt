@@ -1,0 +1,57 @@
+Candidates: 11638
+By category:
+  technoculture: 9038
+  lithic_industry: 1922
+  definition: 590
+  lithic_technology: 88
+Top labels:
+  Neolithic: 2747
+  Acheulean: 1331
+  Mousterian: 683
+  Oldowan: 662
+  Hoabinhian: 608
+  Aurignacian: 524
+  Levallois: 494
+  Mesolithic: 472
+  Toalean: 420
+  Acheulian: 286
+  Dong Son: 212
+  Magdalenian: 206
+  Gravettian: 199
+  Lithic technology: 187
+  Microlithic: 178
+  Paleoindian: 155
+  Pacitanian: 148
+  Hoa Binh: 141
+  Lithic Technology: 119
+  Solutrean: 101
+  Szeletian: 89
+  NEOLITHIC: 80
+  Lithic industries: 79
+  Lithic industry: 79
+  Aterian: 72
+  Clactonian: 70
+  Soanian: 67
+  MESOLITHIC: 55
+  Technocomplex: 53
+  Epigravettian: 32
+  Perigordian: 28
+  Sa Huynh-Kalanay: 22
+  Stone tool technology: 20
+  Techno-complex: 19
+  Lithic Industry: 16
+  Pacitan: 14
+  Shizaishan: 14
+  Zhoukoudian: 14
+  Pakistan: 13
+  Sampungian: 13
+  Mediterranean: 12
+  Sangoan: 12
+  Siberian: 12
+  Bac Son: 11
+  Oalean: 11
+  Chatelperronian: 10
+  Natufian: 10
+  Patjitan: 10
+  Sembiran: 10
+  Toalian: 10

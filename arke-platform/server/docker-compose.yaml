@@ -1,0 +1,39 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    container_name: ${COMPOSE_PROJECT_NAME}-postgres
+    restart: unless-stopped
+    networks:
+      - arkeo
+    ports:
+      - "127.0.0.1:${ARKE_PLATFORM_POSTGRES_PORT}:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ${ARKE_PLATFORM_DATABASE_VOLUME}:/var/lib/postgresql/data
+      - ./sql/init.d:/docker-entrypoint-initdb.d
+
+  graphql-engine:
+    image: hasura/graphql-engine:v2.44.0
+    container_name: ${COMPOSE_PROJECT_NAME}-hasura
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    networks:
+      - arkeo
+    ports:
+      - "127.0.0.1:${ARKE_PLATFORM_GRAPHQL_PORT}:8080"
+    environment:
+      HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@${COMPOSE_PROJECT_NAME}-postgres:5432/postgres
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "${HASURA_GRAPHQL_ENABLE_CONSOLE}"
+      HASURA_GRAPHQL_DEV_MODE: "${HASURA_GRAPHQL_DEV_MODE}"
+      HASURA_GRAPHQL_ADMIN_SECRET: "${HASURA_GRAPHQL_ADMIN_SECRET}"
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup,http-log,webhook-log,websocket-log,query-log
+      HASURA_GRAPHQL_UNAUTHORIZED_ROLE: anonymous
+
+networks:
+  arkeo:
+    external: true
+

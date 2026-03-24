@@ -1,0 +1,17 @@
+- name: arkeopen
+  kind: postgres
+  configuration:
+    connection_info:
+      database_url:
+        from_env: ARKEOPEN_DATABASE_URL
+      isolation_level: read-committed
+      use_prepared_statements: true
+- name: arkeogis
+  kind: postgres
+  configuration:
+    connection_info:
+      database_url:
+        from_env: ARKEOGIS_DATABASE_URL
+      isolation_level: read-committed
+      use_prepared_statements: true
+

@@ -1,0 +1,40 @@
+
+<https://prospection.researchspace.org/container/fieldDefinitionContainer/is_current_or_former_member_of_value/context> {
+  <https://prospection.researchspace.org/container/fieldDefinitionContainer/is_current_or_former_member_of_value>
+    a <http://www.researchspace.org/resource/system/fields/Field>, <http://www.w3.org/ns/prov#Entity>,
+      <http://www.w3.org/ns/ldp#Resource>;
+    <http://www.researchspace.org/resource/system/fields/domain> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>;
+    <http://www.researchspace.org/resource/system/fields/insertPattern> _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9730;
+    <http://www.researchspace.org/resource/system/fields/maxOccurs> "unbound";
+    <http://www.researchspace.org/resource/system/fields/minOccurs> "0";
+    <http://www.researchspace.org/resource/system/fields/selectPattern> _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9728;
+    <http://www.researchspace.org/resource/system/fields/xsdDatatype> <http://www.w3.org/2001/XMLSchema#string>;
+    <http://www.researchspace.org/resource/system/fields/autosuggestionPattern> _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9729;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is or was a member of";
+    <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-07T15:47:56.665Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9728 a <http://spinrdf.org/sp#Query>;
+    <http://spinrdf.org/sp#text> """SELECT ?value WHERE {
+  $subject <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> ?structure . 
+  ?structure rdfs:label ?value
+}""" .
+  
+  _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9729 a <http://spinrdf.org/sp#Query>;
+    <http://spinrdf.org/sp#text> """SELECT ?value ?label WHERE {
+  ?value a crm:E74_Group ;
+    rdfs:label ?label .
+  FILTER REGEX(STR(?label), \"?token\")
+} LIMIT 10""" .
+  
+  _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9730 a <http://spinrdf.org/sp#Query>;
+    <http://spinrdf.org/sp#text> """INSERT { $subject <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> ?structure.
+?structure rdfs:label $value } 
+      	WHERE 
+      	{
+      	BIND(URI(CONCAT(str($subject),\"/structure/\",STRUUID())) as ?structure)
+		}""" .
+  
+  <http://localhost:10214/container/rootContainer/Field_Definition_Container> <http://www.w3.org/ns/ldp#contains>
+      <https://prospection.researchspace.org/container/fieldDefinitionContainer/is_current_or_former_member_of_value> .
+}

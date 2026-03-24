@@ -1,0 +1,125 @@
+
+<http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object> {
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/resource_search_listView_column/1>
+    a <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>;
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/title>
+      "Species";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/order>
+      "1" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/resource_search_listView_column/4>
+    a <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>;
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/order>
+      "4";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_type>
+      "text";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/title>
+      "Site";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_sparql_pattern>
+      "SELECT ?label WHERE {   $subject <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> ?layer .   ?layer <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> ?site .   ?site <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> ?id .   ?id <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> ?label . }" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_creation>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/navigation_item/d696e0ff-440b-4ec9-a0da-5dc659e64bf0>
+    a <http://www.researchspace.org/resource/system/FinderNavigationItem>;
+    <http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object>;
+    <http://www.researchspace.org/pattern/system/navigation_item/menu_section_type> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system>;
+    <http://www.researchspace.org/pattern/system/navigation_item/resource_icon> "nature_people";
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Finder/navigation_menu> .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/resource_search_listView_column/2>
+    a <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>;
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_type>
+      "text";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_sparql_pattern>
+      "SELECT ?label WHERE {   $subject <http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts> ?label . }";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/order>
+      "2";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/title>
+      "Count" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object>
+    a <http://www.researchspace.org/resource/system/resource_configuration>, <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_search_facet_kpCategory>
+      <http://www.researchspace.org/resource/system/category/biological_object_search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Faunal Assemblage configuration";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_broader_property>
+      <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/system/resource_configurations_container>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_label_sparql_pattern>
+      "?item crm:P1_is_identified_by ?appellation . ?appellation a crm:E41_Appellation . ?appellation crm:P2_has_type <http://www.researchspace.org/resource/system/vocab/resource_type/primary_appellation> . ?appellation crm:P190_has_symbolic_content ?label .";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_search_listView_column>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/resource_search_listView_column/3>,
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/resource_search_listView_column/2>,
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/resource_search_listView_column/4>,
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/resource_search_listView_column/1>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_form>
+      <http://www.researchspace.org/resource/system/forms/BiologicalObject>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_list_in_authority>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/list_in_authority>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/pattern/system/resource_configuration/configuration_type/system>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_order_sparql_pattern>
+      "?this rdfs:label ?label . ORDER BY LCASE(?label)";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_membership_property>
+      <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_description>
+      "Faunal remains or faunal record (ROCEEH Table_Fauna)";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_ontology_class>
+      <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_restriction_sparql_pattern>
+      "?this a <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> . ?this <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> ?faunalAsm . ?faunalAsm a <http://www.cidoc-crm.org/cidoc-crm/E78_Collection> .";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_search_view_type>
+      <http://www.researchspace.org/resource/system/vocab/search_view_type/chart>, <http://www.researchspace.org/resource/system/vocab/search_view_type/list>,
+      <http://www.researchspace.org/resource/system/vocab/search_view_type/timeline>, <http://www.researchspace.org/resource/system/vocab/search_view_type/grid>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_card_icon>
+      "nature_people";
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_in_finder>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/navigation_item/d696e0ff-440b-4ec9-a0da-5dc659e64bf0/resource_in_finder>;
+    <http://www.researchspace.org/pattern/system/resource_configuration/resource_name>
+      "Faunal Assemblage" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/resource_search_listView_column/3>
+    a <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>;
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/title>
+      "Layer";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_sparql_pattern>
+      "SELECT ?label WHERE {   $subject <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> ?layer .   ?layer <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> ?id .   ?id <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> ?label . }";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/order>
+      "3";
+    <http://www.researchspace.org/pattern/system/resource_search_listView_column/content_type>
+      "text" .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11i_was_output_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_modification/8ed0fa09-fba9-470a-bf70-976a3fa3bddb>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object> .
+  
+  <http://www.researchspace.org/resource/user/admin> <http://www.cidoc-crm.org/cidoc-crm/P14i_performed>
+      <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_modification/8ed0fa09-fba9-470a-bf70-976a3fa3bddb>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_modification> .
+  
+  <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_modification>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Biological_object/entity_form_record/entity_formRecord_modification/8ed0fa09-fba9-470a-bf70-976a3fa3bddb> .
+}

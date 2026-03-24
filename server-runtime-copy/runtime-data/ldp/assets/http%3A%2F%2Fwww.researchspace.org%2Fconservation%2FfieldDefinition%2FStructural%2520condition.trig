@@ -1,0 +1,24 @@
+
+<http://www.researchspace.org/conservation/fieldDefinition/Structural%20condition/context> {
+  <http://www.researchspace.org/conservation/fieldDefinition/Structural%20condition>
+    a <http://www.researchspace.org/resource/system/fields/Field>, <http://www.w3.org/ns/prov#Entity>,
+      <http://www.w3.org/ns/ldp#Resource>;
+    <http://www.researchspace.org/resource/system/fields/domain> <http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment>;
+    <http://www.researchspace.org/resource/system/fields/insertPattern> _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9937;
+    <http://www.researchspace.org/resource/system/fields/selectPattern> _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9936;
+    <http://www.researchspace.org/resource/system/fields/xsdDatatype> <http://www.w3.org/2001/XMLSchema#string>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Structural Condition"@en;
+    <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-07T15:48:08.820Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9937 a <http://spinrdf.org/sp#Query>;
+    <http://spinrdf.org/sp#text> "INSERT { $subject <http://www.researchspace.org/conservation/fieldDefinition/Structural%20condition> $value} WHERE {}" .
+  
+  _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9936 a <http://spinrdf.org/sp#Query>;
+    <http://spinrdf.org/sp#text> """SELECT ?value WHERE {
+  $subject <http://www.researchspace.org/conservation/fieldDefinition/Structural%20condition> ?value.
+}""" .
+  
+  <http://localhost:10214/container/rootContainer/Field_Definition_Container> <http://www.w3.org/ns/ldp#contains>
+      <http://www.researchspace.org/conservation/fieldDefinition/Structural%20condition> .
+}

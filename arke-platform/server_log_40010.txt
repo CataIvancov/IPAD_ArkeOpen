@@ -1,0 +1,10 @@
+
+> @arke/web-app@0.1.0 dev:arkeopen
+> vite --mode arkeopen --port 40010
+
+
+  VITE v6.4.1   arkeopen   ready in 168 ms
+
+  ➜  Local:   http://localhost:40010/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help

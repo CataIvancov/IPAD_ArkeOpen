@@ -1,0 +1,150 @@
+
+<http://www.researchspace.org/resource/system/vocab/navigation_menu_section> {
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11i_was_output_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/user/admin> <http://www.cidoc-crm.org/cidoc-crm/P14i_performed>
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record/entity_formRecord_creation>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record/entity_formRecord_creation>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record/entity_formRecord_creation/at_some_time_within>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11i_was_output_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record/entity_formRecord_creation>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11i_was_output_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record/entity_formRecord_creation>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record/entity_formRecord_creation/at_some_time_within> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11i_was_output_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record/entity_formRecord_creation> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record/entity_formRecord_creation>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record/entity_formRecord_creation/at_some_time_within>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Archaeological Area";
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record>;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "Archaecomplex";
+    <http://www.w3.org/2004/02/skos/core#related> <http://localhost:8000/8eec2e6e-4135-4c3d-9829-596f8a430e7c>,
+      <http://localhost:8000/3c41b7db-ab61-4132-adfe-bab93670e2d5>, <http://localhost:8000/75eabdfd-6ce0-3eb8-8f3c-5fa0ddd6812d>;
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section> .
+  
+  <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record>
+    <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record>,
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "system";
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record/entity_formRecord_creation>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D7_Digital_Machine_Event>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record/entity_formRecord_creation/at_some_time_within>;
+    <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record_creation> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "libraries";
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/libraries/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://localhost:8000/3c41b7db-ab61-4132-adfe-bab93670e2d5> <http://www.w3.org/2004/02/skos/core#related>
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites>
+    a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "favourites";
+    <http://www.cidoc-crm.org/cidoc-crm/P71i_is_listed_in> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/favourites/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://localhost:8000/75eabdfd-6ce0-3eb8-8f3c-5fa0ddd6812d> <http://www.w3.org/2004/02/skos/core#related>
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2025-09-21T12:49:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section> a <http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Navigation menu section";
+    <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record>;
+    <http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <http://www.researchspace.org/resource/system/resource_configurations_container/data/Type>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/System_Resource> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/entity_form_record/entity_formRecord_creation/at_some_time_within>
+    a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+    <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2024-10-22T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#datetime> .
+  
+  <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record>
+    a <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object>;
+    <http://www.cidoc-crm.org/extensions/crmdig/L11i_was_output_of> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system/entity_form_record/entity_formRecord_creation>;
+    <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/system>;
+    <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.researchspace.org/resource/system/vocab/resource_type/entity_form_record> .
+  
+  <http://localhost:8000/8eec2e6e-4135-4c3d-9829-596f8a430e7c> <http://www.w3.org/2004/02/skos/core#related>
+      <http://www.researchspace.org/resource/system/vocab/navigation_menu_section/Archaeological_Area> .
+}

@@ -1,0 +1,19 @@
+Airtable -> ArkeoGIS v2 conversion report
+
+Input file: /Users/cataivancov/IdeaProjects/arke-platform/data/Imported table-Grid view.csv
+Output file: /Users/cataivancov/IdeaProjects/arke-platform/data/airtable-to-arkeogis-v2.csv
+Rows written: 266
+Distinct sites: 256
+Sites expanded to multiple rows: 10
+
+MAIN_CHARAC counts:
+- Furniture: 38
+- Production: 5
+- Realestate: 223
+
+Unresolved chronology labels:
+- none
+
+Fallback/unresolved characterisation tokens:
+- Pottery production: 1
+- Ceramics: 1

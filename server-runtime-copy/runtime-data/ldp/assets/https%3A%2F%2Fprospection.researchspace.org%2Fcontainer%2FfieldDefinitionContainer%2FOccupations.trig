@@ -1,0 +1,45 @@
+
+<https://prospection.researchspace.org/container/fieldDefinitionContainer/Occupations/context> {
+  <https://prospection.researchspace.org/container/fieldDefinitionContainer/Occupations>
+    a <http://www.researchspace.org/resource/system/fields/Field>, <http://www.w3.org/ns/prov#Entity>,
+      <http://www.w3.org/ns/ldp#Resource>;
+    <http://www.researchspace.org/resource/system/fields/domain> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>;
+    <http://www.researchspace.org/resource/system/fields/insertPattern> _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9675;
+    <http://www.researchspace.org/resource/system/fields/maxOccurs> "unbound";
+    <http://www.researchspace.org/resource/system/fields/minOccurs> "0";
+    <http://www.researchspace.org/resource/system/fields/selectPattern> _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9674;
+    <http://www.researchspace.org/resource/system/fields/xsdDatatype> <http://www.w3.org/2001/XMLSchema#string>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """This property allows sub typing of CRM entities - a form of specialisation – through the use of a terminological hierarchy, or thesaurus.
+The CRM is intended to focus on the high-level entities and relationships needed to describe data structures. Consequently, it does not specialise entities any further than is required for this immediate purpose. However, entities in the isA hierarchy of the CRM may by specialised into any number of sub entities, which can be defined in the E55 Type hierarchy. E51 Contact Point, for example, may be specialised into “e-mail address”, “telephone number”, “post office box”, “URL” etc. none of which figures explicitly in the CRM hierarchy. Sub typing obviously requires consistency between the meaning of the terms assigned and the more general intent of the CRM entity in question.
+""";
+    <http://www.w3.org/2000/01/rdf-schema#label> "Occupations";
+    <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.researchspace.org/resource/user/admin>;
+    <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-07T15:47:53.977Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9674 a <http://spinrdf.org/sp#Query>;
+    <http://spinrdf.org/sp#text> """SELECT ?value WHERE {
+  ?occupation a crm:E74_Group .
+  $subject crm:P2i_is_type_of ?occupation .
+  ?occupation rdfs:label ?value . 	
+}""" .
+  
+  _:genid-cf911f50088f4ceeab2aef5ab9c14349-t9675 a <http://spinrdf.org/sp#Query>;
+    <http://spinrdf.org/sp#text> """INSERT { 
+  ?occupation a crm:E74_Group .
+  $subject crm:P2i_is_type_of ?occupation .
+  ?occupation rdfs:label $value . 	
+  $subject skos:prefLabel \"occupation\" .
+  $subject skos:inScheme <http://www.researchspace.org/vocabulary/E74_Group> .
+  $subject a skos:Concept . 
+
+}   
+    WHERE 
+  
+{ 
+ BIND(URI(CONCAT(\"http://www.researchspace.org/E74_Group/occupation/\",STRUUID())) as ?occupation)
+  BIND(URI(\"http://www.researchspace.org/E74_Group/occupation\") as $subject)
+}""" .
+  
+  <http://localhost:10214/container/rootContainer/Field_Definition_Container> <http://www.w3.org/ns/ldp#contains>
+      <https://prospection.researchspace.org/container/fieldDefinitionContainer/Occupations> .
+}

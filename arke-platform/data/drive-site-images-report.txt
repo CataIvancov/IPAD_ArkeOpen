@@ -1,0 +1,11 @@
+sites_total: 833
+sites_with_images: 446
+sites_without_images: 387
+pages_examined: 2096
+images_written: 1051
+public_image_root: /Users/cataivancov/IdeaProjects/arkeopen-upstream/web-app/public/assets/drive-site-images
+manifest_root: /Users/cataivancov/IdeaProjects/arkeopen-upstream/web-app/public/iiif/manifests/sites
+manifest_base_url: /iiif/manifests/sites
+iiif_image_service_base_url: /iiif/3
+output_csv: /Users/cataivancov/IdeaProjects/arke-platform/data/drive-site-images-web-images.csv
+detail_csv: /Users/cataivancov/IdeaProjects/arke-platform/data/drive-site-images-detail.csv

@@ -1,0 +1,21 @@
+{
+  "name": "@arke/web-admin",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev:arkeopen": "vite --mode arkeopen --port 5174",
+    "dev:arkeogis": "vite --mode arkeogis --port 5174",
+    "build:arkeopen": "vite build --mode arkeopen",
+    "build:arkeogis": "vite build --mode arkeogis"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^3.7.2",
+    "vite": "^6.0.1"
+  }
+}
+

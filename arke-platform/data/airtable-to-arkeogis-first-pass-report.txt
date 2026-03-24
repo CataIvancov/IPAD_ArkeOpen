@@ -1,0 +1,26 @@
+Airtable -> ArkeoGIS first-pass conversion report
+
+Input file: /Users/cataivancov/IdeaProjects/arke-platform/data/Imported table-Grid view.csv
+Output file: /Users/cataivancov/IdeaProjects/arke-platform/data/airtable-to-arkeogis-first-pass.csv
+Rows written: 256
+
+MAIN_CHARAC counts:
+- Furniture: 32
+- Production: 4
+- Realestate: 220
+
+Chronology ranges used:
+- Undefined -> Undefined: 211
+- -4000 -> 1500: 13
+- -10000 -> -2000: 10
+- -2580000 -> -9700: 8
+- -2500 -> 500: 7
+- -2580000 -> 1950: 5
+- -3300000 -> -10000: 1
+- -3300 -> 500: 1
+
+Unresolved chronology labels:
+- none
+
+Fallback/unresolved characterisation values:
+- none
