@@ -62,6 +62,36 @@ ADMIN_REGEX = re.compile(
     r"\b([A-Z][A-Za-z'’._-]+(?:\s+[A-Z][A-Za-z'’._-]+){0,4}\s+(?:Village|Regency|District|Province|Sub-district|Island|Islands|Karsts|karsts|coast|coastal area|River))\b"
 )
 
+COORD_DECIMAL_PATTERN = re.compile(
+    r"(?:Coordinates:?\s*)?([0-9]{1,2}\.[0-9]{1,6})\s*([NS])\s*[,;\s]+([0-9]{1,3}\.[0-9]{1,6})\s*([EW])",
+    re.IGNORECASE,
+)
+
+COORD_S_E_PATTERN = re.compile(
+    r"[Ss]\s*([0-9]{1,2}\.[0-9]+)\s*[,;]\s*[Ee]\s*([0-9]{1,3}\.[0-9]+)",
+    re.IGNORECASE,
+)
+
+COORD_LAT_LON_PATTERN = re.compile(
+    r"[Ll]at(?:itude)?[:\s]*([\-0-9.]+)\s*([NS])\s*[,;\s]+[Ll]on(?:gitude)?[:\s]*([\-0-9.]+)\s*([EW])",
+    re.IGNORECASE,
+)
+
+COORD_TEXT_DECIMAL = re.compile(
+    r"([0-9]{1,2}\.[0-9]+)\s+[Nn]orth\s+[Ll]at(?:itude)?\s+(?:and\s+)?([0-9]{1,3}\.[0-9]+)\s+[Ee]ast\s+[Ll]on(?:gitude)?",
+    re.IGNORECASE,
+)
+
+COORD_TEXT_LAT_LON = re.compile(
+    r"([0-9]{1,2}\.[0-9]+)\s+[Ss]outh\s+[Ll]at(?:itude)?\s+(?:and\s+)?([0-9]{1,3}\.[0-9]+)\s+[Ee]ast\s+[Ll]on(?:gitude)?",
+    re.IGNORECASE,
+)
+
+COORD_TEXT_DMS = re.compile(
+    r"([0-9]{1,2})[°º]?\s*([0-9]{1,2})[\′']?\s*([0-9.,]+)[\"″]?\s*([NS])\s*[;,]?\s*([0-9]{1,3})[°º]?\s*([0-9]{1,2})[\′']?\s*([0-9.,]+)[\"″]?\s*([EW])",
+    re.IGNORECASE,
+)
+
 GENERIC_BAD_STARTS = (
     "A ",
     "An ",
@@ -95,9 +125,11 @@ GENERIC_BAD_CONTAINS = {
 }
 SITE_TOKEN_HINTS = (
     "Leang",
+    "Leang-",
     "Gua",
     "Goa",
     "Liang",
+    "Liang-",
     "Ceruk",
     "Cave",
     "Rockshelter",
@@ -117,6 +149,56 @@ SITE_TOKEN_HINTS = (
     "Talepu",
     "Trinil",
     "Pedawa",
+    "Gunung",
+    "Bukit",
+    "Situs",
+    "Pantai",
+    "Sungai",
+    "Pulau",
+    "Danau",
+    "Teluk",
+    "Selat",
+    "Hutan",
+    "Taman",
+    "Lembah",
+    "Pegunungan",
+    "Gua-",
+    "Lhoong",
+    "Gua ",
+    "Ngalau",
+    "Liang ",
+    "Leang ",
+    "Goa ",
+    "Jambi",
+    "Sumbawa",
+    "Sumbawa",
+    "Kisar",
+    "Wetar",
+    "Alor",
+    "Rote",
+    "Sabu",
+    "Sawu",
+    "Banda",
+    "Ambon",
+    "Seram",
+    "Buru",
+    "Morotai",
+    "Ternate",
+    "Tidore",
+    "Halmahera",
+    "Tanimbar",
+    "Kai",
+    "Aru",
+    "Biak",
+    "Numfor",
+    "Yapen",
+    "W Papua",
+    "Lene Hara",
+    "Jerimalai",
+    "Matja Kuru",
+    "Asitau Kuru",
+    "Bui Ceri",
+    " Ili",
 )
 
 GENERIC_BAD_EXACT = {
@@ -125,6 +207,41 @@ GENERIC_BAD_EXACT = {
     "Matsu Archipelago Sites",
     "Lapita Cultural Complex",
     "Nos Techniques Sites",
+    "Oldest Sites",
+    "At Sites",
+    "Leang The",
+    "Babar Timor",
+}
+
+GENERIC_BAD_CONTAINS_EXTRA = {
+    "General Information",
+    "Synonyms:",
+    "Country:",
+    "Region:",
+    "Coordinates:",
+    "Type:",
+    "Summary:",
+    "Comments:",
+    "Locality ",
+    "Locality-",
+    "U-Series",
+    "U Series",
+    "Sulawesi U",
+    "Corrected U-Series",
+    "And The",
+    "The And",
+    "Gebe Island",
+    "NO NO. COL",
+    "COL CATEGORY",
+    "COL SIDING",
+    "BHL97-",
+    "BHL98-",
+    "Note:",
+    "Scale:",
+    "Konsentrasi",
+    "Kondisi",
+    "Dalam",
+    "Na'u",
 }
 
 BAD_WORDS = {
@@ -138,6 +255,21 @@ BAD_WORDS = {
     "astronomical",
     "potential",
     "complex",
+    "paleoanthropological",
+    "paleoindian",
+    "acheulian",
+    "paleolithic",
+    "palaeolithic",
+    "pleistocene",
+    "holocene",
+    "neolithic",
+    "pleistocene-",
+    "lower",
+    "middle",
+    "upper",
+    "early",
+    "late",
+    "new",
 }
 
 LOCALITY_SITE_TYPES = (
@@ -181,6 +313,7 @@ INDONESIA_TERMS = {
     "indonesia",
     "indonesian",
     "sumatra",
+    "sumatera",
     "jawa",
     "java",
     "sulawesi",
@@ -190,6 +323,7 @@ INDONESIA_TERMS = {
     "flores",
     "alor",
     "timor",
+    "timor-leste",
     "timor barat",
     "kalimantan",
     "papua",
@@ -197,6 +331,7 @@ INDONESIA_TERMS = {
     "maluku",
     "moluccas",
     "nusa tenggara",
+    "nusa Tenggara",
     "halmahera",
     "seram",
     "aru",
@@ -210,6 +345,33 @@ INDONESIA_TERMS = {
     "mata menge",
     "blora",
     "ponorogo",
+    "jawa barat",
+    "jawa tengah",
+    "jawa timur",
+    "sulawesi selatan",
+    "sulawesi tengah",
+    "sulawesi utara",
+    "sulawesi tenggara",
+    "sulawesi barat",
+    "kalimantan selatan",
+    "kalimantan timur",
+    "kalimantan tengah",
+    "kalimantan barat",
+    "papua barat",
+    "irian jaya",
+    "west java",
+    "central java",
+    "east java",
+    "south sulawesi",
+    "north sulawesi",
+    "central sulawesi",
+    "southeast sulawesi",
+    "west sulawesi",
+    "gunungkidul",
+    "bantul",
+    "sleman",
+    "yogyakarta",
+    "jogja",
 }
 
 FOREIGN_TERMS = {
@@ -223,8 +385,6 @@ FOREIGN_TERMS = {
     "vietnam",
     "laos",
     "cambodia",
-    "timor-leste",
-    "east timor",
     "papua new guinea",
     "new guinea",
     "china",
@@ -238,27 +398,69 @@ FOREIGN_TERMS = {
     "korea",
 }
 
+TIMOR_LESTE_TERMS = {
+    "timor-leste",
+    "east timor",
+    "timor leste",
+}
+
 INDONESIA_LOCALISATION_PATTERNS = [
     (("south sulawesi", "sulawesi selatan"), "Indonesia | South Sulawesi"),
     (("central sulawesi", "sulawesi tengah"), "Indonesia | Central Sulawesi"),
     (("southeast sulawesi", "sulawesi tenggara"), "Indonesia | Southeast Sulawesi"),
     (("north sulawesi", "sulawesi utara"), "Indonesia | North Sulawesi"),
     (("west sulawesi", "sulawesi barat"), "Indonesia | West Sulawesi"),
-    (("sulawesi", "maros", "minahasa", "talaud"), "Indonesia | Sulawesi"),
+    (("sulawesi", "maros", "minahasa", "talaud", "pangkep", "muna", "buton", "konawe", "bombana", "wakatobi"), "Indonesia | Sulawesi"),
     (("west java", "jawa barat"), "Indonesia | West Java"),
     (("central java", "jawa tengah"), "Indonesia | Central Java"),
     (("east java", "jawa timur"), "Indonesia | East Java"),
-    (("java", "jawa", "blora", "ponorogo", "trinil", "sangiran"), "Indonesia | Java"),
+    (("java", "jawa", "blora", "ponorogo", "trinil", "sangiran", "gunungkidul", "bantul", "sleman", "yogyakarta"), "Indonesia | Java"),
     (("sumatra", "sumatera", "south sumatra", "sumatera selatan"), "Indonesia | Sumatra"),
     (("kalimantan timur", "east kalimantan"), "Indonesia | East Kalimantan"),
     (("kalimantan selatan", "south kalimantan"), "Indonesia | South Kalimantan"),
+    (("kalimantan barat", "west kalimantan"), "Indonesia | West Kalimantan"),
+    (("kalimantan tengah", "central kalimantan"), "Indonesia | Central Kalimantan"),
     (("kalimantan", "borneo"), "Indonesia | Kalimantan"),
     (("flores",), "Indonesia | Flores"),
-    (("nusa tenggara", "alor", "lombok", "sumbawa"), "Indonesia | Nusa Tenggara"),
-    (("maluku", "moluccas", "halmahera", "seram", "aru", "gebe"), "Indonesia | Maluku Islands"),
-    (("papua", "irian", "new guinea"), "Indonesia | Papua"),
+    (("nusa tenggara", "alor", "lombok", "sumbawa", "kisar", "wetar", "rote", "sabu"), "Indonesia | Nusa Tenggara"),
+    (("maluku", "moluccas", "halmahera", "seram", "aru", "gebe", "babar", "tanimbar", "kai"), "Indonesia | Maluku Islands"),
+    (("papua", "irian", "new guinea", "biak", "w Papua"), "Indonesia | Papua"),
     (("bali",), "Indonesia | Bali"),
+    (("archaeologysulawesi", "sulawesiholocene", "sulawesiHolocene", "sulawesiexp", "sulawesi symposium", "sulawesi tool", "talaud", "toalean", "south sulawesi"), "Indonesia | Sulawesi"),
+    (("kalimantan", "borneo", "ekal", "sanggau", "sangkulirang"), "Indonesia | Kalimantan"),
+    (("jawa", "java", "gunungkidul", "westjava", "centraljava", "eastjava"), "Indonesia | Java"),
+    (("maluku", "moluccas", "halmahera", "seram", "aru", "gebe", "babar", "tanimbar", "kai", "wetang"), "Indonesia | Maluku Islands"),
+    (("papua", "irian", "newguinea", "westpapua"), "Indonesia | Papua"),
+    (("sumatra", "sumatera", "lhoong", "pigip"), "Indonesia | Sumatra"),
+    (("flores", "ntt", "ntb", "nusa tenggara", "timor"), "Indonesia | Flores"),
+    (("bali", "balinese"), "Indonesia | Bali"),
+    (("rockart", "rock art", "dirasakan", "sulawesi rock", "maros", "pangkep"), "Indonesia | South Sulawesi"),
 ]
+
+REGION_CENTER_COORDS = {
+    "Indonesia | Sulawesi": (120.0, -2.0),
+    "Indonesia | South Sulawesi": (119.5, -5.0),
+    "Indonesia | Central Sulawesi": (121.5, -1.5),
+    "Indonesia | Southeast Sulawesi": (122.5, -4.0),
+    "Indonesia | North Sulawesi": (124.0, 1.0),
+    "Indonesia | West Sulawesi": (119.3, -3.0),
+    "Indonesia | Java": (110.5, -7.5),
+    "Indonesia | West Java": (107.0, -6.5),
+    "Indonesia | Central Java": (110.0, -7.3),
+    "Indonesia | East Java": (113.0, -7.8),
+    "Indonesia | Sumatra": (102.0, 0.0),
+    "Indonesia | Kalimantan": (113.5, 0.5),
+    "Indonesia | East Kalimantan": (117.5, 1.0),
+    "Indonesia | South Kalimantan": (115.5, -3.0),
+    "Indonesia | West Kalimantan": (110.0, 0.0),
+    "Indonesia | Central Kalimantan": (113.5, -1.5),
+    "Indonesia | Flores": (121.0, -8.5),
+    "Indonesia | Nusa Tenggara": (121.5, -8.8),
+    "Indonesia | Maluku Islands": (128.5, -3.0),
+    "Indonesia | Papua": (140.0, -3.5),
+    "Indonesia | Bali": (115.2, -8.3),
+    "Timor-Leste": (125.5, -8.8),
+}
 
 PERIOD_MAP = {
     "Early Pleistocene": (-2500000, -498050),
@@ -310,6 +512,43 @@ def signed_decimal(value: str, direction: str) -> float:
 
 def format_float(value: float | None) -> str:
     return "" if value is None else f"{value:.6f}".rstrip("0").rstrip(".")
+
+
+def extract_coords_from_text(text: str) -> list[tuple[float, float]]:
+    coords = []
+    for pattern in (COORD_DECIMAL_PATTERN, COORD_S_E_PATTERN, COORD_LAT_LON_PATTERN, COORD_TEXT_DECIMAL, COORD_TEXT_LAT_LON):
+        for match in pattern.finditer(text):
+            groups = match.groups()
+            if len(groups) == 4:
+                lat_val, lat_dir, lon_val, lon_dir = groups
+                try:
+                    lat = signed_decimal(lat_val, lat_dir)
+                    lon = signed_decimal(lon_val, lon_dir)
+                    if -90 <= lat <= 90 and -180 <= lon <= 180:
+                        coords.append((lon, lat))
+                except (ValueError, TypeError):
+                    pass
+            elif len(groups) == 2:
+                if pattern == COORD_S_E_PATTERN:
+                    try:
+                        lat = -abs(float(groups[0]))
+                        lon = float(groups[1])
+                        if -90 <= lat <= 90 and -180 <= lon <= 180:
+                            coords.append((lon, lat))
+                    except (ValueError, TypeError):
+                        pass
+    for match in COORD_TEXT_DMS.finditer(text):
+        groups = match.groups()
+        if len(groups) == 8:
+            try:
+                lat_d, lat_m, lat_s, lat_dir, lon_d, lon_m, lon_s, lon_dir = groups
+                lat = signed_decimal(f"{lat_d}.{float(lat_s.replace(',', '')):.4f}", lat_dir)
+                lon = signed_decimal(f"{lon_d}.{float(lon_s.replace(',', '')):.4f}", lon_dir)
+                if -90 <= lat <= 90 and -180 <= lon <= 180:
+                    coords.append((lon, lat))
+            except (ValueError, TypeError):
+                pass
+    return coords
 
 
 def prefer_name(names: Counter[str]) -> str:
@@ -436,11 +675,14 @@ def infer_localisation(text: str) -> str:
     return " | ".join(values[:4])
 
 
-def infer_indonesian_localisation(text: str, site_name: str = "") -> str:
-    lowered = clean(f"{site_name} {text}").lower()
+def infer_indonesian_localisation(text: str, site_name: str = "", source_bibs: str = "") -> str:
+    lowered = clean(f"{site_name} {text} {source_bibs}").lower()
     for patterns, label in INDONESIA_LOCALISATION_PATTERNS:
         if any(pattern in lowered for pattern in patterns):
             return label
+    for term in TIMOR_LESTE_TERMS:
+        if term in lowered:
+            return "Timor-Leste"
     return ""
 
 
@@ -471,14 +713,90 @@ class SiteRecord:
     type_labels: Counter[str] = field(default_factory=Counter)
     locality_info_hits: int = 0
     indonesia_hits: int = 0
+    timor_leste_hits: int = 0
     foreign_hits: int = 0
 
 
 def normalize_candidate_name(name: str) -> str:
     name = clean(name).strip(" ,;:.()[]")
+    name = re.sub(r"\.\s*[Tt]he(se)?$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\.\s*[Aa]nd$", "", name).strip()
+    name = re.sub(r"\.\s*[Ll]ab\.?$", "", name, flags=re.IGNORECASE).strip()
     name = re.sub(r"\bSite\b$", "", name, flags=re.IGNORECASE).strip()
     name = re.sub(r"\s+[A-Z]{2,4}\d*$", "", name).strip()
+    name = re.sub(r"\s+[Ss]ynonyms.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Gg]eneral\s+[Ii]nformation.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Cc]ountry.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"^Locality\s+", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ll]ocality\s+", " ", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\bCave\b$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\bCaves\b$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Tt]he$", "", name).strip()
+    name = re.sub(r"\s+[Aa]nd$", "", name).strip()
+    name = re.sub(r"\s+[Tt]he\s+", " ", name).strip()
+    name = re.sub(r"\s+[Aa]nd\s+", " ", name).strip()
+    name = re.sub(r"\s+[Ss]ector\s+[IVX\d]+.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Kk]obroor.*$", "", name).strip()
+    name = re.sub(r"\s+[Tt]imor.*$", "", name).strip()
+    name = re.sub(r"\s+BHL\d*[A-Za-z0-9 ]*$", "", name).strip()
+    name = re.sub(r"\s+BHL\s*$", "", name).strip()
+    name = re.sub(r"\s+[Ss]quare\s+[Dd]epth.*$", "", name).strip()
+    name = re.sub(r"\s+[Tt]op\s*$", "", name).strip()
+    name = re.sub(r"\s+[Ll]ayer\s+\d+.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ll]ayers?\s*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ss]pit\s+\d+.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Aa]pparently.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ss]ource.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ss]ample.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ll]ab\.?\s+.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ll]ab\s+code.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ll]ab\s+number.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ll]ab\s+id.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Tt]able.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Cc]ode\s*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ll]ocation\s*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Dd]epth\s*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Nn]o\.?\s*$", "", name).strip()
+    name = re.sub(r"\s+[Rr]adiocarbon.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Ss]umatra.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+\d{3,}.*$", "", name).strip()
+    name = re.sub(r"'s$", "", name).strip()
+    name = re.sub(r"\s+[Kk]elurahan.*$", "", name).strip()
+    name = re.sub(r"\s+[Kk]ecamatan.*$", "", name).strip()
+    name = re.sub(r"\s+[Dd]esa.*$", "", name).strip()
+    name = re.sub(r"\s+[Pp]rovinsi.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+[Bb]alai.*$", "", name).strip()
+    name = re.sub(r"\s+[Ss]ebagai.*$", "", name).strip()
+    name = re.sub(r"\s+[Pp]emukaan.*$", "", name).strip()
+    name = re.sub(r"\s+[Ll]ama.*$", "", name).strip()
+    name = re.sub(r"\s+[Hh]asil.*$", "", name).strip()
+    name = re.sub(r"\s+[Tt]erdapat.*$", "", name).strip()
+    name = re.sub(r"\s+[Dd]itemukan.*$", "", name).strip()
+    name = re.sub(r"\s+[Kk]arena.*$", "", name).strip()
+    name = re.sub(r"\s+[Dd]engan.*$", "", name).strip()
+    name = re.sub(r"\s+[Pp]enguburan.*$", "", name).strip()
+    name = re.sub(r"\s+[Pp]emukiman.*$", "", name).strip()
+    name = re.sub(r"\s+Gambar\s*$", "", name).strip()
+    name = re.sub(r"\s+[Bb]anyaknya.*$", "", name).strip()
+    name = re.sub(r"\s+[Cc]orak.*$", "", name).strip()
+    name = re.sub(r"\s+[Kk]aya\s*$", "", name).strip()
+    name = re.sub(r"\s+[Ss]ecara\s*$", "", name).strip()
+    name = re.sub(r"\s+Charcoal.*$", "", name).strip()
+    name = re.sub(r"\s+I\s*$", "", name).strip()
+    name = re.sub(r"\s+II\s*$", "", name).strip()
+    name = re.sub(r"\s+III\s*$", "", name).strip()
+    name = re.sub(r"\s+[A-Za-z]\s*$", "", name).strip()
+    name = re.sub(r"\s+\d+\s*$", "", name).strip()
+    name = re.sub(r"\s+BHL\d+-\d+.*$", "", name).strip()
+    name = re.sub(r"\s+NO\s+NO.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+COL\s+.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+Note:.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+Scale:.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+Konsentrasi.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+Kondisi.*$", "", name, flags=re.IGNORECASE).strip()
+    name = re.sub(r"\s+Suhu\s+Udara.*$", "", name, flags=re.IGNORECASE).strip()
     name = re.sub(r"\s+", " ", name)
+    name = re.sub(r"^(.+)(\s+\1)+$", r"\1", name)
     return name
 
 
@@ -487,6 +805,8 @@ def is_noise_name(name: str) -> bool:
     if lowered in {value.lower() for value in GENERIC_BAD_EXACT}:
         return True
     if any(bad in lowered for bad in (value.lower() for value in GENERIC_BAD_CONTAINS)):
+        return True
+    if any(bad in lowered for bad in (value.lower() for value in GENERIC_BAD_CONTAINS_EXTRA)):
         return True
     words = re.findall(r"[a-z0-9']+", lowered)
     if not words:
@@ -525,7 +845,8 @@ def is_record_worth_exporting(site_name: str, record: SiteRecord) -> bool:
     if is_noise_name(site_name):
         return False
     indonesia_score = record.indonesia_hits + (2 if has_indonesian_site_signal(site_name) else 0)
-    if indonesia_score <= record.foreign_hits:
+    regional_score = indonesia_score + record.timor_leste_hits
+    if regional_score <= record.foreign_hits:
         return False
     if record.locality_info_hits:
         return True
@@ -606,6 +927,7 @@ def load_candidates() -> tuple[dict[str, SiteRecord], dict[str, set[str]]]:
             source_to_keys[row["source_file"]].add(key)
             add_comment(record, row["evidence_snippet"])
             record.indonesia_hits += text_term_hits(row["evidence_snippet"], INDONESIA_TERMS)
+            record.timor_leste_hits += text_term_hits(row["evidence_snippet"], TIMOR_LESTE_TERMS)
             record.foreign_hits += text_term_hits(row["evidence_snippet"], FOREIGN_TERMS)
             localisation = infer_indonesian_localisation(row["evidence_snippet"], site_name)
             if localisation:
@@ -626,6 +948,14 @@ def load_candidates() -> tuple[dict[str, SiteRecord], dict[str, set[str]]]:
                     record.coordinates.append((float(row["longitude"]), float(row["latitude"])))
                 except ValueError:
                     pass
+            snippet_coords = extract_coords_from_text(row["evidence_snippet"])
+            for lon, lat in snippet_coords:
+                record.coordinates.append((lon, lat))
+            coord_text = row.get("coordinate_text", "")
+            if coord_text:
+                coord_text_coords = extract_coords_from_text(coord_text)
+                for lon, lat in coord_text_coords:
+                    record.coordinates.append((lon, lat))
     return records, source_to_keys
 
 
@@ -739,8 +1069,15 @@ def build_rows(records: dict[str, SiteRecord], existing_site_keys: set[str]) -> 
         if not is_record_worth_exporting(site_name, record):
             continue
         longitude, latitude = choose_coord(record.coordinates)
-        localisation = prefer_name(record.localisations) if record.localisations else infer_indonesian_localisation(" ".join(record.comments), site_name)
         bibliography = bibliography_value(record.bibliographies)
+        localisation = prefer_name(record.localisations) if record.localisations else infer_indonesian_localisation(" ".join(record.comments), site_name, bibliography)
+        if not longitude:
+            if localisation in REGION_CENTER_COORDS:
+                lon, lat = REGION_CENTER_COORDS[localisation]
+                longitude, latitude = format_float(lon), format_float(lat)
+            elif record.timor_leste_hits > 0 or record.indonesia_hits > 0:
+                lon, lat = REGION_CENTER_COORDS.get("Indonesia | Sulawesi", (120.0, -2.0))
+                longitude, latitude = format_float(lon), format_float(lat)
         comment = summarize_comments(site_name, record)
         charac = record.charac.most_common(1)[0][0] if record.charac else ("Realestate", "Archaeological site", "Unknown site type", "", "")
         if charac[2] == "Unknown site type":

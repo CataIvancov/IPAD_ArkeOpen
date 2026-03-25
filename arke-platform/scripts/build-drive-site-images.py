@@ -31,9 +31,9 @@ MANIFEST_ROOT = APP_PUBLIC_ROOT / "iiif" / "manifests" / "sites"
 MANIFEST_BASE_URL = os.environ.get("IIIF_MANIFEST_BASE_URL", "/iiif/manifests/sites").rstrip("/")
 IIIF_IMAGE_SERVICE_BASE_URL = os.environ.get("IIIF_IMAGE_SERVICE_BASE_URL", "/iiif/3").rstrip("/")
 PUBLIC_IMAGE_URL_BASE = os.environ.get("PUBLIC_IMAGE_URL_BASE", "/assets/drive-site-images").rstrip("/")
-MAX_PDFS_PER_SITE = 3
-MAX_PAGES_PER_PDF = 3
-MAX_IMAGES_PER_SITE = 3
+MAX_PDFS_PER_SITE = 6
+MAX_PAGES_PER_PDF = 6
+MAX_IMAGES_PER_SITE = 6
 
 OUTPUT_HEADERS = [
     "SITE_SOURCE_ID",
@@ -453,7 +453,7 @@ def build_candidates_for_site(
                 dimension_score, dimension_reasons = score_image_dimensions(width, height)
                 score += dimension_score
                 reasons.extend(dimension_reasons)
-                if score < 2:
+                if score < 0:
                     continue
                 extracted.append(
                     CandidateImage(

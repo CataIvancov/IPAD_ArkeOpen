@@ -1,29 +1,29 @@
-Rows: 833
-Rows with coordinates: 19
+Rows: 750
+Rows with coordinates: 734
 Output: /Users/cataivancov/IdeaProjects/arke-platform/data/drive-sites-to-arkeogis.csv
 Sample rows:
 - Liang Bua | Indonesia | Flores | 120.444,-8.531 | https://doi.org/10.1016/j.jasrep.2021.103199 | https://doi.org/10.1016/j.jasrep.2021.103199 | https://doi.org/10.7152/ji
-- Leang Burung | Indonesia | Sulawesi | , | https://doi.org/10.1002/9781119251583 | https://doi.org/10.1371/journal.pone.0193025.g001 | https://doi.org/10.1016/j.qu
-- Gua Harimau | Indonesia | Java | , | https://doi.org/10.1016/j.jhevol.2012.11.002 | https://doi.org/10.1371/journal.pone.0198689 | https://doi.org/10.1371/jo
+- Leang Burung | Indonesia | Sulawesi | 120,-2 | https://doi.org/10.1002/9781119251583 | https://doi.org/10.1371/journal.pone.0193025.g001 | https://doi.org/10.1016/j.qu
+- Gua Harimau | Indonesia | Java | 110.5,-7.5 | https://doi.org/10.1016/j.jhevol.2012.11.002 | https://doi.org/10.1371/journal.pone.0198689 | https://doi.org/10.1371/jo
 - Leang Sarru | Indonesia | Sulawesi | 126.79,4.24 | https://doi.org/10.1080/00438243.2023.2172074 | https://doi.org/10.1371/journal.pone.0289513 | 2.0-S2352409X25000525-mai
-- Gua Pawon | Indonesia | Java | , | https://doi.org/10.1016/j.anthro.200 | First Islanders Prehistory and Human Migration in Island Southeast Asia by Peter 
-- Gua Braholo | Indonesia | Java | , | . Semedo galleys 300824 | Butta Toa | DiasporaMelanesiaNusantara | Emergence and Diversity of Modern Human Behavior in P
+- Gua Braholo | Indonesia | Java | 110.5,-7.5 | . Semedo galleys 300824 | Butta Toa | DiasporaMelanesiaNusantara | Emergence and Diversity of Modern Human Behavior in P
+- Gua Pawon | Indonesia | Java | 110.5,-7.5 | https://doi.org/10.1016/j.anthro.200 | First Islanders Prehistory and Human Migration in Island Southeast Asia by Peter 
+- Lene Hara | Indonesia | Flores | 127.293,-8.409 | https://doi.org/10.1016/j.ara.2020.100191 | https://doi.org/10.1017/S0003598X0008978X | https://doi.org/10.1017/S0003598
 - Liang Abu | Indonesia | East Kalimantan | 117.287861,1.468306 | https://doi.org/10.1002/gea.20122 | https://doi.org/10.5281/zenodo.6774530 | https://doi.org/10.1016/j.quaint.2015.11.08
-- Gua Pra | Indonesia | Kalimantan | , | Borneo Menyingkap gua prasejarah
-- Leang Bulu Bettue | Indonesia | Sulawesi | , | https://doi.org/10.1002/arco.5272 | Archaeology in Oceania - 2022 - Perston - Stone‐flaking technology at Leang Bulu Bet
 - Liang Lemdubu | Indonesia | Maluku Islands | 134.465,-6.092 | https://doi.org/10.1371/journal.pone.0289513 | Alor Island PleistoceneCranial | Alor Pleistocene HumanSkull | archaeolog
-- Leang Buidane | Indonesia | Sulawesi | , | https://doi.org/10.1017/S0003598X00079679 | archaeologysulawesi | b20535351-Anggraeni | Bioarchaeology of Southeast Asia
-- Laili Cave | Timor-Leste | Manatuto | 126.164,-8.54 | https://doi.org/10.1016/j.quascirev | https://doi.org/10.1038/s41586-019-1806-y | https://doi.org/10.1016/j.quascirev.20
-- Gua Kidang | Indonesia | Java | , | https://doi.org/10.1177/0264550504048342 | https://doi.org/10.24832/kpt.v24i1.52 | https://doi.org/10.24164/pw.v6i2.205 
+- Gua Pra | Indonesia | Maluku Islands | 128.5,-3 | Borneo Menyingkap gua prasejarah
+- Leang Bulu Bettue | Indonesia | Sulawesi | 120,-2 | https://doi.org/10.1002/arco.5272 | Archaeology in Oceania - 2022 - Perston - Stone‐flaking technology at Leang Bulu Bet
+- Laili | Indonesia | Flores | 126.164,-8.54 | https://doi.org/10.1016/j.quascirev | https://doi.org/10.1038/s41586-019-1806-y | https://doi.org/10.1016/j.quascirev.20
+- Leang Buidane | Indonesia | Sulawesi | 120,-2 | https://doi.org/10.1017/S0003598X00079679 | archaeologysulawesi | b20535351-Anggraeni | Bioarchaeology of Southeast Asia
+- Leang | Indonesia | Sulawesi | 120,-2 | https://doi.org/10.1016/j.jas.2019.105031 | https://doi.org/10.1017/S0003598X00069015 | https://doi.org/10.1017/s0003598
+- Gua Kidang | Indonesia | Java | 110.5,-7.5 | https://doi.org/10.1177/0264550504048342 | https://doi.org/10.24832/kpt.v24i1.52 | https://doi.org/10.24164/pw.v6i2.205 
 - Liang Jon | Indonesia | Kalimantan | 117.273333,1.064444 | https://doi.org/10.2218/jls.v4i2.2544 | Beads Kalimantan | Borneo Menyingkap gua prasejarah | BukitBangkai Mesolithic | 
-- Gua Siti Nafisah | Indonesia | Maluku Islands | , | First Islanders Prehistory and Human Migration in Island Southeast Asia by Peter Bellwood (z-lib.org) | GuaSitiHalmahera
-- Liang Toge | Indonesia | Flores | , | . Jurnal Papua Vol 3 No 2 Nov 2011 | Alor Island PleistoceneCranial | Alor Pleistocene HumanSkull | Bioarchaeology of So
-- Gua Tewet | Indonesia | Kalimantan | , | Borneo Menyingkap gua prasejarah | BorneoRockArt | Butta Toa | EKal CavesArt | First Islanders Prehistory and Human Migr
-- Goa Topogaro | Indonesia | Central Sulawesi | , | https://doi.org/10.1080/00438243.2023.2172074 | early metal age interactions in island southeast asia and oceania jar bu
-- Leang Batti | Indonesia | South Sulawesi | , | https://doi.org/10.1002/arco.5040 | https://doi.org/10.1038/nature13422 | https://doi.org/10.1073/pnas.1 | https://doi.o
-- Gua Mo | Indonesia | Sulawesi | , | archaeologysulawesi | GoaTopogaro Sulawesi Holocene BoneLithic | GuaMo'oHonoRcokshelter SSul | HoloceneOccupSulawesi | p
-- Gua Mo’o | Indonesia | Sulawesi | , | archaeologysulawesi | FlakingStone matano SSul | GuaMo'oHonoRcokshelter SSul | HoloceneOccupSulawesi | homoSap SSul | Li
-- Gua Lawa | Indonesia | East Java | , | https://doi.org/10.2218/jls.v4i2.2544 | https://doi.org/10.24832/amt.v39i1.1-16 | Bomo-Teleng StoneAdzeWorkshop | Butta 
-- Gua Babi | Indonesia | Kalimantan | , | https://doi.org/10.1016/j.jasrep.2023.103850 | https://doi.org/10.30883/jba.v19i1.791 | https://doi.org/10.2218/jls.v4i2
+- Gua Siti Nafisah | Indonesia | Maluku Islands | 128.5,-3 | First Islanders Prehistory and Human Migration in Island Southeast Asia by Peter Bellwood (z-lib.org) | GuaSitiHalmahera
 - Leang Tedongnge | Indonesia | Sulawesi | 119.694,-5.003 | https://doi.org/10.1371/journal.pone.0289513 | 3217-1-PB | Animal motifs on rock art in Papua and West Papua | homoSap S
-- Gua Prasejarah | Indonesia | South Sulawesi | , | archaeologysulawesi | BuanoIslandRockArt | CultureHistoryToaleanSSul | DIREKTORI SENI CADAS | document (2) | ERA BARU DA
+- Gua Tewet | Indonesia | Kalimantan | 113.5,0.5 | Borneo Menyingkap gua prasejarah | BorneoRockArt | Butta Toa | EKal CavesArt | First Islanders Prehistory and Human Migr
+- Liang Toge | Indonesia | Flores | 121,-8.5 | . Jurnal Papua Vol 3 No 2 Nov 2011 | Alor Island PleistoceneCranial | Alor Pleistocene HumanSkull | Bioarchaeology of So
+- Goa Topogaro | Indonesia | Central Sulawesi | 121.294,-2.763 | https://doi.org/10.1080/00438243.2023.2172074 | early metal age interactions in island southeast asia and oceania jar bu
+- Gua Masri | Indonesia | Kalimantan | 113.5,0.5 | Borneo Menyingkap gua prasejarah | BorneoRockArt | EKal CavesArt | EKalimantan CavesMesolithicBurials | First Islanders 
+- Leang Batti | Indonesia | South Sulawesi | 119.5,-5 | https://doi.org/10.1002/arco.5040 | https://doi.org/10.1038/nature13422 | https://doi.org/10.1073/pnas.1 | https://doi.o
+- Gua Mo | Indonesia | Sulawesi | 120,-2 | archaeologysulawesi | GoaTopogaro Sulawesi Holocene BoneLithic | GuaMo'oHonoRcokshelter SSul | HoloceneOccupSulawesi | p
+- Gua Mo’o | Indonesia | Sulawesi | 120,-2 | archaeologysulawesi | FlakingStone matano SSul | GuaMo'oHonoRcokshelter SSul | HoloceneOccupSulawesi | homoSap SSul | Li

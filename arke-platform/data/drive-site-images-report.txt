@@ -1,8 +1,8 @@
-sites_total: 833
-sites_with_images: 446
-sites_without_images: 387
-pages_examined: 2096
-images_written: 1051
+sites_total: 369
+sites_with_images: 241
+sites_without_images: 128
+pages_examined: 2374
+images_written: 1064
 public_image_root: /Users/cataivancov/IdeaProjects/arkeopen-upstream/web-app/public/assets/drive-site-images
 manifest_root: /Users/cataivancov/IdeaProjects/arkeopen-upstream/web-app/public/iiif/manifests/sites
 manifest_base_url: /iiif/manifests/sites
