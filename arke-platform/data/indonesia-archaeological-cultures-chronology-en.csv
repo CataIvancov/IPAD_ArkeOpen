@@ -1,0 +1,9 @@
+id;parent_id;name;start_date;end_date;color;description;sources
+972000;0;Indonesian Archaeological Cultures (draft v1);-1500000;200;6B8270;Draft chronology of Indonesian archaeological cultures and cultural horizons.;O'Connor et al. 2017 | Bulbeck 2004 | Regional syntheses
+972100;972000;Archaeological Cultures;-1500000;200;6B8270;Grouping node for Indonesian archaeological culture periods.;Structured for ArkeOpen dropdown nesting
+972110;972100;Pacitanian Industry;-1500000;-200000;6B8270;Pacitanian Industry cultural horizon. Spatial coverage: Java, Indonesia.;O'Connor et al. 2017 | Bulbeck 2004 | Regional syntheses
+972120;972100;Cabengian Industry;-800000;-200000;9EA78A;Cabengian Industry cultural horizon. Spatial coverage: Sulawesi, Indonesia.;O'Connor et al. 2017 | Bulbeck 2004 | Regional syntheses
+972130;972100;Sanpungian Culture;-12000;-2000;C6C09C;Sanpungian Culture. Spatial coverage: Java, Indonesia.;O'Connor et al. 2017 | Bulbeck 2004 | Regional syntheses
+972140;972100;Toalean Culture;-8000;-1500;D3A9AB;Toalean Culture. Spatial coverage: South Sulawesi, Indonesia.;O'Connor et al. 2017 | Bulbeck 2004 | Regional syntheses
+972150;972100;Hoabinhian Culture (Indonesia);-10000;-3000;E4CED0;Hoabinhian Culture (Indonesia). Spatial coverage: Sumatra, Indonesia.;O'Connor et al. 2017 | Bulbeck 2004 | Regional syntheses
+972160;972100;Dong Son Cultural Horizon (Indonesia);-600;200;F0DEE0;Dong Son Cultural Horizon. Spatial coverage: Indonesia / Southeast Asia.;O'Connor et al. 2017 | Bulbeck 2004 | Regional syntheses

@@ -29,6 +29,7 @@
     "align:analyses-thesaurus": "python3 ./scripts/align-nakala-thesaurus.py analyses",
     "import:quaternary-chronology-en": "python3 ./scripts/import-quaternary-chronology-en.py",
     "import:indonesia-prehistory-protohistory-chronology": "python3 ./scripts/import-indonesia-prehistory-protohistory-chronology.py",
+    "import:indonesia-archaeological-cultures-chronology": "python3 ./scripts/import-indonesia-archaeological-cultures-chronology.py",
     "deactivate-other-chronologies": "python3 ./scripts/deactivate-other-chronologies.py",
     "import:bibracte-map-source": "python3 ./scripts/import-bibracte-map-source.py",
     "import:lorraine-medieval-sites": "python3 ./scripts/import-lorraine-medieval-sites.py",

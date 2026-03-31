@@ -1,0 +1,16 @@
+site_id,site_name,site_type,calbp_start,calbp_end,year_start,year_end,has_chronology
+meratus-batu-cave,Batu Cave,cave,6065,5650,-4115,-3700,yes
+meratus-hasan-basri-cave,Hasan Basri Cave,cave,,,,,no
+meratus-gunung-else-cave,Gunung Else Cave,cave,,,,,no
+meratus-gunung-bambu-else-rockshelter,Gunung Bambu Else Rockshelter,cave,,,,,no
+meratus-rasidi-1-cave,Rasidi 1 Cave,cave,,,,,no
+meratus-gunung-beringin-rockshelter,Gunung Beringin Rockshelter,cave,,,,,no
+meratus-gunung-liang-udud-cave,Gunung Liang Udud Cave,cave,,,,,no
+meratus-takasima-2-cave,Takasima 2 Cave,cave,,,,,no
+meratus-bali-rockshelter,Bali Rockshelter,cave,,,,,no
+meratus-isur-cave,Isur Cave,cave,,,,,no
+meratus-kebun-sawit,Kebun Sawit (Palm Oil Plantation),unknown,,,,,no
+meratus-liang-bangkai-1,Liang Bangkai 1,cave,5920,6045,-4095,-3970,yes
+meratus-liang-bangkai-10,Liang Bangkai 10,cave,6424,6573,-4623,-4474,yes
+meratus-payung-cave,Payung Cave,cave,3082,3408,-1458,-1132,yes
+meratus-liang-ulin-2,Liang Ulin 2,cave,11247,11560,-9610,-9297,yes
