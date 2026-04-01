@@ -34,7 +34,8 @@ UNDETERMINED_RIGHT = 2147483647
 
 CHARAC_MAP = {
     "Burial niche": "Archaeological Sites > Burial / Cemetery / Kubur / Makam",
-    "Rock art": "Archaeological Sites > Rock art site / Petroglyph / Pictograph / Hand stencil",
+    "Rock art": "Stationary Structures > Rock art site / Petroglyph / Pictograph / Hand stencil",
+    "Ceremonial site": "Archaeological Sites > Open-air site",
 }
 
 KNOWLEDGE_TYPE_MAP = {
@@ -152,6 +153,8 @@ def build_dataset(rows, charac_paths):
     sites = []
     for row in rows:
         main_charac = (row.get("MAIN_CHARAC") or "").strip()
+        if main_charac == "Archaeological Site":
+            main_charac = "Archaeological Sites"
         lvl1 = (row.get("CHARAC_LVL1") or "").strip()
         charac_path = CHARAC_MAP.get(lvl1) or (" > ".join(part for part in [main_charac, lvl1] if part))
         if charac_path not in charac_paths:

@@ -77,15 +77,20 @@ def read_csv():
             site_id = row['SITE_SOURCE_ID']
             site_map[site_id] = {
                 "id": site_id,
+                "code": site_id,
                 "name": row['SITE_NAME'],
-                "localisation": row['LOCALISATION'],
+                "city_name": row['LOCALISATION'],
+                "city_geonameid": 0,
                 "longitude": float(row['LONGITUDE']) if row['LONGITUDE'] else None,
                 "latitude": float(row['LATITUDE']) if row['LATITUDE'] else None,
-                "altitude": int(row['ALTITUDE']) if row['ALTITUDE'] else None,
+                "altitude": int(row['ALTITUDE']) if row['ALTITUDE'] else 0,
+                "centroid": True,
+                "occupation": "not_documented",
                 "state_of_knowledge": row['STATE_OF_KNOWLEDGE'],
-                "occupation": row['OCCUPATION'],
-                "start_date1": int(row['STARTING_PERIOD']) if row['STARTING_PERIOD'] else None,
-                "end_date1": int(row['ENDING_PERIOD']) if row['ENDING_PERIOD'] else None,
+                "start_date1": int(row['STARTING_PERIOD']) if row['STARTING_PERIOD'] else 0,
+                "start_date2": 0,
+                "end_date1": int(row['ENDING_PERIOD']) if row['ENDING_PERIOD'] else 0,
+                "end_date2": 0,
                 "main_charac": row['MAIN_CHARAC'],
                 "charac_lvl1": row['CHARAC_LVL1'],
                 "bibliography": row['BIBLIOGRAPHY'],
@@ -170,7 +175,7 @@ def main():
         end_dates = []
 
         for site in site_map.values():
-            new_id = f"wondama-{site['id']}"
+            new_id = site['id']
             lon = site["longitude"]
             lat = site["latitude"]
             if lon is not None and lat is not None:
@@ -189,12 +194,16 @@ def main():
 
             # site
             geom = f"ST_GeogFromText('POINT({lon} {lat})')" if lon is not None and lat is not None else "NULL"
+            geom_3d = f"ST_Force3DZ(ST_GeomFromText('POINT({lon} {lat})', 4326), {site['altitude']})::geography" if lon is not None and lat is not None else "NULL"
             statements.append(
                 "INSERT INTO public.site "
-                "(id, database_id, name, city_name, centroid, geom, altitude, created_at, updated_at) "
-                f"VALUES ({sql_literal(new_id)}, {dataset_id}, {sql_literal(site['name'])}, {sql_literal(site['localisation'])}, "
-                f"{geom}, {geom}, {site['altitude'] or 'NULL'}, now(), now()) "
-                "ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, geom = EXCLUDED.geom, updated_at = now();"
+                "(id, code, name, city_name, city_geonameid, geom, geom_3d, centroid, occupation, database_id, created_at, updated_at, altitude, start_date1, start_date2, end_date1, end_date2) "
+                f"VALUES ({sql_literal(new_id)}, {sql_literal(site['code'])}, {sql_literal(site['name'])}, {sql_literal(site['city_name'])}, "
+                f"{site['city_geonameid']}, {geom}, "
+                f"{geom_3d}, "
+                f"{'true' if site['centroid'] else 'false'}, {sql_literal(site['occupation'])}, {dataset_id}, now(), now(), {site['altitude']}, "
+                f"{site['start_date1']}, {site['start_date2']}, {site['end_date1']}, {site['end_date2']}) "
+                "ON CONFLICT (id) DO UPDATE SET updated_at = now();"
             )
 
             # site_tr
