@@ -97,6 +97,24 @@ def read_csv():
 
 def main():
     site_map = read_csv()
+    min_lon = min_lat = None
+    max_lon = max_lat = None
+    for site in site_map.values():
+        lon = site["longitude"]
+        lat = site["latitude"]
+        if lon is not None and lat is not None:
+            if min_lon is None:
+                min_lon = max_lon = lon
+                min_lat = max_lat = lat
+            else:
+                min_lon = min(min_lon, lon)
+                max_lon = max(max_lon, lon)
+                min_lat = min(min_lat, lat)
+                max_lat = max(max_lat, lat)
+    if min_lon is not None:
+        geom_wkt = f"POLYGON(({min_lon} {min_lat}, {max_lon} {min_lat}, {max_lon} {max_lat}, {min_lon} {max_lat}, {min_lon} {min_lat}))"
+    else:
+        geom_wkt = "POLYGON((0 0, 0 1, 1 1, 1 0, 0 0))"
     for db in DATABASES:
         print(f"Importing to {db}...")
         owner_user_id = get_owner_id(db)
@@ -118,7 +136,7 @@ def main():
             "license_id, published, soft_deleted, geographical_extent_geom, start_date, end_date, declared_creation_date, public, created_at, updated_at, root_chronology_id, illustrations, database_collection_id) "
             f"VALUES ({dataset_id}, {sql_literal(DATASET_NAME)}, 'region', 'region', 'inventory', {owner_user_id}, "
             f"{sql_literal('IPAD import')}, {sql_literal('')}, {sql_literal('IPAD')}, 'en', 'finished', "
-            f"{license_id}, true, false, ST_GeogFromText({sql_literal('POLYGON((0 0, 0 1, 1 1, 1 0, 0 0))')}), 0, 0, "
+            f"{license_id}, true, false, ST_GeogFromText({sql_literal(geom_wkt)}), 0, 0, "
             f"{sql_literal('2026-03-30T00:00:00+00:00')}, true, now(), now(), {ROOT_CHRONOLOGY_ID}, '', {collection_id}) "
             "ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, updated_at = now(), database_collection_id = EXCLUDED.database_collection_id;"
         )
