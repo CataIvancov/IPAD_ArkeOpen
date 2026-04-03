@@ -7,7 +7,7 @@ Distinct sites: 256
 Sites expanded to multiple rows: 10
 
 MAIN_CHARAC counts:
-- Furniture: 38
+- Artifact/Find: 38
 - Production: 5
 - Realestate: 223
 

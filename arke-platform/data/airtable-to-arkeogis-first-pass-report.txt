@@ -5,7 +5,7 @@ Output file: /Users/cataivancov/IdeaProjects/arke-platform/data/airtable-to-arke
 Rows written: 256
 
 MAIN_CHARAC counts:
-- Furniture: 32
+- Artifact/Find: 32
 - Production: 4
 - Realestate: 220
 
