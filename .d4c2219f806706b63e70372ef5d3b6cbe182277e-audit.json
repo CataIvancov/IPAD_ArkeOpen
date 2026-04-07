@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 36
+    },
+    "auditLog": ".d4c2219f806706b63e70372ef5d3b6cbe182277e-audit.json",
+    "files": [
+        {
+            "date": 1775568582290,
+            "name": "arkeoserver-2026-04.log",
+            "hash": "d7c9b9184d76348f345ad955d3f6d3f91ea4170a4e9df04a4451570679940087"
+        }
+    ],
+    "hashType": "sha256"
+}
