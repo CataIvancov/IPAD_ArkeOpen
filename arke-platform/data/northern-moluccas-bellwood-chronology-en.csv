@@ -1,0 +1,6 @@
+id;parent_id;name;start_date;end_date;color;description;sources
+980000;0;Northern Moluccas Chronology - Bellwood;-40000;500;ff6b6b;Regional chronological phases from Bellwood's research on Northern Moluccas (Morotai, Kayoa, Gebe, Halmahera).;Bellwood research
+980100;980000;Phase 1 Pre-Neolithic;-40000;-3500;ff6b6b;From 40,000 to 3500/3000 BP, flaked stone and shell from the beginning, but with marsupials, bone tools, and edge-ground technology for shell adzes only appearing definitely in Holocene but pre-Neolithic contexts.;Bellwood
+980200;980000;Phase 2 Neolithic;-3500;-2000;ff9f6b;3500/3000 to 2000 BP, Neolithic red-slipped pottery, shell ornaments, and pig and dog bones (no data on human burials).;Bellwood
+980300;980000;Phase 3 Early Metal;-2000;-500;ffbe6b;2000 to 500 BP, Early Metal Phase cupreous and iron artefacts, glass beads, jar burial (Uattamdi), skull burial (Tanjung Pinang), extended burial with cranial modification (Golo), spread of pottery into Morotai and Halmahera, extirpation of marsupials, spice trade().;Bellwood
+980400;980000;Phase 4 Historic;-500;1950;ffdd6b;500 BP to recent, European contact, Asian trade ceramics.;Bellwood
