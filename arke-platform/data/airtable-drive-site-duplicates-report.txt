@@ -1,0 +1,27 @@
+Airtable vs Google Drive site duplicate report
+
+Airtable rows: 255
+Drive rows: 290
+Exact duplicates: 1
+Fuzzy duplicates: 17
+Output CSV: /Users/cataivancov/IdeaProjects/arke-platform/data/airtable-drive-site-duplicates.csv
+
+Top matches:
+- exact_norm | 1.00 | Mata Menge <> Mata Menge Site
+- fuzzy_name | 0.98 | Leang Pamelakkang Tedong <> Gua Pamelakang Tedong
+- fuzzy_name | 0.97 | Gua Barugaya <> Leang Barugayya
+- fuzzy_name | 0.97 | Gua Bulusumi <> Gua Bulu Sumi
+- fuzzy_name | 0.97 | Gua Bulusumi <> Gua Bulu Sumi
+- fuzzy_name | 0.97 | Gua Pettae Kere <> Leang Petta Kere
+- fuzzy_name | 0.97 | Gua Sumpang Bita <> Gua Sumpangbita
+- fuzzy_name | 0.97 | Leang Batanglamara <> Gua Batang Lamara
+- fuzzy_name | 0.97 | Leang Lambatorang <> Leang Lambattorang
+- fuzzy_name | 0.96 | Goa Jepang <> Gua Jempang
+- fuzzy_name | 0.96 | Leang DjariE <> Leang Jarie
+- fuzzy_name | 0.96 | Leang Leang <> Gua Lesang
+- fuzzy_name | 0.96 | Leang Sakapa <> Gua Sakapao
+- fuzzy_name | 0.95 | Leang Jin <> Leang Jing
+- fuzzy_name | 0.95 | Leang Paja <> Leang Pajae
+- fuzzy_name | 0.94 | Leang Pette Kere <> Leang Petta Kere
+- fuzzy_name | 0.92 | Gua Macinai <> Gua Maccina
+- fuzzy_name | 0.92 | Leang Karassa <> Leang Karrasa

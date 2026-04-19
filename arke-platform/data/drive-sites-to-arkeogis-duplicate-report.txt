@@ -1,0 +1,28 @@
+Drive sites internal duplicate report
+
+Drive rows: 258
+Exact duplicate pairs: 3
+Fuzzy duplicate pairs: 18
+Output CSV: /Users/cataivancov/IdeaProjects/arke-platform/data/drive-sites-to-arkeogis-duplicate-report.csv
+
+Top matches:
+- exact_norm | 1.00 | Gua Metanduno <> Gua Metanduno
+- exact_norm | 1.00 | Gua Pandan <> Gua Pandan
+- exact_norm | 1.00 | Liang Batu Ukir <> Liang Batu Ukir
+- fuzzy_name | 0.97 | Gua Batu Adji <> Gua Batu Aji
+- fuzzy_name | 0.96 | Gua Kebobo <> Gua Keboboh
+- fuzzy_name | 0.96 | Gua Pondowa <> Gua Pondoa
+- fuzzy_name | 0.96 | Gua Thamrin <> Gua Tamrin
+- fuzzy_name | 0.96 | Gua Uhallie <> Gua Uhalie
+- fuzzy_name | 0.96 | Leang Buiduane <> Leang Buidane
+- fuzzy_name | 0.96 | Liang Bua Sector IV Mollusk <> Liang Bua Sector XI Mollusk
+- fuzzy_name | 0.95 | Gua Gede <> Gua Gedeh
+- fuzzy_name | 0.95 | Gua Tebok <> Liang Tebo
+- fuzzy_name | 0.95 | Leang Ara <> Gua Arca
+- fuzzy_name | 0.95 | Leang Ara <> Liang Sara
+- fuzzy_name | 0.95 | Liang Bua Sector IV Mollusk <> Liang Bua Sector VII Mollusk
+- fuzzy_name | 0.95 | Liang Bua Sector VII Mollusk <> Liang Bua Sector XI Mollusk
+- fuzzy_name | 0.95 | Liang Toge <> Gua Toe
+- fuzzy_name | 0.94 | Leang Sarru. The <> Leang Sarru. These
+- fuzzy_name | 0.93 | Gua Masri I & II <> Gua Masri II Cave
+- fuzzy_name | 0.93 | Gua Tengkorak <> Gua Tenkgorak

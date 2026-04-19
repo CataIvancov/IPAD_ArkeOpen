@@ -111,11 +111,17 @@ def main():
     rows = load_rows()
     root_id = int(rows[0]["id"])
     sql = build_sql(rows)
+    
     for db in DATABASES:
-        sh(
+        print(f"Importing to {db}...")
+        result = sh(
             ["docker", "exec", "-i", CONTAINER, "psql", "-v", "ON_ERROR_STOP=1", "-U", "postgres", "-d", db],
             stdin=sql,
         )
+        print(f"  Done: {db}")
+    
+    # Verify
+    for db in DATABASES:
         verify(db, root_id)
 
 
