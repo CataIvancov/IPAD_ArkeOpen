@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "drive-8100231b256d",
+        "name": "Gua Arca",
+        "region": "East Java",
+        "site_type": "Cave / Gua / Liang / Ceruk",
+        "comments": "The excavation recovered an assemblage of animal bones and lithic artefacts. Aside of the two, it also resulted in earthenware fragments, bone tools, calm shells, fish bones, floral remains (charcoal, woods, seeds), ocher fragments and human bones",
+        "source_csv": "drive-sites-to-arkeogis.csv",
+        "resource_link": "file:///Users/cataivancov/IdeaProjects/arke-platform/data/drive-sites-to-arkeogis.csv",
+        "doi": "https://doi.org/10.30883/jba.v40i2.518 | https://doi.org/10.30883/jba.v30i1.385 | https://doi.org/10.30883/jba.v41i2.855 | https://doi.org/10.24164/pnk.v2i1.21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [115.366056, -6.847389]
+      }
+    }
+  ]
+}
