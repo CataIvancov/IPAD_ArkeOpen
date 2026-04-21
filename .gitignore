@@ -10,3 +10,6 @@ arke-platform/data/google-drive-pdfs/
 # Exclude large Google Drive folders
 arke-platform/data/google-drive-pdfs/
 arke-platform/data/google-drive-text/
+
+# Stakpak session files
+.stakpak/session*

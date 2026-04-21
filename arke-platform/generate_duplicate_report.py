@@ -6,6 +6,11 @@ v4 = pd.read_csv('data/airtable-to-arkeogis-v4-site-only.csv', sep=';')
 v3.columns = [c.strip() for c in v3.columns]
 v4.columns = [c.strip() for c in v4.columns]
 
+for df in (v3, v4):
+    for col in ['LONGITUDE', 'LATITUDE']:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+
 rows = []
 
 def add_row(candidate_type, dataset, sid1, name1, lon1, lat1, sid2, name2, lon2, lat2, notes):
