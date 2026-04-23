@@ -111,10 +111,14 @@ def parse_point_wkt(value: str) -> tuple[str, str]:
 
 
 def sanitize_source_id(row: dict[str, str]) -> str:
-    candidate = (row.get("UUID") or row.get("ID") or row.get("Site_Name") or "").strip()
+    candidate = (row.get("ID") or "").strip()
     if not candidate:
         return ""
-    return re.sub(r"[^A-Za-z0-9_-]+", "-", candidate).strip("-_")
+    try:
+        numeric_id = int(candidate)
+        return f"IPAD_{numeric_id:03d}"
+    except ValueError:
+        return re.sub(r"[^A-Za-z0-9_-]+", "-", candidate).strip("-_")
 
 
 def build_localisation(row: dict[str, str]) -> str:

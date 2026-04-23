@@ -1,0 +1,39 @@
+Airtable -> ArkeoGIS v4 site-only conversion report
+
+Input file: /Users/cataivancov/IdeaProjects/arke-platform/data/Imported table-Grid view.csv
+Output file: /Users/cataivancov/IdeaProjects/arke-platform/data/airtable-to-arkeogis-v4-site-only.csv
+Rows written: 256
+
+MAIN_CHARAC counts:
+- Production: 3
+- Realestate: 253
+
+MAIN_CHARAC / CHARAC_LVL1 counts:
+- Production > (blank): 3
+- Realestate > Funerary: 3
+- Realestate > Ritual: 144
+- Realestate > Settlement: 5
+- Realestate > Unknown: 101
+
+Applied heuristics:
+- rockshelter:art->ritual: 16
+- Cave:art->ritual: 14
+- cliff:art->ritual: 10
+
+Excluded object/find-like subtype tokens:
+- Sarcophagus: 14
+- Lithic: 14
+- Artefact: 13
+- Shards: 5
+- Urn: 2
+- Jar: 2
+- Statue: 2
+- Stone Mortar: 1
+- Pottery production: 1
+- Ceramics: 1
+
+Unresolved chronology labels:
+- none
+
+Unresolved site characterisation values:
+- none
