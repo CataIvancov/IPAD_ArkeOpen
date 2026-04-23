@@ -1,0 +1,76 @@
+English, The import file must use this first line with the English headings.;SITE_SOURCE_ID;SITE_NAME;LOCALISATION;GEONAME_ID;PROJECTION_SYSTEM;LONGITUDE;LATITUDE;ALTITUDE;CITY_CENTROID;OCCUPATION;STATE_OF_KNOWLEDGE ;STARTING_PERIOD;ENDING_PERIOD;MAIN_CHARAC;CHARAC_LVL1;CHARAC_LVL2;CHARAC_LVL3;CHARAC_LVL4;CHARAC_EXP;BIBLIOGRAPHY;COMMENTS;WEB_IMAGES
+Français : traduction des entêtes de colonnes donnée à titre informatif. Ne pas utiliser pour l'importation de base de données. Utiliser les entêtes en anglais.;SITE_SOURCE_ID;NOM_SITE;LOCALISATION;CODE_GEONAME;SYSTEME_PROJECTION;LONGITUDE;LATITUDE;ALTITUDE;CENTRE_COMMUNE;OCCUPATION;ETAT_CONNAISSANCES;PERIODE_DEBUT_PLUS_FINE;PERIODE_FIN_PLUS_FINE;NOM_CARACTERISATION;CARACTERISATION_NIV1;CARACTERISATION_NIV2;CARACTERISATION_NIV3;CARACTERISATION_NIV4;CARACTERISATION_EXP;BIBLIOGRAPHIE;REMARQUES;WEB_IMAGES
+Deutsch: Übersetzung der Spaltenüberschriften zu Informationszwecken. Nicht für den Import von Datenbanken verwenden. Verwenden Sie die englischen Überschriften.;ADEX_ID;BEZEICHNG;STANDORT;GEONAME_ID;KOORDINATE_REFSYS;LANGEN;BREITENGRADEN ;HOEHE ;GENAUIGKEIT;PHASE;BEGRUENDUNG;ANFANGSDATUM_FEIN;ENDDATUM_FEIN;NAME_CHARAKTERISIERUNG;CHARAKTERISIERUNG_STU1;CHARAKTERISIERUNG_STU2;CHARAKTERISIERUNG_STU3;CHARAKTERISIERUNG_STU4;CHARAKTERISIERUNG_Auß;LITERATUR;LISTENTEXT;WEB_IMAGES
+Español: traducción de los encabezados de las columnas a título informativo. No utilizar para la importación de bases de datos. Utilizar los encabezados en inglés.;ID_YACIMIENTO;NOMBRE_YACIMIENTO;UBICACIÓN;CODIGO_CIUDAD;SISTEMA_DE_PROYECCION;LONGITUD;LATITUD;ALTITUD;CENTRO_CIUDAD;Ocupación;CONOCIMIENTO;FECHA_FIN_PRECISA;FECHA_FIN_PRECISA;NOMBRE_CARACTERIZACION;CARACTERIZACION_NIV1;CARACTERIZACION_NIV2;CARACTERIZACION_NIV3;CARACTERIZACION_NIV4;CARACTERIZACION_EXP;BIBLIOGRAFIA;OBSERVACION;WEB_IMAGES
+Request: this information may be included in a request. / Requête : cette information pourra être incluse dans une requête.;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Not/non/nicht/no;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si;Yes/oui/ja/si
+"Field value: An unknown, non-mandatory value must be entered either by leaving the field blank or by entering the value NULL. Do not use ‘0’, which is a value.
+Valeur du champ : Une valeur inconnue non obligatoire doit être renseignée soit par un champ laissé vide soit par la valeur NULL ne pas utiliser le « 0 » qui est une valeur.";"Alphanumérique
+Ne peux contenir que
+des lettres (aA-zZ), 
+des chiffres (0-9)
+Et les caractères - et _ mais ni au début ni à la fin.";Alphanumérique;Alphanumérique;Numérique;"Alphanumérique
+Code EPSG du système utilisé";"Numérique
+";"Numérique
+";"Numérique
+Pour les sites terrestres, l'altitude la plus haute du site est retenue.
+Pour les sites sous-marin, l'altitude la plus basse du site est retenue.
+L'unité de référence est le mètre.";"Yes-No / Oui–Non / Ja-Nein / Si-No
+";"Not documented / Non renseigné / Unbestimmt / No documentado
+Single / Unique / Einzelphasig / única
+Continuous / Continue (plusieurs périodes contiguës) / Durchgehend / continua
+Multiple / Multiple (plusieurs périodes indépendantes) / Mehrphasig / múltiple";"Not documented / Non renseigné / Unbestimmt / No documentado
+Literature / Littérature / Literatur / Literatura
+Prospected aerial / Prospecté aérien / Lesefund flugprospektion / Reconocimiento aéreo
+Prospected pedestrian / Prospecté pédestre / Lesefund feldbegehung / Prospección arqueológica
+Surveyed / Sondé / Sondiert / Sondeo arqueológico
+Dig / Fouillé / Ausgegraben / Excavación";"Les valeurs peuvent être:
+- Soit numériques: précédées par un - ou un +. En l'absence de signe, l'attribut par défaut est le ""+""
+- Soit textuelles: Undefined/ Indéterminé / Unbestimmt / Indeterminado";"Les valeurs peuvent être:
+- Soit numériques: précédées par un - ou un +. En l'absence de signe, l'attribut par défaut est le ""+""
+- Soit textuelles: Undefined/ Indéterminé / Unbestimmt / Indeterminado";"Real estate / Immobilier / Befunde  / Inmobiliario
+Furniture / Mobilier / Funde / Material arqueológico
+Production / Production / Produktion / Producción
+Landscape / Paysage / Umwelt / Paisage
+Analyses / Analyses / Analysen / Análisis";"Doit reprendre exactement le libellé pour ce niveau de la caractérisation définie dans la colonne :
+MAIN_CHARAC (NOM_CARACTERISATION).";"Doit reprendre exactement le libellé pour ce niveau de la caractérisation définie dans la colonne :
+MAIN_CHARAC (NOM_CARACTERISATION).
+Le niveau précédent doit être obligatoirement renseigné pour pouvoir renseigner ce niveau.";"Doit reprendre exactement le libellé pour ce niveau de la caractérisation définie dans la colonne :
+MAIN_CHARAC (NOM_CARACTERISATION).
+Le niveau précédent doit être obligatoirement renseigné pour pouvoir renseigner ce niveau.";"Doit reprendre exactement le libellé pour ce niveau de la caractérisation définie dans la colonne :
+MAIN_CHARAC (NOM_CARACTERISATION).
+Le niveau précédent doit être obligatoirement renseigné pour pouvoir renseigner ce niveau.";Yes-No / Oui–Non / Ja-Nein  / Si-No; Text Field / Texte / Textfeld / Texto; Text Field / Texte / Textfeld / Texto;URI
+Presence of the field / Présence du champ ;"MANDATORY
+OBLIGATOIRE";;;"OBLIGATOIRE
+Si pas de coordonnées Longitude et Latitude pour le site
+Chaque ligne débutant par le même SITE_SOURCE_ID, doit avoir une «GEONAME_ID» identique.";"OBLIGATOIRE
+Si vide le Code EPSG du WGS84 est utilisé par défaut soit : 4326";"OBLIGATOIRE
+Si pas centre commune.
+Chaque ligne débutant par le même SITE_SOURCE_ID, doit avoir une «LONGITUDE» identique.";"OBLIGATOIRE
+Si pas centre commune.
+Chaque ligne débutant par le même SITE_SOURCE_ID, doit avoir une «LATITUDE» identique.";Chaque ligne débutant par le même SITE_SOURCE_ID, doit avoir une «ALTITUDE» identique.;"OBLIGATOIRE
+Une des propositions";"OBLIGATOIRE
+Une des propositions pour chaque ligne de la base de données.
+Chaque ligne débutant par le même SITE_SOURCE_ID, doit avoir une «OCCUPATION» identique.";"OBLIGATOIRE
+Une des propositions pour chaque ligne de la base de données.
+Un site ayant un même SITE_SOURCE_ID, 
+peut ainsi disposer d'un « état des connaissances » distinct et relatif à chacun des éléments de caractérisation décrits. ";"OBLIGATOIRE
+Une des propositions pour chaque ligne de la base de données.
+Un site ayant un même SITE_SOURCE_ID, 
+peut ainsi disposer d'une « période de début » distincte pour chacun des éléments décrits. ";"OBLIGATOIRE
+Une des propositions pour chaque ligne de la base de données.
+Un site ayant un même SITE_SOURCE_ID, 
+peut ainsi disposer « d'une période de fin » distincte pour chacun des éléments décrits. ";"OBLIGATOIRE
+Une des propositions.";"MANDATORY
+OBLIGATOIRE";;;;"OBLIGATOIRE
+Une des propositions";Un site ayant un même SITE_SOURCE_ID, sur différentes lignes  peut ainsi disposer d'une bibliographie distincte pour chacun des éléments de caractérisation décrits.;"Un site ayant un même SITE_SOURCE_ID, sur différentes lignes 
+peut ainsi disposer de remarques distinctes pour chacun des éléments de caractérisation décrits.";"Un site ayant le même « SITE_SOURCE_ID » sur différentes lignes peut ainsi disposer d'illustrations distinctes pour chacun des éléments de caractérisation décrits.
+L'auteur peut utiliser des liens vers des images en utilisant l'URL de leur manifest.json au format IIIF. 
+Exemple : https://gallica.bnf.fr/iiif/ark:/12148/btv1b7742257s/manifest.json, https://media.getty.edu/iiif/manifest/8959676f-d7e7-4f73-99ed-3a7f6e46b1d1.
+Il est également possible d'indiquer des URL de fichiers d'images entreposés sur Nakala, qui seront légendés. ArkeoGIS récupère en effet toutes les métadonnées à partir de l'URL du DOI indiqué pour générer un fichier standard au format IIIF manifest.json. 
+Exemple : https://doi.org/10.34847/nkl.b6e00u70, https://doi.org/10.34847/nkl.cb442502. 
+Ces liens doivent être saisis dans le fichier d'importation, séparés par une virgule. Il est possible qu'un même élément mélange les deux types d'URL (IIIF et DOI) et les URL en provenance de différents dépôts IIIF. 
+Si vous avez un doute, vous pouvez tester vos adresses en utilisant le bouton « + » situé en haut à gauche de cette démonstration en ligne de la visionneuse Mirador IIIF utilisée par le projet. https://projectmirador.org/demo/
+Ces différentes illustrations et leurs métadonnées seront présentées dans cette visionneuse intégrée à l'interface des plateformes du projet ArkeoGIS et ArkeOpen.  L'adresse suivante : https://wd-image-positions.toolforge.org/iiif/Q188694/P18/manifest.json pour utiliser des illustrations partagées sur https://www.wikidata.org/ en indiquant leur identifiant unique et en générant un manifest à la volée."
+;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;"
+";;;;;;;;;;;;
