@@ -167,6 +167,7 @@ IDArkeoGIS;CARAC_NAME;CARAC_LVL1;CARAC_LVL2;CARAC_LVL3;CARAC_LVL4;IdArk;IdPactol
 ;Portable Objects / Artefacts;Stone;Tools;Axe;Rhyolith;;;
 ;Portable Objects / Artefacts;Stone;Tools;Axe;Flint;;;
 ;Portable Objects / Artefacts;Stone;Tools;Axe;Others;;;
+;Portable Objects / Artefacts;Stone;Tools;Maros Point;Others;;;
 ;Portable Objects / Artefacts;Stone;Tools;Scraper;Sandstone;;;
 ;Portable Objects / Artefacts;Stone;Tools;Scraper;Limestone;;;
 ;Portable Objects / Artefacts;Stone;Tools;Scraper;Baslalt;;;
@@ -185,6 +186,7 @@ IDArkeoGIS;CARAC_NAME;CARAC_LVL1;CARAC_LVL2;CARAC_LVL3;CARAC_LVL4;IdArk;IdPactol
 ;Portable Objects / Artefacts;Stone;Tools;Others;Rhyolith;;;
 ;Portable Objects / Artefacts;Stone;Tools;Others;Flint;;;
 ;Portable Objects / Artefacts;Stone;Tools;Others;Others;;;
+;Portable Objects / Artefacts;Stone;Tools;Flake;Chert;;;
 ;Portable Objects / Artefacts;Stone;Architectural Stone;Sandstone;;;;
 ;Portable Objects / Artefacts;Stone;Architectural Stone;Limestone;;;;
 ;Portable Objects / Artefacts;Stone;Architectural Stone;Marble;;;;
