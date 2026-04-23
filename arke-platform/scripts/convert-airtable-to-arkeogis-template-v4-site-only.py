@@ -11,6 +11,7 @@ BASE_DIR = pathlib.Path("/Users/cataivancov/IdeaProjects/arke-platform")
 INPUT_CSV = BASE_DIR / "data" / "Imported table-Grid view.csv"
 OUTPUT_CSV = BASE_DIR / "data" / "airtable-to-arkeogis-v4-site-only.csv"
 REPORT_TXT = BASE_DIR / "data" / "airtable-to-arkeogis-v4-site-only-report.txt"
+IPAD_ID_OFFSET = 284
 
 OUTPUT_HEADERS = [
     "SITE_SOURCE_ID",
@@ -116,7 +117,7 @@ def sanitize_source_id(row: dict[str, str]) -> str:
         return ""
     try:
         numeric_id = int(candidate)
-        return f"IPAD_{numeric_id:03d}"
+        return f"IPAD_{numeric_id + IPAD_ID_OFFSET:03d}"
     except ValueError:
         return re.sub(r"[^A-Za-z0-9_-]+", "-", candidate).strip("-_")
 
