@@ -1,0 +1,136 @@
+
+<div style="padding: 1rem 0;">
+<h2 class="sr-only">Temuan Megalitik Suger Lor — 28 situs dengan koordinat geografis hasil konversi UTM 49L</h2>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 1.5rem;">
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.9rem 1rem;">
+    <div style="font-size:12px;color:var(--color-text-secondary);margin-bottom:3px;">Total situs</div>
+    <div style="font-size:22px;font-weight:500;">28</div>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.9rem 1rem;">
+    <div style="font-size:12px;color:var(--color-text-secondary);margin-bottom:3px;">Dusun Rabeh</div>
+    <div style="font-size:22px;font-weight:500;">20</div>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.9rem 1rem;">
+    <div style="font-size:12px;color:var(--color-text-secondary);margin-bottom:3px;">Dusun Gedangan</div>
+    <div style="font-size:22px;font-weight:500;">8</div>
+  </div>
+</div>
+
+<div style="display:flex;gap:8px;margin-bottom:1rem;flex-wrap:wrap;">
+  <button onclick="filter('all')" id="btn-all" style="font-size:12px;padding:5px 14px;background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info);">Semua</button>
+  <button onclick="filter('Rabeh')" id="btn-Rabeh" style="font-size:12px;padding:5px 14px;">Rabeh</button>
+  <button onclick="filter('Gedangan')" id="btn-Gedangan" style="font-size:12px;padding:5px 14px;">Gedangan</button>
+  <button onclick="filter('Batu Kenong')" id="btn-kenong" style="font-size:12px;padding:5px 14px;">Batu Kenong</button>
+  <button onclick="filter('Dolmen')" id="btn-dolmen" style="font-size:12px;padding:5px 14px;">Dolmen</button>
+</div>
+
+<div style="overflow-x:auto;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);">
+<table id="site-table" style="width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed;">
+  <colgroup>
+    <col style="width:110px">
+    <col style="width:110px">
+    <col style="width:105px">
+    <col style="width:105px">
+    <col style="width:70px">
+    <col style="width:90px">
+    <col style="width:90px">
+  </colgroup>
+  <thead>
+    <tr style="background:var(--color-background-secondary);">
+      <th style="padding:9px 10px;text-align:left;font-weight:500;border-bottom:0.5px solid var(--color-border-tertiary);">Nama situs</th>
+      <th style="padding:9px 10px;text-align:left;font-weight:500;border-bottom:0.5px solid var(--color-border-tertiary);">Jenis</th>
+      <th style="padding:9px 10px;text-align:right;font-weight:500;border-bottom:0.5px solid var(--color-border-tertiary);">Easting (m)</th>
+      <th style="padding:9px 10px;text-align:right;font-weight:500;border-bottom:0.5px solid var(--color-border-tertiary);">Northing (m)</th>
+      <th style="padding:9px 10px;text-align:right;font-weight:500;border-bottom:0.5px solid var(--color-border-tertiary);">mdpl</th>
+      <th style="padding:9px 10px;text-align:right;font-weight:500;border-bottom:0.5px solid var(--color-border-tertiary);">Lat (°)</th>
+      <th style="padding:9px 10px;text-align:right;font-weight:500;border-bottom:0.5px solid var(--color-border-tertiary);">Lon (°)</th>
+    </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+</div>
+
+<div style="margin-top:8px;font-size:11px;color:var(--color-text-tertiary);">Konversi menggunakan rumus UTM WGS84 — EPSG:32749 (Zone 49S). Meridian tengah 111°E.</div>
+</div>
+
+<script>
+const sites = [
+  ['Rabeh 1','Batu Kenong',807116.253,9109399.731,303,-8.047547,113.786181],
+  ['Rabeh 2','Batu Kenong',807134.965,9109312.594,290,-8.048333,113.786356],
+  ['Rabeh 3','Batu Kenong',807134.965,9109312.594,290,-8.048333,113.786356],
+  ['Rabeh 4','Batu Kenong',807135.805,9109300.905,289,-8.048439,113.786364],
+  ['Rabeh 5','Batu Kenong',807135.805,9109300.905,289,-8.048439,113.786364],
+  ['Rabeh 6','Batu Kenong',807112.701,9109328.118,294,-8.048194,113.786153],
+  ['Rabeh 7','Batu Kenong',807293.067,9109489.532,296,-8.046725,113.787778],
+  ['Rabeh 8','Dolmen',807192.121,9109515.739,297,-8.046494,113.786861],
+  ['Rabeh 9','Dolmen',807215.394,9109558.316,299,-8.046108,113.787069],
+  ['Rabeh 10','Dolmen',807246.595,9109550.110,299,-8.046181,113.787353],
+  ['Rabeh 11','Dolmen',807228.135,9109584.363,301,-8.045872,113.787183],
+  ['Rabeh 12','Dolmen',807231.531,9109588.030,301,-8.045839,113.787214],
+  ['Rabeh 13','Dolmen',807241.282,9109624.858,305,-8.045506,113.787300],
+  ['Rabeh 14','Dolmen',807242.249,9109631.923,305,-8.045442,113.787308],
+  ['Rabeh 15','Dolmen',807015.532,9109683.889,307,-8.044986,113.785250],
+  ['Rabeh 16','Dolmen',807012.102,9109675.304,307,-8.045064,113.785219],
+  ['Rabeh 17','Dolmen',807018.367,9109695.246,306,-8.044883,113.785275],
+  ['Rabeh 18','Dolmen',806944.710,9109768.921,308,-8.044222,113.784603],
+  ['Rabeh 19','Dolmen',806925.781,9109779.196,311,-8.044131,113.784431],
+  ['Rabeh 20','Dolmen',806959.051,9109894.880,316,-8.043083,113.784725],
+  ['Gedangan 1','Batu Kenong',806999.817,9109941.335,308,-8.042661,113.785092],
+  ['Gedangan 2','Batu Kenong',807093.827,9109841.387,306,-8.043558,113.785950],
+  ['Gedangan 3','Dolmen',807218.950,9109810.405,309,-8.043831,113.787086],
+  ['Gedangan 4','Dolmen',809466.240,9110009.647,315,-8.041892,113.807444],
+  ['Gedangan 5','Dolmen',806906.655,9109940.739,319,-8.042672,113.784247],
+  ['Gedangan 6','Dolmen',806876.115,9109956.012,318,-8.042536,113.783969],
+  ['Gedangan 7','Dolmen',806832.265,9109906.811,317,-8.042983,113.783575],
+  ['Gedangan 8','Dolmen',806864.350,9109893.372,316,-8.043103,113.783867],
+];
+
+let activeFilter = 'all';
+
+function renderTable(data) {
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+  data.forEach((s, i) => {
+    const isRabeh = s[0].startsWith('Rabeh');
+    const tr = document.createElement('tr');
+    tr.style.borderBottom = '0.5px solid var(--color-border-tertiary)';
+    tr.style.background = i%2===0 ? 'transparent' : 'var(--color-background-secondary)';
+    const badge = s[1]==='Dolmen'
+      ? `<span style="font-size:10px;padding:2px 7px;border-radius:4px;background:var(--color-background-success);color:var(--color-text-success);font-weight:500;">Dolmen</span>`
+      : `<span style="font-size:10px;padding:2px 7px;border-radius:4px;background:var(--color-background-info);color:var(--color-text-info);font-weight:500;">Kenong</span>`;
+    const dusunBadge = isRabeh
+      ? `<span style="font-size:10px;padding:2px 7px;border-radius:4px;background:var(--color-background-warning);color:var(--color-text-warning);font-weight:500;margin-right:4px;">Rabeh</span>`
+      : `<span style="font-size:10px;padding:2px 7px;border-radius:4px;background:var(--color-background-danger);color:var(--color-text-danger);font-weight:500;margin-right:4px;">Gedangan</span>`;
+    tr.innerHTML = `
+      <td style="padding:8px 10px;">${dusunBadge}${s[0].split(' ')[1]}</td>
+      <td style="padding:8px 10px;">${badge}</td>
+      <td style="padding:8px 10px;text-align:right;font-variant-numeric:tabular-nums;">${s[2].toFixed(3)}</td>
+      <td style="padding:8px 10px;text-align:right;font-variant-numeric:tabular-nums;">${s[3].toFixed(3)}</td>
+      <td style="padding:8px 10px;text-align:right;">${s[4]}</td>
+      <td style="padding:8px 10px;text-align:right;font-variant-numeric:tabular-nums;">${s[5].toFixed(6)}</td>
+      <td style="padding:8px 10px;text-align:right;font-variant-numeric:tabular-nums;">${s[6].toFixed(6)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function filter(f) {
+  activeFilter = f;
+  ['all','Rabeh','Gedangan','Batu Kenong','Dolmen'].forEach(k => {
+    const id = k==='Batu Kenong'?'btn-kenong':k==='Dolmen'?'btn-dolmen':'btn-'+k;
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.style.background = k===f ? 'var(--color-background-info)' : '';
+      btn.style.color = k===f ? 'var(--color-text-info)' : '';
+      btn.style.borderColor = k===f ? 'var(--color-border-info)' : '';
+    }
+  });
+  const filtered = f==='all' ? sites : sites.filter(s =>
+    s[0].startsWith(f) || s[1]===f
+  );
+  renderTable(filtered);
+}
+
+renderTable(sites);
+</script>
