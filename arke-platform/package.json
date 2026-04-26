@@ -19,6 +19,8 @@
     "server:up": "docker compose --env-file ../arkeopen-upstream/server/.env -f ../arkeopen-upstream/server/docker-compose.yaml up -d",
     "server:down": "docker compose --env-file ../arkeopen-upstream/server/.env -f ../arkeopen-upstream/server/docker-compose.yaml down",
     "server:logs": "docker compose --env-file ../arkeopen-upstream/server/.env -f ../arkeopen-upstream/server/docker-compose.yaml logs -f",
+    "server:geoserver:logs": "docker compose --env-file ../arkeopen-upstream/server/.env -f ../arkeopen-upstream/server/docker-compose.yaml logs -f geoserver",
+    "server:geoserver:ps": "docker compose --env-file ../arkeopen-upstream/server/.env -f ../arkeopen-upstream/server/docker-compose.yaml ps geoserver",
     "doctor:upstream-data": "sh ./scripts/check-upstream-data.sh",
     "import:public-seeds": "sh ./scripts/import-public-arkeogis-seeds.sh",
     "align:arkeopen-thesauri": "python3 ./scripts/align-nakala-thesaurus.py all",
