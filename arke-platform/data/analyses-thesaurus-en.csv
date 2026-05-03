@@ -1,0 +1,125 @@
+IDArkeoGIS;MAIN_CHARAC;CHARAC_LVL1;CHARAC_LVL2;CHARAC_LVL3;CHARAC_LVL4;IdArk;IdPactols;IdAat
+1898;Analyses;Preparation;;;;;;
+2020;Analyses;Preparation;Thin section;;;https://ark.frantiq.fr/ark:/26678/pcrt6g793r0j6q;266565;
+2021;Analyses;Preparation;Thin section;Site sample;;;;
+2022;Analyses;Preparation;Thin section;Reference sample;;;;
+2023;Analyses;Preparation;Polished section;;;;;
+2024;Analyses;Preparation;Polished section;Site sample;;;;
+2025;Analyses;Preparation;Polished section;Reference sample;;;;
+2026;Analyses;Sampling;;;;https://ark.frantiq.fr/ark:/26678/pcrtdfsZ3abSZh;35684;
+2027;Analyses;Sampling;Laser ablation;;;;;
+2028;Analyses;Sampling;Laser ablation;Site sample;;;;
+2029;Analyses;Sampling;Laser ablation;Reference sample;;;;
+;Analyses;Remote sensing;;;;https://ark.frantiq.fr/ark:/26678/pcrtubzTHKxnAM;17434;
+;Analyses;Remote sensing;LIDAR;;;https://ark.frantiq.fr/ark:/26678/pcrtWIlj2RNume;29834;
+2030;Analyses;Observation;;;;;;
+2031;Analyses;Observation;SEM;;;https://ark.frantiq.fr/ark:/26678/pcrtIvN6VPwMxK;22150;http://vocab.getty.edu/page/aat/300224957
+2032;Analyses;Observation;SEM;Site sample;;;;
+2033;Analyses;Observation;SEM;Reference sample;;;;
+2034;Analyses;Observation;Confocal microscope;;;;;
+2035;Analyses;Observation;Confocal microscope;Site sample;;;;
+2036;Analyses;Observation;Confocal microscope;Reference sample;;;;
+2037;Analyses;Observation;Optical microscope;;;;;
+2038;Analyses;Observation;Optical microscope;Site sample;;;;
+2039;Analyses;Observation;Optical microscope;Reference sample;;;;
+2040;Analyses;Dating;;;;https://ark.frantiq.fr/ark:/26678/pcrtpSis9hZLUb;14335;http://vocab.getty.edu/page/aat/300054714
+2041;Analyses;Dating;Radiocarbon;;;http://ark.frantiq.fr/ark:/26678/pcrtThu8wInkhJ;16554;http://vocab.getty.edu/page/aat/300054717
+2042;Analyses;Dating;Radiocarbon;Site sample;;;;
+2043;Analyses;Dating;Radiocarbon;Reference sample;;;;
+2044;Analyses;Dating;Dendrochronology;;;http://ark.frantiq.fr/ark:/26678/pcrtYgu4jWtWru;14339;http://vocab.getty.edu/page/aat/300054715
+2045;Analyses;Dating;Dendrochronology;Site sample;;;;
+2046;Analyses;Dating;Dendrochronology;Reference sample;;;;
+2047;Analyses;Dating;Oxygen isotope;;;https://ark.frantiq.fr/ark:/26678/pcrtTnlurfPgFb;21877;http://vocab.getty.edu/page/aat/300379640
+2048;Analyses;Dating;Oxygen isotope;Site sample;;;;
+2049;Analyses;Dating;Oxygen isotope;Reference sample;;;;
+2050;Analyses;Dating;OSL;;;https://ark.frantiq.fr/ark:/26678/pcrtoz5WZxu4iz;27572;http://vocab.getty.edu/page/aat/300266050
+2051;Analyses;Dating;OSL;Site sample;;;;
+2052;Analyses;Dating;OSL;Reference sample;;;;
+2053;Analyses;Dating;Paleomagnetism;;;http://ark.frantiq.fr/ark:/26678/pcrtwWpo2faNF0;35806;http://vocab.getty.edu/page/aat/300223526
+2054;Analyses;Dating;Paleomagnetism;Site sample;;;;
+2055;Analyses;Dating;Paleomagnetism;Reference sample;;;;
+2056;Analyses;Dating;Thermoluminescence;;;https://ark.frantiq.fr/ark:/26678/pcrtVPxBxiVqMy;17284;http://vocab.getty.edu/page/aat/300054718
+2057;Analyses;Dating;Thermoluminescence;Site sample;;;;
+2058;Analyses;Dating;Thermoluminescence;Reference sample;;;;
+2059;Analyses;Anthropology;;;;http://ark.frantiq.fr/ark:/26678/pcrttcpeEPi2K0;13232;http://vocab.getty.edu/page/aat/300054322
+2060;Analyses;Anthropology;Site sample;;;;;
+2061;Analyses;Anthropology;Reference sample;;;;;
+2062;Analyses;Botany;;;;https://ark.frantiq.fr/ark:/26678/pcrtvw7qwGBX9r;13607;http://vocab.getty.edu/page/aat/300054467
+2063;Analyses;Botany;Macroremains;;;https://ark.frantiq.fr/ark:/26678/pcrtSE0sKffhOM;15540;
+2064;Analyses;Botany;Macroremains;Anthracology;;http://ark.frantiq.fr/ark:/26678/pcrtHymRiII9SY;24391;http://vocab.getty.edu/page/aat/300438514
+2065;Analyses;Botany;Macroremains;Anthracology;Site sample;;;
+2066;Analyses;Botany;Macroremains;Anthracology;Reference sample;;;
+2067;Analyses;Botany;Macroremains;Carpology;;http://ark.frantiq.fr/ark:/26678/pcrtRi9at48zkM;13751;
+2068;Analyses;Botany;Macroremains;Carpology;Site sample;;;
+2069;Analyses;Botany;Macroremains;Carpology;Reference sample;;;
+2070;Analyses;Botany;Microremains;;;https://ark.frantiq.fr/ark:/26678/pcrtmn4k8f28dv;15657;
+2071;Analyses;Botany;Microremains;Palynology;;http://ark.frantiq.fr/ark:/26678/pcrt1vSh3lIhHm;16077;http://vocab.getty.edu/page/aat/300251145
+2072;Analyses;Botany;Microremains;Palynology;Site sample;;;
+2073;Analyses;Botany;Microremains;Palynology;Reference sample;;;
+2074;Analyses;Botany;Microremains;Phytoliths;;http://ark.frantiq.fr/ark:/26678/pcrt5Bet7kzAgJ;16226;http://vocab.getty.edu/page/aat/300379628
+2075;Analyses;Botany;Microremains;Phytoliths;Site sample;;;
+2076;Analyses;Botany;Microremains;Phytoliths;Reference sample;;;
+2077;Analyses;Geology;;;;https://ark.frantiq.fr/ark:/26678/pcrtcMAzwfcMyS;14983;http://vocab.getty.edu/page/aat/300054546
+2078;Analyses;Geology;Granulometry;;;http://ark.frantiq.fr/ark:/26678/pcrtAO75iuppgW;27455;http://vocab.getty.edu/page/aat/300380072
+2079;Analyses;Geology;Granulometry;Site sample;;;;
+2080;Analyses;Geology;Granulometry;Reference sample;;;;
+2081;Analyses;Geology;Pedology;;;http://ark.frantiq.fr/ark:/26678/pcrts8Sij9iWxU;16514;http://vocab.getty.edu/page/aat/300054557
+2082;Analyses;Geology;Pedology;Site sample;;;;
+2083;Analyses;Geology;Pedology;Reference sample;;;;
+2084;Analyses;Geology;Petrography;;;https://ark.frantiq.fr/ark:/26678/pcrtiiGa8GYBlS;16525;
+2085;Analyses;Geology;Petrography;Site sample;;;;
+2086;Analyses;Geology;Petrography;Reference sample;;;;
+2087;Analyses;Geology;Phosphate;;;https://ark.frantiq.fr/ark:/26678/pcrt2nbSAPPSwB;24140;http://vocab.getty.edu/page/aat/300379779
+2088;Analyses;Geology;Phosphate;Site sample;;;;
+2089;Analyses;Geology;Phosphate;Reference sample;;;;
+2090;Analyses;Geology;Sedimentology;;;https://ark.frantiq.fr/ark:/26678/pcrt4vmcwIU4yP;17188;http://vocab.getty.edu/page/aat/300379586
+2091;Analyses;Geology;Sedimentology;Site sample;;;;
+2092;Analyses;Geology;Sedimentology;Reference sample;;;;
+2093;Analyses;Zoology;;;;https://ark.frantiq.fr/ark:/26678/pcrt3qpYFnIQFm;17595;http://vocab.getty.edu/page/aat/300054472
+2094;Analyses;Zoology;Entomology;;;http://ark.frantiq.fr/ark:/26678/pcrtePI6K35S9V;35447;http://vocab.getty.edu/page/aat/300251856
+2095;Analyses;Zoology;Entomology;Site sample;;;;
+2096;Analyses;Zoology;Entomology;Reference sample;;;;
+2097;Analyses;Zoology;Fauna;;;http://ark.frantiq.fr/ark:/26678/pcrtT2H2KjqBcU;14717;http://vocab.getty.edu/page/aat/300310150
+2098;Analyses;Zoology;Fauna;Site sample;;;;
+2099;Analyses;Zoology;Fauna;Reference sample;;;;
+2100;Analyses;Zoology;Mollusc;;;http://ark.frantiq.fr/ark:/26678/pcrt4jqSXocNLw;15701;http://vocab.getty.edu/page/aat/300266510
+2101;Analyses;Zoology;Mollusc;Site sample;;;;
+2102;Analyses;Zoology;Mollusc;Reference sample;;;;
+2103;Analyses;Physiography;;;;https://ark.frantiq.fr/ark:/26678/pcrt6g3bwHKS6p;14982;http://vocab.getty.edu/page/aat/300054389
+2104;Analyses;Physiography;Hydrology;;;http://ark.frantiq.fr/ark:/26678/pcrtqQv1MSIsp0;15126;http://vocab.getty.edu/page/aat/300264403
+2105;Analyses;Physiography;Hydrology;Site sample;;;;
+2106;Analyses;Physiography;Hydrology;Reference sample;;;;
+2107;Analyses;Physical chemistry;;;;https://ark.frantiq.fr/ark:/26678/pcrtkyIAFWLoSn;16221;http://vocab.getty.edu/page/aat/300224431
+2108;Analyses;Physical chemistry;Cathodoluminescence;;;;;
+2109;Analyses;Physical chemistry;Cathodoluminescence;Site sample;;;;
+2110;Analyses;Physical chemistry;Cathodoluminescence;Reference sample;;;;
+2111;Analyses;Physical chemistry;Optical emission spectroscopy;;;https://ark.frantiq.fr/ark:/26678/pcrtAXp46dQPL8;14383;http://vocab.getty.edu/page/aat/300390520
+2112;Analyses;Physical chemistry;Optical emission spectroscopy;Site sample;;;;
+2113;Analyses;Physical chemistry;Optical emission spectroscopy;Reference sample;;;;
+2114;Analyses;Physical chemistry;X-ray Fluorescence;;;https://ark.frantiq.fr/ark:/26678/pcrtxP5I53Pj0s;18206;http://vocab.getty.edu/page/aat/300224161
+2115;Analyses;Physical chemistry;X-ray Fluorescence;Site sample;;;;
+2116;Analyses;Physical chemistry;X-ray Fluorescence;Reference sample;;;;
+2117;Analyses;Physical chemistry;ICP-MS;;;https://ark.frantiq.fr/ark:/26678/pcrtJM6rFSQ84T;26009;http://vocab.getty.edu/page/aat/300264220
+2118;Analyses;Physical chemistry;ICP-MS;Site sample;;;;
+2119;Analyses;Physical chemistry;ICP-MS;Reference sample;;;;
+2120;Analyses;Physical chemistry;SEM-EDS;;;https://ark.frantiq.fr/ark:/26678/pcrtIvN6VPwMxK;22150;http://vocab.getty.edu/page/aat/300224957
+2121;Analyses;Physical chemistry;SEM-EDS;Site sample;;;;
+2122;Analyses;Physical chemistry;SEM-EDS;Reference sample;;;;
+2123;Analyses;Physical chemistry;SEM-WDS;;;;;
+2124;Analyses;Physical chemistry;SEM-WDS;Site sample;;;;
+2125;Analyses;Physical chemistry;SEM-WDS;Reference sample;;;;
+2126;Analyses;Physical chemistry;Sediment percolation;;;;;
+2127;Analyses;Physical chemistry;Sediment percolation;Site sample;;;;
+2128;Analyses;Physical chemistry;Sediment percolation;Reference sample;;;;
+2129;Analyses;Physical chemistry;Spectroscopy FTIR;;;;;
+2130;Analyses;Physical chemistry;Spectroscopy FTIR;Site sample;;;;
+2131;Analyses;Physical chemistry;Spectroscopy FTIR;Reference sample;;;;
+2132;Analyses;Physical chemistry;Spectroscopy RAMAN;;;;;
+2133;Analyses;Physical chemistry;Spectroscopy RAMAN;Site sample;;;;
+2134;Analyses;Physical chemistry;Spectroscopy RAMAN;Reference sample;;;;
+2135;Analyses;Physical chemistry;Differential thermal;;;https://ark.frantiq.fr/ark:/26678/pcrt9Mjxw2pZ0M;35656;http://vocab.getty.edu/page/aat/300214739
+2136;Analyses;Physical chemistry;Differential thermal;Site sample;;;;
+2137;Analyses;Physical chemistry;Differential thermal;Reference sample;;;;
+2138;Analyses;Physical chemistry;Thermogravimetric;;;;;
+2139;Analyses;Physical chemistry;Thermogravimetric;Site sample;;;;
+2140;Analyses;Physical chemistry;Thermogravimetric;Reference sample;;;;

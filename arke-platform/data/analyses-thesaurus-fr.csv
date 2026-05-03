@@ -1,0 +1,125 @@
+IDArkeoGIS;MAIN_CHARAC;CHARAC_LVL1;CHARAC_LVL2;CHARAC_LVL3;CHARAC_LVL4;IdArk;IdPactols;IdAat
+1898;Analyses;Préparation;;;;;;
+2020;Analyses;Préparation;Lame mince;;;https://ark.frantiq.fr/ark:/26678/pcrt6g793r0j6q;266565;
+2021;Analyses;Préparation;Lame mince;Échantillon site;;;;
+2022;Analyses;Préparation;Lame mince;Échantillon référence;;;;
+2023;Analyses;Préparation;Section polie;;;;;
+2024;Analyses;Préparation;Section polie;Échantillon site;;;;
+2025;Analyses;Préparation;Section polie;Échantillon référence;;;;
+2026;Analyses;Échantillonnage;;;;https://ark.frantiq.fr/ark:/26678/pcrtdfsZ3abSZh;35684;
+2027;Analyses;Échantillonnage;Ablation laser;;;;;
+2028;Analyses;Échantillonnage;Ablation laser;Échantillon site;;;;
+2029;Analyses;Échantillonnage;Ablation laser;Échantillon référence;;;;
+;Analyses;Télédétection;;;;https://ark.frantiq.fr/ark:/26678/pcrtubzTHKxnAM;17434;
+;Analyses;Télédétection;LIDAR;;;https://ark.frantiq.fr/ark:/26678/pcrtWIlj2RNume;29834;
+2030;Analyses;Observation;;;;;;
+2031;Analyses;Observation;MEB;;;https://ark.frantiq.fr/ark:/26678/pcrtIvN6VPwMxK;22150;http://vocab.getty.edu/page/aat/300224957
+2032;Analyses;Observation;MEB;Échantillon site;;;;
+2033;Analyses;Observation;MEB;Échantillon référence;;;;
+2034;Analyses;Observation;Microscope confocal;;;;;
+2035;Analyses;Observation;Microscope confocal;Échantillon site;;;;
+2036;Analyses;Observation;Microscope confocal;Échantillon référence;;;;
+2037;Analyses;Observation;Microscope optique;;;;;
+2038;Analyses;Observation;Microscope optique;Échantillon site;;;;
+2039;Analyses;Observation;Microscope optique;Échantillon référence;;;;
+2040;Analyses;Datation;;;;https://ark.frantiq.fr/ark:/26678/pcrtpSis9hZLUb;14335;http://vocab.getty.edu/page/aat/300054714
+2041;Analyses;Datation;14C;;;http://ark.frantiq.fr/ark:/26678/pcrtThu8wInkhJ;16554;http://vocab.getty.edu/page/aat/300054717
+2042;Analyses;Datation;14C;Échantillon site;;;;
+2043;Analyses;Datation;14C;Échantillon référence;;;;
+2044;Analyses;Datation;Dendrochronologie;;;http://ark.frantiq.fr/ark:/26678/pcrtYgu4jWtWru;14339;http://vocab.getty.edu/page/aat/300054715
+2045;Analyses;Datation;Dendrochronologie;Échantillon site;;;;
+2046;Analyses;Datation;Dendrochronologie;Échantillon référence;;;;
+2047;Analyses;Datation;Isotopique;;;https://ark.frantiq.fr/ark:/26678/pcrtTnlurfPgFb;21877;http://vocab.getty.edu/page/aat/300379640
+2048;Analyses;Datation;Isotopique;Échantillon site;;;;
+2049;Analyses;Datation;Isotopique;Échantillon référence;;;;
+2050;Analyses;Datation;Optoluminescence;;;https://ark.frantiq.fr/ark:/26678/pcrtoz5WZxu4iz;27572;http://vocab.getty.edu/page/aat/300266050
+2051;Analyses;Datation;Optoluminescence;Échantillon site;;;;
+2052;Analyses;Datation;Optoluminescence;Échantillon référence;;;;
+2053;Analyses;Datation;Paléomagnetisme;;;http://ark.frantiq.fr/ark:/26678/pcrtwWpo2faNF0;35806;http://vocab.getty.edu/page/aat/300223526
+2054;Analyses;Datation;Paléomagnetisme;Échantillon site;;;;
+2055;Analyses;Datation;Paléomagnetisme;Échantillon référence;;;;
+2056;Analyses;Datation;Thermoluminescence;;;https://ark.frantiq.fr/ark:/26678/pcrtVPxBxiVqMy;17284;http://vocab.getty.edu/page/aat/300054718
+2057;Analyses;Datation;Thermoluminescence;Échantillon site;;;;
+2058;Analyses;Datation;Thermoluminescence;Échantillon référence;;;;
+2059;Analyses;Anthropologie;;;;http://ark.frantiq.fr/ark:/26678/pcrttcpeEPi2K0;13232;http://vocab.getty.edu/page/aat/300054322
+2060;Analyses;Anthropologie;Échantillon site;;;;;
+2061;Analyses;Anthropologie;Échantillon référence;;;;;
+2062;Analyses;Botanique;;;;https://ark.frantiq.fr/ark:/26678/pcrtvw7qwGBX9r;13607;http://vocab.getty.edu/page/aat/300054467
+2063;Analyses;Botanique;Macroreste;;;https://ark.frantiq.fr/ark:/26678/pcrtSE0sKffhOM;15540;
+2064;Analyses;Botanique;Macroreste;Anthracologie;;http://ark.frantiq.fr/ark:/26678/pcrtHymRiII9SY;24391;http://vocab.getty.edu/page/aat/300438514
+2065;Analyses;Botanique;Macroreste;Anthracologie;Échantillon site;;;
+2066;Analyses;Botanique;Macroreste;Anthracologie;Échantillon référence;;;
+2067;Analyses;Botanique;Macroreste;Carpologie;;http://ark.frantiq.fr/ark:/26678/pcrtRi9at48zkM;13751;
+2068;Analyses;Botanique;Macroreste;Carpologie;Échantillon site;;;
+2069;Analyses;Botanique;Macroreste;Carpologie;Échantillon référence;;;
+2070;Analyses;Botanique;Microreste;;;https://ark.frantiq.fr/ark:/26678/pcrtmn4k8f28dv;15657;
+2071;Analyses;Botanique;Microreste;Palynologie;;http://ark.frantiq.fr/ark:/26678/pcrt1vSh3lIhHm;16077;http://vocab.getty.edu/page/aat/300251145
+2072;Analyses;Botanique;Microreste;Palynologie;Échantillon site;;;
+2073;Analyses;Botanique;Microreste;Palynologie;Échantillon référence;;;
+2074;Analyses;Botanique;Microreste;Phytolithes;;http://ark.frantiq.fr/ark:/26678/pcrt5Bet7kzAgJ;16226;http://vocab.getty.edu/page/aat/300379628
+2075;Analyses;Botanique;Microreste;Phytolithes;Échantillon site;;;
+2076;Analyses;Botanique;Microreste;Phytolithes;Échantillon référence;;;
+2077;Analyses;Géologie;;;;https://ark.frantiq.fr/ark:/26678/pcrtcMAzwfcMyS;14983;http://vocab.getty.edu/page/aat/300054546
+2078;Analyses;Géologie;Granulométrie;;;http://ark.frantiq.fr/ark:/26678/pcrtAO75iuppgW;27455;http://vocab.getty.edu/page/aat/300380072
+2079;Analyses;Géologie;Granulométrie;Échantillon site;;;;
+2080;Analyses;Géologie;Granulométrie;Échantillon référence;;;;
+2081;Analyses;Géologie;Pédologie;;;http://ark.frantiq.fr/ark:/26678/pcrts8Sij9iWxU;16514;http://vocab.getty.edu/page/aat/300054557
+2082;Analyses;Géologie;Pédologie;Échantillon site;;;;
+2083;Analyses;Géologie;Pédologie;Échantillon référence;;;;
+2084;Analyses;Géologie;Pétrologie;;;https://ark.frantiq.fr/ark:/26678/pcrtiiGa8GYBlS;16525;
+2085;Analyses;Géologie;Pétrologie;Échantillon site;;;;
+2086;Analyses;Géologie;Pétrologie;Échantillon référence;;;;
+2087;Analyses;Géologie;Phosphates;;;https://ark.frantiq.fr/ark:/26678/pcrt2nbSAPPSwB;24140;http://vocab.getty.edu/page/aat/300379779
+2088;Analyses;Géologie;Phosphates;Échantillon site;;;;
+2089;Analyses;Géologie;Phosphates;Échantillon référence;;;;
+2090;Analyses;Géologie;Sédimentologie;;;https://ark.frantiq.fr/ark:/26678/pcrt4vmcwIU4yP;17188;http://vocab.getty.edu/page/aat/300379586
+2091;Analyses;Géologie;Sédimentologie;Échantillon site;;;;
+2092;Analyses;Géologie;Sédimentologie;Échantillon référence;;;;
+2093;Analyses;Zoologie;;;;https://ark.frantiq.fr/ark:/26678/pcrt3qpYFnIQFm;17595;http://vocab.getty.edu/page/aat/300054472
+2094;Analyses;Zoologie;Entomologie;;;http://ark.frantiq.fr/ark:/26678/pcrtePI6K35S9V;35447;http://vocab.getty.edu/page/aat/300251856
+2095;Analyses;Zoologie;Entomologie;Échantillon site;;;;
+2096;Analyses;Zoologie;Entomologie;Échantillon référence;;;;
+2097;Analyses;Zoologie;Faune;;;http://ark.frantiq.fr/ark:/26678/pcrtT2H2KjqBcU;14717;http://vocab.getty.edu/page/aat/300310150
+2098;Analyses;Zoologie;Faune;Échantillon site;;;;
+2099;Analyses;Zoologie;Faune;Échantillon référence;;;;
+2100;Analyses;Zoologie;Malacofaune;;;http://ark.frantiq.fr/ark:/26678/pcrt4jqSXocNLw;15701;http://vocab.getty.edu/page/aat/300266510
+2101;Analyses;Zoologie;Malacofaune;Échantillon site;;;;
+2102;Analyses;Zoologie;Malacofaune;Échantillon référence;;;;
+2103;Analyses;Géographie physique;;;;https://ark.frantiq.fr/ark:/26678/pcrt6g3bwHKS6p;14982;http://vocab.getty.edu/page/aat/300054389
+2104;Analyses;Géographie physique;Hydrologie;;;http://ark.frantiq.fr/ark:/26678/pcrtqQv1MSIsp0;15126;http://vocab.getty.edu/page/aat/300264403
+2105;Analyses;Géographie physique;Hydrologie;Échantillon site;;;;
+2106;Analyses;Géographie physique;Hydrologie;Échantillon référence;;;;
+2107;Analyses;Physico-chimique;;;;https://ark.frantiq.fr/ark:/26678/pcrtkyIAFWLoSn;16221;http://vocab.getty.edu/page/aat/300224431
+2108;Analyses;Physico-chimique;Cathodoluminescence;;;;;
+2109;Analyses;Physico-chimique;Cathodoluminescence;Échantillon site;;;;
+2110;Analyses;Physico-chimique;Cathodoluminescence;Échantillon référence;;;;
+2111;Analyses;Physico-chimique;Diffraction X;;;https://ark.frantiq.fr/ark:/26678/pcrtAXp46dQPL8;14383;http://vocab.getty.edu/page/aat/300390520
+2112;Analyses;Physico-chimique;Diffraction X;Échantillon site;;;;
+2113;Analyses;Physico-chimique;Diffraction X;Échantillon référence;;;;
+2114;Analyses;Physico-chimique;Fluorescence X;;;https://ark.frantiq.fr/ark:/26678/pcrtxP5I53Pj0s;18206;http://vocab.getty.edu/page/aat/300224161
+2115;Analyses;Physico-chimique;Fluorescence X;Échantillon site;;;;
+2116;Analyses;Physico-chimique;Fluorescence X;Échantillon référence;;;;
+2117;Analyses;Physico-chimique;ICP-MS;;;https://ark.frantiq.fr/ark:/26678/pcrtJM6rFSQ84T;26009;http://vocab.getty.edu/page/aat/300264220
+2118;Analyses;Physico-chimique;ICP-MS;Échantillon site;;;;
+2119;Analyses;Physico-chimique;ICP-MS;Échantillon référence;;;;
+2120;Analyses;Physico-chimique;MEB-EDS;;;https://ark.frantiq.fr/ark:/26678/pcrtIvN6VPwMxK;22150;http://vocab.getty.edu/page/aat/300224957
+2121;Analyses;Physico-chimique;MEB-EDS;Échantillon site;;;;
+2122;Analyses;Physico-chimique;MEB-EDS;Échantillon référence;;;;
+2123;Analyses;Physico-chimique;MEB-WDS;;;;;
+2124;Analyses;Physico-chimique;MEB-WDS;Échantillon site;;;;
+2125;Analyses;Physico-chimique;MEB-WDS;Échantillon référence;;;;
+2126;Analyses;Physico-chimique;Percolation des vases;;;;;
+2127;Analyses;Physico-chimique;Percolation des vases;Échantillon site;;;;
+2128;Analyses;Physico-chimique;Percolation des vases;Échantillon référence;;;;
+2129;Analyses;Physico-chimique;Spectroscopie IRTF;;;;;
+2130;Analyses;Physico-chimique;Spectroscopie IRTF;Échantillon site;;;;
+2131;Analyses;Physico-chimique;Spectroscopie IRTF;Échantillon référence;;;;
+2132;Analyses;Physico-chimique;Spectroscopie RAMAN;;;;;
+2133;Analyses;Physico-chimique;Spectroscopie RAMAN;Échantillon site;;;;
+2134;Analyses;Physico-chimique;Spectroscopie RAMAN;Échantillon référence;;;;
+2135;Analyses;Physico-chimique;Thermodifférentielle;;;https://ark.frantiq.fr/ark:/26678/pcrt9Mjxw2pZ0M;35656;http://vocab.getty.edu/page/aat/300214739
+2136;Analyses;Physico-chimique;Thermodifférentielle;Échantillon site;;;;
+2137;Analyses;Physico-chimique;Thermodifférentielle;Échantillon référence;;;;
+2138;Analyses;Physico-chimique;Thermogravimétrique;;;;;
+2139;Analyses;Physico-chimique;Thermogravimétrique;Échantillon site;;;;
+2140;Analyses;Physico-chimique;Thermogravimétrique;Échantillon référence;;;;
