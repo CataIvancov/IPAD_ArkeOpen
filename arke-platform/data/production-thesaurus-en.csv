@@ -1,168 +1,168 @@
 IDArkeoGIS;CARAC_NAME;CARAC_LVL1;CARAC_LVL2;CARAC_LVL3;CARAC_LVL4;IdArk;IdPactols;IdAat
-361;Production;Agricole;;;;http://ark.frantiq.fr/ark:/26678/pcrtIdEjFMFAod;13681;http://vocab.getty.edu/page/aat/300004895
-362;Production;Agricole;Grenier;;;http://ark.frantiq.fr/ark:/26678/pcrtGBctSVZOBy;14923;http://vocab.getty.edu/page/aat/300004929
-363;Production;Agricole;Silo;;;http://ark.frantiq.fr/ark:/26678/pcrtdgALrHBSlv;16944;http://vocab.getty.edu/page/aat/300005024
-364;Production;Céramique;;;;https://ark.frantiq.fr/ark:/26678/pcrtYPpmkDk2rS;17239;http://vocab.getty.edu/page/aat/300386308
-365;Production;Céramique;Extraction;;;http://ark.frantiq.fr/ark:/26678/pcrtpZqoqAbrdg;21835;http://vocab.getty.edu/page/aat/300000388
-366;Production;Céramique;Atelier;;;http://ark.frantiq.fr/ark:/26678/pcrtfUZSMbifle;15962;http://vocab.getty.edu/page/aat/300004531
-367;Production;Céramique;Atelier;Local;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-368;Production;Céramique;Atelier;Régional;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-369;Production;Céramique;Atelier;Suprarégional;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300435609
-370;Production;Céramique;Atelier de TCA;;;https://ark.frantiq.fr/ark:/26678/pcrtbAJrlqK7Lc;35611;http://vocab.getty.edu/page/aat/300010670
-371;Production;Céramique;Atelier de TCA;Local;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-372;Production;Céramique;Atelier de TCA;Régional;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-373;Production;Céramique;Atelier de TCA;Suprarégional;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300435609
-374;Production;Métal;;;;https://ark.frantiq.fr/ark:/26678/pcrtuf9JSs9vo6;15846;http://vocab.getty.edu/page/aat/300054499
-375;Production;Métal;Extraction;;;https://ark.frantiq.fr/ark:/26678/pcrtuVBFofOdjD;15665;http://vocab.getty.edu/page/aat/300000390
-376;Production;Métal;Extraction;Fer;;http://ark.frantiq.fr/ark:/26678/pcrtJWWucnutA0;14726;http://vocab.getty.edu/page/aat/300011002
-377;Production;Métal;Extraction;Fer;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-378;Production;Métal;Extraction;Fer;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-379;Production;Métal;Extraction;Argent;;http://ark.frantiq.fr/ark:/26678/pcrtcWoSlbWLE0;13338;http://vocab.getty.edu/page/aat/300011029
-380;Production;Métal;Extraction;Argent;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-381;Production;Métal;Extraction;Argent;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-382;Production;Métal;Extraction;Bronze;;http://ark.frantiq.fr/ark:/26678/pcrtjzKlry0LZi;13652;http://vocab.getty.edu/page/aat/300010957
-383;Production;Métal;Extraction;Bronze;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-384;Production;Métal;Extraction;Bronze;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-385;Production;Métal;Extraction;Or;;http://ark.frantiq.fr/ark:/26678/pcrtuihSl3eSnW;15995;http://vocab.getty.edu/page/aat/300011021
-386;Production;Métal;Extraction;Or;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-387;Production;Métal;Extraction;Or;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-388;Production;Métal;Extraction;Cuivre;;http://ark.frantiq.fr/ark:/26678/pcrt16pnvNar4g;14200;http://vocab.getty.edu/page/aat/300011020
-389;Production;Métal;Extraction;Cuivre;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-390;Production;Métal;Extraction;Cuivre;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-1892;Production;Métal;Extraction;Plomb;;https://ark.frantiq.fr/ark:/26678/pcrtEpGlZykUTy;16297;http://vocab.getty.edu/page/aat/300343378
-1893;Production;Métal;Extraction;Plomb;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-1894;Production;Métal;Extraction;Plomb;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-391;Production;Métal;Extraction;Autres;;;;
-392;Production;Métal;Extraction;Autres;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-393;Production;Métal;Extraction;Autres;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-394;Production;Métal;Réduction;;;http://ark.frantiq.fr/ark:/26678/pcrtuF8OFfOOwQ;155878;http://vocab.getty.edu/page/aat/300103997
-395;Production;Métal;Réduction;Fer;;http://ark.frantiq.fr/ark:/26678/pcrtJWWucnutA0;14726;http://vocab.getty.edu/page/aat/300011002
-396;Production;Métal;Réduction;Fer;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-397;Production;Métal;Réduction;Fer;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-398;Production;Métal;Réduction;Argent;;http://ark.frantiq.fr/ark:/26678/pcrtcWoSlbWLE0;13338;http://vocab.getty.edu/page/aat/300011029
-399;Production;Métal;Réduction;Argent;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-400;Production;Métal;Réduction;Argent;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-401;Production;Métal;Réduction;Bronze;;http://ark.frantiq.fr/ark:/26678/pcrtjzKlry0LZi;13652;http://vocab.getty.edu/page/aat/300010957
-402;Production;Métal;Réduction;Bronze;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-403;Production;Métal;Réduction;Bronze;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-404;Production;Métal;Réduction;Or;;http://ark.frantiq.fr/ark:/26678/pcrtuihSl3eSnW;15995;http://vocab.getty.edu/page/aat/300011021
-405;Production;Métal;Réduction;Or;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-406;Production;Métal;Réduction;Or;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-407;Production;Métal;Réduction;Cuivre;;http://ark.frantiq.fr/ark:/26678/pcrt16pnvNar4g;14200;http://vocab.getty.edu/page/aat/300011020
-408;Production;Métal;Réduction;Cuivre;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-409;Production;Métal;Réduction;Cuivre;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-410;Production;Métal;Réduction;Autres;;;;
-411;Production;Métal;Réduction;Autres;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-412;Production;Métal;Réduction;Autres;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-413;Production;Métal;Forge;;;http://ark.frantiq.fr/ark:/26678/pcrt3uOj7GEVaE;14795;http://vocab.getty.edu/page/aat/300007734
-414;Production;Métal;Forge;Fer;;http://ark.frantiq.fr/ark:/26678/pcrtJWWucnutA0;14726;http://vocab.getty.edu/page/aat/300011002
-415;Production;Métal;Forge;Fer;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-416;Production;Métal;Forge;Fer;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-417;Production;Métal;Forge;Argent;;http://ark.frantiq.fr/ark:/26678/pcrtcWoSlbWLE0;13338;http://vocab.getty.edu/page/aat/300011029
-418;Production;Métal;Forge;Argent;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-419;Production;Métal;Forge;Argent;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-420;Production;Métal;Forge;Bronze;;http://ark.frantiq.fr/ark:/26678/pcrtjzKlry0LZi;13652;http://vocab.getty.edu/page/aat/300010957
-421;Production;Métal;Forge;Bronze;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-422;Production;Métal;Forge;Bronze;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-423;Production;Métal;Forge;Or;;http://ark.frantiq.fr/ark:/26678/pcrtuihSl3eSnW;15995;http://vocab.getty.edu/page/aat/300011021
-424;Production;Métal;Forge;Or;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-425;Production;Métal;Forge;Or;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-426;Production;Métal;Forge;Cuivre;;http://ark.frantiq.fr/ark:/26678/pcrt16pnvNar4g;14200;http://vocab.getty.edu/page/aat/300011020
-427;Production;Métal;Forge;Cuivre;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-428;Production;Métal;Forge;Cuivre;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-429;Production;Métal;Forge;Autres;;;;
-430;Production;Métal;Forge;Autres;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-431;Production;Métal;Forge;Autres;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-1895;Production;Métal;Fonderie;;;https://ark.frantiq.fr/ark:/26678/pcrtA40egcJDkz;14788;http://vocab.getty.edu/page/aat/300054038
-1896;Production;Métal;Fonderie;Plomb;;https://ark.frantiq.fr/ark:/26678/pcrtEpGlZykUTy;16297;http://vocab.getty.edu/page/aat/300011022
-432;Production;Métal;Atelier monétaire;;;http://ark.frantiq.fr/ark:/26678/pcrteoqGpMvXlj;13460;http://vocab.getty.edu/page/aat/300006031
-433;Production;Métal;Atelier monétaire;Fer;;http://ark.frantiq.fr/ark:/26678/pcrtJWWucnutA0;14726;http://vocab.getty.edu/page/aat/300011002
-434;Production;Métal;Atelier monétaire;Fer;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-435;Production;Métal;Atelier monétaire;Fer;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-436;Production;Métal;Atelier monétaire;Argent;;http://ark.frantiq.fr/ark:/26678/pcrtcWoSlbWLE0;13338;http://vocab.getty.edu/page/aat/300011029
-437;Production;Métal;Atelier monétaire;Argent;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-438;Production;Métal;Atelier monétaire;Argent;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-439;Production;Métal;Atelier monétaire;Bronze;;http://ark.frantiq.fr/ark:/26678/pcrtjzKlry0LZi;13652;http://vocab.getty.edu/page/aat/300010957
-440;Production;Métal;Atelier monétaire;Bronze;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-441;Production;Métal;Atelier monétaire;Bronze;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-442;Production;Métal;Atelier monétaire;Or;;http://ark.frantiq.fr/ark:/26678/pcrtuihSl3eSnW;15995;http://vocab.getty.edu/page/aat/300011021
-443;Production;Métal;Atelier monétaire;Or;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-444;Production;Métal;Atelier monétaire;Or;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-445;Production;Métal;Atelier monétaire;Cuivre;;http://ark.frantiq.fr/ark:/26678/pcrt16pnvNar4g;14200;http://vocab.getty.edu/page/aat/300011020
-446;Production;Métal;Atelier monétaire;Cuivre;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-447;Production;Métal;Atelier monétaire;Cuivre;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-448;Production;Métal;Atelier monétaire;Autres;;;;
-449;Production;Métal;Atelier monétaire;Autres;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-450;Production;Métal;Atelier monétaire;Autres;Régional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
-451;Production;Pierre;;;;http://ark.frantiq.fr/ark:/26678/pcrtSVdwKcS3MI;16689;http://vocab.getty.edu/page/aat/300011692
-452;Production;Pierre;Atelier;;;https://ark.frantiq.fr/ark:/26678/pcrt9WrayiIQys;13457;http://vocab.getty.edu/page/aat/300053149
-453;Production;Pierre;Atelier;Meule;;http://ark.frantiq.fr/ark:/26678/pcrt1Gqf0UzaZ3;15649;http://vocab.getty.edu/page/aat/300185256
-454;Production;Pierre;Atelier;Meule;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-455;Production;Pierre;Atelier;Meule;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-456;Production;Pierre;Atelier;Meule;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-457;Production;Pierre;Atelier;Meule;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-458;Production;Pierre;Atelier;Meule;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-459;Production;Pierre;Atelier;Meule;Autres;;;
-460;Production;Pierre;Atelier;Architecture;;http://ark.frantiq.fr/ark:/26678/pcrt9WrayiIQys;13457;http://vocab.getty.edu/page/aat/300264383
-461;Production;Pierre;Atelier;Architecture;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-462;Production;Pierre;Atelier;Architecture;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-463;Production;Pierre;Atelier;Architecture;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-464;Production;Pierre;Atelier;Architecture;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-465;Production;Pierre;Atelier;Architecture;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-466;Production;Pierre;Atelier;Architecture;Autres;;;
-467;Production;Pierre;Atelier;Outils;;https://ark.frantiq.fr/ark:/26678/pcrtxs8Kml8jLw;16050;http://vocab.getty.edu/page/aat/300024841
-468;Production;Pierre;Atelier;Outils;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-469;Production;Pierre;Atelier;Outils;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-470;Production;Pierre;Atelier;Outils;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-471;Production;Pierre;Atelier;Outils;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-472;Production;Pierre;Atelier;Outils;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-473;Production;Pierre;Atelier;Outils;Autres;;;
-474;Production;Pierre;Extraction;;;https://ark.frantiq.fr/ark:/26678/pcrtXk6sdvTjnE;13755;http://vocab.getty.edu/page/aat/300000402
-475;Production;Pierre;Extraction;Meule;;https://ark.frantiq.fr/ark:/26678/pcrt1Gqf0UzaZ3;15649;http://vocab.getty.edu/page/aat/300185256
-476;Production;Pierre;Extraction;Meule;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-477;Production;Pierre;Extraction;Meule;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-478;Production;Pierre;Extraction;Meule;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-479;Production;Pierre;Extraction;Meule;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-480;Production;Pierre;Extraction;Meule;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-481;Production;Pierre;Extraction;Meule;Autres;;;
-482;Production;Pierre;Extraction;Architecture;;https://ark.frantiq.fr/ark:/26678/pcrtQuZiT5nYY2;14070;http://vocab.getty.edu/page/aat/300014857
-483;Production;Pierre;Extraction;Architecture;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-484;Production;Pierre;Extraction;Architecture;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-485;Production;Pierre;Extraction;Architecture;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-486;Production;Pierre;Extraction;Architecture;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-487;Production;Pierre;Extraction;Architecture;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-488;Production;Pierre;Extraction;Architecture;Autres;;;
-489;Production;Pierre;Extraction;Outils;;https://ark.frantiq.fr/ark:/26678/pcrtxs8Kml8jLw;16050;http://vocab.getty.edu/page/aat/300024841
-490;Production;Pierre;Extraction;Outils;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-491;Production;Pierre;Extraction;Outils;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-492;Production;Pierre;Extraction;Outils;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-493;Production;Pierre;Extraction;Outils;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-494;Production;Pierre;Extraction;Outils;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-495;Production;Pierre;Extraction;Outils;Autres;;;
-496;Production;Pierre;Non renseigné;;;;;
-497;Production;Pierre;Non renseigné;Meule;;https://ark.frantiq.fr/ark:/26678/pcrt1Gqf0UzaZ3;15649;http://vocab.getty.edu/page/aat/300185256
-498;Production;Pierre;Non renseigné;Meule;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-499;Production;Pierre;Non renseigné;Meule;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-500;Production;Pierre;Non renseigné;Meule;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-501;Production;Pierre;Non renseigné;Meule;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-502;Production;Pierre;Non renseigné;Meule;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-503;Production;Pierre;Non renseigné;Meule;Autres;;;
-504;Production;Pierre;Non renseigné;Architecture;;https://ark.frantiq.fr/ark:/26678/pcrtKJVpuP3AET;13289;http://vocab.getty.edu/page/aat/300014857
-505;Production;Pierre;Non renseigné;Architecture;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-506;Production;Pierre;Non renseigné;Architecture;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-507;Production;Pierre;Non renseigné;Architecture;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-508;Production;Pierre;Non renseigné;Architecture;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-509;Production;Pierre;Non renseigné;Architecture;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-510;Production;Pierre;Non renseigné;Architecture;Autres;;;
-511;Production;Pierre;Non renseigné;Outils;;https://ark.frantiq.fr/ark:/26678/pcrtxs8Kml8jLw;16050;http://vocab.getty.edu/page/aat/300024841
-512;Production;Pierre;Non renseigné;Outils;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
-513;Production;Pierre;Non renseigné;Outils;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
-514;Production;Pierre;Non renseigné;Outils;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
-515;Production;Pierre;Non renseigné;Outils;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
-516;Production;Pierre;Non renseigné;Outils;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
-517;Production;Pierre;Non renseigné;Outils;Autres;;;
-518;Production;Pierre;Chaux;;;http://ark.frantiq.fr/ark:/26678/pcrtERMm8Q0wYw;13847;http://vocab.getty.edu/page/aat/300011740
-519;Production;Charbon;;;;https://ark.frantiq.fr/ark:/26678/pcrtmsvDnRnsoA;155890;http://vocab.getty.edu/page/aat/300000396
-520;Production;Sel;;;;https://ark.frantiq.fr/ark:/26678/pcrtYHA8kKMYt9;14678;http://vocab.getty.edu/page/aat/300045537
-521;Production;Verre;;;;https://ark.frantiq.fr/ark:/26678/pcrt125sJ3jsbN;17244;http://vocab.getty.edu/page/aat/300053929
-522;Production;Autres;;;;;;
+361;Production;Agricultural;;;;http://ark.frantiq.fr/ark:/26678/pcrtIdEjFMFAod;13681;http://vocab.getty.edu/page/aat/300004895
+362;Production;Agricultural;Granary;;;http://ark.frantiq.fr/ark:/26678/pcrtGBctSVZOBy;14923;http://vocab.getty.edu/page/aat/300004929
+363;Production;Agricultural;Silo;;;http://ark.frantiq.fr/ark:/26678/pcrtdgALrHBSlv;16944;http://vocab.getty.edu/page/aat/300005024
+364;Production;Ceramic;;;;https://ark.frantiq.fr/ark:/26678/pcrtYPpmkDk2rS;17239;http://vocab.getty.edu/page/aat/300386308
+365;Production;Ceramic;Extraction;;;http://ark.frantiq.fr/ark:/26678/pcrtpZqoqAbrdg;21835;http://vocab.getty.edu/page/aat/300000388
+366;Production;Ceramic;Workshop;;;http://ark.frantiq.fr/ark:/26678/pcrtfUZSMbifle;15962;http://vocab.getty.edu/page/aat/300004531
+367;Production;Ceramic;Workshop;Local;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+368;Production;Ceramic;Workshop;Regional;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+369;Production;Ceramic;Workshop;Supraregional;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300435609
+370;Production;Ceramic;TCA Workshop;;;https://ark.frantiq.fr/ark:/26678/pcrtbAJrlqK7Lc;35611;http://vocab.getty.edu/page/aat/300010670
+371;Production;Ceramic;TCA Workshop;Local;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+372;Production;Ceramic;TCA Workshop;Regional;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+373;Production;Ceramic;TCA Workshop;Supraregional;;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300435609
+374;Production;Metal;;;;https://ark.frantiq.fr/ark:/26678/pcrtuf9JSs9vo6;15846;http://vocab.getty.edu/page/aat/300054499
+375;Production;Metal;Extraction;;;https://ark.frantiq.fr/ark:/26678/pcrtuVBFofOdjD;15665;http://vocab.getty.edu/page/aat/300000390
+376;Production;Metal;Extraction;Iron;;http://ark.frantiq.fr/ark:/26678/pcrtJWWucnutA0;14726;http://vocab.getty.edu/page/aat/300011002
+377;Production;Metal;Extraction;Iron;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+378;Production;Metal;Extraction;Iron;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+379;Production;Metal;Extraction;Silver;;http://ark.frantiq.fr/ark:/26678/pcrtcWoSlbWLE0;13338;http://vocab.getty.edu/page/aat/300011029
+380;Production;Metal;Extraction;Silver;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+381;Production;Metal;Extraction;Silver;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+382;Production;Metal;Extraction;Bronze;;http://ark.frantiq.fr/ark:/26678/pcrtjzKlry0LZi;13652;http://vocab.getty.edu/page/aat/300010957
+383;Production;Metal;Extraction;Bronze;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+384;Production;Metal;Extraction;Bronze;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+385;Production;Metal;Extraction;Gold;;http://ark.frantiq.fr/ark:/26678/pcrtuihSl3eSnW;15995;http://vocab.getty.edu/page/aat/300011021
+386;Production;Metal;Extraction;Gold;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+387;Production;Metal;Extraction;Gold;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+388;Production;Metal;Extraction;Copper;;http://ark.frantiq.fr/ark:/26678/pcrt16pnvNar4g;14200;http://vocab.getty.edu/page/aat/300011020
+389;Production;Metal;Extraction;Copper;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+390;Production;Metal;Extraction;Copper;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+1892;Production;Metal;Extraction;Lead;;https://ark.frantiq.fr/ark:/26678/pcrtEpGlZykUTy;16297;http://vocab.getty.edu/page/aat/300343378
+1893;Production;Metal;Extraction;Lead;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+1894;Production;Metal;Extraction;Lead;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+391;Production;Metal;Extraction;Others;;;;
+392;Production;Metal;Extraction;Others;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+393;Production;Metal;Extraction;Others;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+394;Production;Metal;Reduction;;;http://ark.frantiq.fr/ark:/26678/pcrtuF8OFfOOwQ;155878;http://vocab.getty.edu/page/aat/300103997
+395;Production;Metal;Reduction;Iron;;http://ark.frantiq.fr/ark:/26678/pcrtJWWucnutA0;14726;http://vocab.getty.edu/page/aat/300011002
+396;Production;Metal;Reduction;Iron;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+397;Production;Metal;Reduction;Iron;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+398;Production;Metal;Reduction;Silver;;http://ark.frantiq.fr/ark:/26678/pcrtcWoSlbWLE0;13338;http://vocab.getty.edu/page/aat/300011029
+399;Production;Metal;Reduction;Silver;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+400;Production;Metal;Reduction;Silver;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+401;Production;Metal;Reduction;Bronze;;http://ark.frantiq.fr/ark:/26678/pcrtjzKlry0LZi;13652;http://vocab.getty.edu/page/aat/300010957
+402;Production;Metal;Reduction;Bronze;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+403;Production;Metal;Reduction;Bronze;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+404;Production;Metal;Reduction;Gold;;http://ark.frantiq.fr/ark:/26678/pcrtuihSl3eSnW;15995;http://vocab.getty.edu/page/aat/300011021
+405;Production;Metal;Reduction;Gold;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+406;Production;Metal;Reduction;Gold;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+407;Production;Metal;Reduction;Copper;;http://ark.frantiq.fr/ark:/26678/pcrt16pnvNar4g;14200;http://vocab.getty.edu/page/aat/300011020
+408;Production;Metal;Reduction;Copper;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+409;Production;Metal;Reduction;Copper;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+410;Production;Metal;Reduction;Others;;;;
+411;Production;Metal;Reduction;Others;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+412;Production;Metal;Reduction;Others;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+413;Production;Metal;Forge;;;http://ark.frantiq.fr/ark:/26678/pcrt3uOj7GEVaE;14795;http://vocab.getty.edu/page/aat/300007734
+414;Production;Metal;Forge;Iron;;http://ark.frantiq.fr/ark:/26678/pcrtJWWucnutA0;14726;http://vocab.getty.edu/page/aat/300011002
+415;Production;Metal;Forge;Iron;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+416;Production;Metal;Forge;Iron;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+417;Production;Metal;Forge;Silver;;http://ark.frantiq.fr/ark:/26678/pcrtcWoSlbWLE0;13338;http://vocab.getty.edu/page/aat/300011029
+418;Production;Metal;Forge;Silver;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+419;Production;Metal;Forge;Silver;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+420;Production;Metal;Forge;Bronze;;http://ark.frantiq.fr/ark:/26678/pcrtjzKlry0LZi;13652;http://vocab.getty.edu/page/aat/300010957
+421;Production;Metal;Forge;Bronze;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+422;Production;Metal;Forge;Bronze;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+423;Production;Metal;Forge;Gold;;http://ark.frantiq.fr/ark:/26678/pcrtuihSl3eSnW;15995;http://vocab.getty.edu/page/aat/300011021
+424;Production;Metal;Forge;Gold;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+425;Production;Metal;Forge;Gold;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+426;Production;Metal;Forge;Copper;;http://ark.frantiq.fr/ark:/26678/pcrt16pnvNar4g;14200;http://vocab.getty.edu/page/aat/300011020
+427;Production;Metal;Forge;Copper;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+428;Production;Metal;Forge;Copper;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+429;Production;Metal;Forge;Others;;;;
+430;Production;Metal;Forge;Others;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+431;Production;Metal;Forge;Others;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+1895;Production;Metal;Foundry;;;https://ark.frantiq.fr/ark:/26678/pcrtA40egcJDkz;14788;http://vocab.getty.edu/page/aat/300054038
+1896;Production;Metal;Foundry;Lead;;https://ark.frantiq.fr/ark:/26678/pcrtEpGlZykUTy;16297;http://vocab.getty.edu/page/aat/300011022
+432;Production;Metal;Mint workshop;;;http://ark.frantiq.fr/ark:/26678/pcrteoqGpMvXlj;13460;http://vocab.getty.edu/page/aat/300006031
+433;Production;Metal;Mint workshop;Iron;;http://ark.frantiq.fr/ark:/26678/pcrtJWWucnutA0;14726;http://vocab.getty.edu/page/aat/300011002
+434;Production;Metal;Mint workshop;Iron;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+435;Production;Metal;Mint workshop;Iron;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+436;Production;Metal;Mint workshop;Silver;;http://ark.frantiq.fr/ark:/26678/pcrtcWoSlbWLE0;13338;http://vocab.getty.edu/page/aat/300011029
+437;Production;Metal;Mint workshop;Silver;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+438;Production;Metal;Mint workshop;Silver;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+439;Production;Metal;Mint workshop;Bronze;;http://ark.frantiq.fr/ark:/26678/pcrtjzKlry0LZi;13652;http://vocab.getty.edu/page/aat/300010957
+440;Production;Metal;Mint workshop;Bronze;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+441;Production;Metal;Mint workshop;Bronze;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+442;Production;Metal;Mint workshop;Gold;;http://ark.frantiq.fr/ark:/26678/pcrtuihSl3eSnW;15995;http://vocab.getty.edu/page/aat/300011021
+443;Production;Metal;Mint workshop;Gold;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+444;Production;Metal;Mint workshop;Gold;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+445;Production;Metal;Mint workshop;Copper;;http://ark.frantiq.fr/ark:/26678/pcrt16pnvNar4g;14200;http://vocab.getty.edu/page/aat/300011020
+446;Production;Metal;Mint workshop;Copper;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+447;Production;Metal;Mint workshop;Copper;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+448;Production;Metal;Mint workshop;Others;;;;
+449;Production;Metal;Mint workshop;Others;Local;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+450;Production;Metal;Mint workshop;Others;Regional;https://ark.frantiq.fr/ark:/26678/pcrthOtrQhBIUG;13991;http://vocab.getty.edu/page/aat/300061886
+451;Production;Stone;;;;http://ark.frantiq.fr/ark:/26678/pcrtSVdwKcS3MI;16689;http://vocab.getty.edu/page/aat/300011692
+452;Production;Stone;Workshop;;;https://ark.frantiq.fr/ark:/26678/pcrt9WrayiIQys;13457;http://vocab.getty.edu/page/aat/300053149
+453;Production;Stone;Workshop;Millstone;;http://ark.frantiq.fr/ark:/26678/pcrt1Gqf0UzaZ3;15649;http://vocab.getty.edu/page/aat/300185256
+454;Production;Stone;Workshop;Millstone;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+455;Production;Stone;Workshop;Millstone;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+456;Production;Stone;Workshop;Millstone;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+457;Production;Stone;Workshop;Millstone;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+458;Production;Stone;Workshop;Millstone;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+459;Production;Stone;Workshop;Millstone;Others;;;
+460;Production;Stone;Workshop;Architecture;;http://ark.frantiq.fr/ark:/26678/pcrt9WrayiIQys;13457;http://vocab.getty.edu/page/aat/300264383
+461;Production;Stone;Workshop;Architecture;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+462;Production;Stone;Workshop;Architecture;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+463;Production;Stone;Workshop;Architecture;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+464;Production;Stone;Workshop;Architecture;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+465;Production;Stone;Workshop;Architecture;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+466;Production;Stone;Workshop;Architecture;Others;;;
+467;Production;Stone;Workshop;Tools;;https://ark.frantiq.fr/ark:/26678/pcrtxs8Kml8jLw;16050;http://vocab.getty.edu/page/aat/300024841
+468;Production;Stone;Workshop;Tools;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+469;Production;Stone;Workshop;Tools;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+470;Production;Stone;Workshop;Tools;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+471;Production;Stone;Workshop;Tools;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+472;Production;Stone;Workshop;Tools;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+473;Production;Stone;Workshop;Tools;Others;;;
+474;Production;Stone;Extraction;;;https://ark.frantiq.fr/ark:/26678/pcrtXk6sdvTjnE;13755;http://vocab.getty.edu/page/aat/300000402
+475;Production;Stone;Extraction;Millstone;;https://ark.frantiq.fr/ark:/26678/pcrt1Gqf0UzaZ3;15649;http://vocab.getty.edu/page/aat/300185256
+476;Production;Stone;Extraction;Millstone;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+477;Production;Stone;Extraction;Millstone;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+478;Production;Stone;Extraction;Millstone;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+479;Production;Stone;Extraction;Millstone;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+480;Production;Stone;Extraction;Millstone;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+481;Production;Stone;Extraction;Millstone;Others;;;
+482;Production;Stone;Extraction;Architecture;;https://ark.frantiq.fr/ark:/26678/pcrtQuZiT5nYY2;14070;http://vocab.getty.edu/page/aat/300014857
+483;Production;Stone;Extraction;Architecture;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+484;Production;Stone;Extraction;Architecture;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+485;Production;Stone;Extraction;Architecture;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+486;Production;Stone;Extraction;Architecture;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+487;Production;Stone;Extraction;Architecture;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+488;Production;Stone;Extraction;Architecture;Others;;;
+489;Production;Stone;Extraction;Tools;;https://ark.frantiq.fr/ark:/26678/pcrtxs8Kml8jLw;16050;http://vocab.getty.edu/page/aat/300024841
+490;Production;Stone;Extraction;Tools;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+491;Production;Stone;Extraction;Tools;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+492;Production;Stone;Extraction;Tools;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+493;Production;Stone;Extraction;Tools;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+494;Production;Stone;Extraction;Tools;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+495;Production;Stone;Extraction;Tools;Others;;;
+496;Production;Stone;Not specified;;;;;
+497;Production;Stone;Not specified;Millstone;;https://ark.frantiq.fr/ark:/26678/pcrt1Gqf0UzaZ3;15649;http://vocab.getty.edu/page/aat/300185256
+498;Production;Stone;Not specified;Millstone;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+499;Production;Stone;Not specified;Millstone;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+500;Production;Stone;Not specified;Millstone;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+501;Production;Stone;Not specified;Millstone;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+502;Production;Stone;Not specified;Millstone;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+503;Production;Stone;Not specified;Millstone;Others;;;
+504;Production;Stone;Not specified;Architecture;;https://ark.frantiq.fr/ark:/26678/pcrtKJVpuP3AET;13289;http://vocab.getty.edu/page/aat/300014857
+505;Production;Stone;Not specified;Architecture;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+506;Production;Stone;Not specified;Architecture;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+507;Production;Stone;Not specified;Architecture;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+508;Production;Stone;Not specified;Architecture;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+509;Production;Stone;Not specified;Architecture;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+510;Production;Stone;Not specified;Architecture;Others;;;
+511;Production;Stone;Not specified;Tools;;https://ark.frantiq.fr/ark:/26678/pcrtxs8Kml8jLw;16050;http://vocab.getty.edu/page/aat/300024841
+512;Production;Stone;Not specified;Tools;Grès;http://ark.frantiq.fr/ark:/26678/pcrtR1s94Zuaul;14936;http://vocab.getty.edu/page/aat/300011376
+513;Production;Stone;Not specified;Tools;Calcaire;http://ark.frantiq.fr/ark:/26678/pcrtc1Ueky7Zpg;13704;http://vocab.getty.edu/page/aat/300011286
+514;Production;Stone;Not specified;Tools;Basalte;http://ark.frantiq.fr/ark:/26678/pcrtctuE9VNJOc;13541;http://vocab.getty.edu/page/aat/300011222
+515;Production;Stone;Not specified;Tools;Rhyolite;http://ark.frantiq.fr/ark:/26678/pcrtXVZBob53by;27632;http://vocab.getty.edu/page/aat/300011211
+516;Production;Stone;Not specified;Tools;Silex;http://ark.frantiq.fr/ark:/26678/pcrtIzSUofuocv;16943;http://vocab.getty.edu/page/aat/300011143
+517;Production;Stone;Not specified;Tools;Others;;;
+518;Production;Stone;Lime;;;http://ark.frantiq.fr/ark:/26678/pcrtERMm8Q0wYw;13847;http://vocab.getty.edu/page/aat/300011740
+519;Production;Coal;;;;https://ark.frantiq.fr/ark:/26678/pcrtmsvDnRnsoA;155890;http://vocab.getty.edu/page/aat/300000396
+520;Production;Salt;;;;https://ark.frantiq.fr/ark:/26678/pcrtYHA8kKMYt9;14678;http://vocab.getty.edu/page/aat/300045537
+521;Production;Glass;;;;https://ark.frantiq.fr/ark:/26678/pcrt125sJ3jsbN;17244;http://vocab.getty.edu/page/aat/300053929
+522;Production;Others;;;;;;

@@ -11,13 +11,15 @@ from pathlib import Path
 CONTAINER = "arkeopenlocal-postgres"
 DATABASES = ("arkeopen", "arkeogis")
 
-ROOT_NAME_FR = "Analyses"
 ROOT_NAME_EN = "Analysis"
-CACHED_LANGS = "fr,en"
+ROOT_NAME_ID = "Analisis"
+ROOT_NAME_FR = "Analyses"
+CACHED_LANGS = "en,id,fr"
 ADMIN_GROUP_ID = 20
 ROOT_ID = 253
 
-DATA_FR = Path("/Users/cataivancov/IdeaProjects/arke-platform/data/analyses-thesaurus-fr.csv")
+DATA_EN = Path("/Users/cataivancov/IdeaProjects/arke-platform/data/analyses-thesaurus-en.csv")
+DATA_ID = Path("/Users/cataivancov/IdeaProjects/arke-platform/data/analyses-thesaurus-id.csv")
 
 
 def sh(cmd, *, stdin=None):
@@ -34,6 +36,15 @@ def sql_literal(value):
     return "'" + value.replace("'", "''") + "'"
 
 
+def ensure_lang(db):
+    statements = [
+        "INSERT INTO lang (isocode, active) SELECT 'id', true WHERE NOT EXISTS (SELECT 1 FROM lang WHERE isocode='id');",
+        "INSERT INTO lang_tr (lang_isocode, lang_isocode_tr, name) SELECT 'id','en','Indonesian' WHERE NOT EXISTS (SELECT 1 FROM lang_tr WHERE lang_isocode='id' AND lang_isocode_tr='en');",
+        "INSERT INTO lang_tr (lang_isocode, lang_isocode_tr, name) SELECT 'id','id','Bahasa Indonesia' WHERE NOT EXISTS (SELECT 1 FROM lang_tr WHERE lang_isocode='id' AND lang_isocode_tr='id');",
+    ]
+    sh(["docker", "exec", "-i", CONTAINER, "psql", "-U", "postgres", "-d", db], stdin="\n".join(statements))
+
+
 def get_owner_id(db):
     value = query(db, "SELECT id FROM \"user\" WHERE username='IPAD_admin' ORDER BY id LIMIT 1;").strip()
     if not value:
@@ -46,44 +57,57 @@ def read_csv(path: Path):
     return list(csv.DictReader(io.StringIO(text), delimiter=";"))
 
 
-def load_nodes(rows):
+def load_nodes(rows_by_lang):
     nodes = {}
-    for index, row in enumerate(rows, start=1):
-        path = [
-            (row.get("CARAC_NAME") or row.get("MAIN_CHARAC") or "").strip(),
-            (row.get("CARAC_LVL1") or row.get("CHARAC_LVL1") or "").strip(),
-            (row.get("CARAC_LVL2") or row.get("CHARAC_LVL2") or "").strip(),
-            (row.get("CARAC_LVL3") or row.get("CHARAC_LVL3") or "").strip(),
-            (row.get("CARAC_LVL4") or row.get("CHARAC_LVL4") or "").strip(),
-        ]
-        path = [p for p in path if p]
+    en_rows = rows_by_lang["en"]
+    id_rows = rows_by_lang["id"]
+    if len(en_rows) != len(id_rows):
+        raise RuntimeError("English/Indonesian CSV row counts differ.")
 
-        if not path:
+    for index, (row_en, row_id) in enumerate(zip(en_rows, id_rows), start=1):
+        path_en = [
+            (row_en.get("CARAC_NAME") or row_en.get("MAIN_CHARAC") or "").strip(),
+            (row_en.get("CARAC_LVL1") or row_en.get("CHARAC_LVL1") or "").strip(),
+            (row_en.get("CARAC_LVL2") or row_en.get("CHARAC_LVL2") or "").strip(),
+            (row_en.get("CARAC_LVL3") or row_en.get("CHARAC_LVL3") or "").strip(),
+            (row_en.get("CARAC_LVL4") or row_en.get("CHARAC_LVL4") or "").strip(),
+        ]
+        path_id = [
+            (row_id.get("CARAC_NAME") or row_id.get("MAIN_CHARAC") or "").strip(),
+            (row_id.get("CARAC_LVL1") or row_id.get("CHARAC_LVL1") or "").strip(),
+            (row_id.get("CARAC_LVL2") or row_id.get("CHARAC_LVL2") or "").strip(),
+            (row_id.get("CARAC_LVL3") or row_id.get("CHARAC_LVL3") or "").strip(),
+            (row_id.get("CARAC_LVL4") or row_id.get("CHARAC_LVL4") or "").strip(),
+        ]
+        path_en = [p for p in path_en if p]
+        path_id = [p for p in path_id if p]
+
+        if not path_en:
             continue
 
-        for depth in range(1, len(path) + 1):
-            key = tuple(path[:depth])
+        for depth in range(1, len(path_en) + 1):
+            key = tuple(path_en[:depth])
             node = nodes.setdefault(key, {"names": {}, "order": index, "id": None, "ark_id": "", "pactols_id": "", "aat_id": ""})
             if index < node["order"]:
                 node["order"] = index
-            node["names"]["fr"] = path[depth - 1]
-            node["names"]["en"] = path[depth - 1]  # Default EN to FR for now
+            node["names"]["en"] = path_en[depth - 1]
+            node["names"]["id"] = path_id[depth - 1] if depth - 1 < len(path_id) else path_en[depth - 1]
 
         # Set ID and external IDs if present at the deepest level
-        raw_id = (row.get("IDArkeoGIS") or "").strip()
-        full_key = tuple(path)
+        raw_id = (row_en.get("IDArkeoGIS") or "").strip()
+        full_key = tuple(path_en)
         if full_key in nodes:
             if raw_id:
                 nodes[full_key]["id"] = int(raw_id)
-            nodes[full_key]["ark_id"] = (row.get("IdArk") or "").strip()
-            nodes[full_key]["pactols_id"] = (row.get("IdPactols") or "").strip()
-            nodes[full_key]["aat_id"] = (row.get("IdAat") or "").strip()
+            nodes[full_key]["ark_id"] = (row_en.get("IdArk") or "").strip()
+            nodes[full_key]["pactols_id"] = (row_en.get("IdPactols") or "").strip()
+            nodes[full_key]["aat_id"] = (row_en.get("IdAat") or "").strip()
 
     return nodes
 
 
 def build_sql(db, owner_user_id, nodes):
-    root_key = (ROOT_NAME_FR,)
+    root_key = (ROOT_NAME_EN,)
     statements = ["BEGIN;", "SET session_replication_role = replica;"]
 
     # Check if root exists
@@ -118,12 +142,17 @@ def build_sql(db, owner_user_id, nodes):
     # Update root translations
     statements.append(
         "INSERT INTO charac_tr (charac_id, lang_isocode, name, description) "
-        f"VALUES ({ROOT_ID}, 'fr', {sql_literal(ROOT_NAME_FR)}, '') "
+        f"VALUES ({ROOT_ID}, 'en', {sql_literal(ROOT_NAME_EN)}, '') "
         "ON CONFLICT (charac_id, lang_isocode) DO UPDATE SET name = EXCLUDED.name;"
     )
     statements.append(
         "INSERT INTO charac_tr (charac_id, lang_isocode, name, description) "
-        f"VALUES ({ROOT_ID}, 'en', {sql_literal(ROOT_NAME_EN)}, '') "
+        f"VALUES ({ROOT_ID}, 'id', {sql_literal(ROOT_NAME_ID)}, '') "
+        "ON CONFLICT (charac_id, lang_isocode) DO UPDATE SET name = EXCLUDED.name;"
+    )
+    statements.append(
+        "INSERT INTO charac_tr (charac_id, lang_isocode, name, description) "
+        f"VALUES ({ROOT_ID}, 'fr', {sql_literal(ROOT_NAME_FR)}, '') "
         "ON CONFLICT (charac_id, lang_isocode) DO UPDATE SET name = EXCLUDED.name;"
     )
 
@@ -134,7 +163,7 @@ def build_sql(db, owner_user_id, nodes):
     )
 
     nodes = dict(nodes)
-    nodes[root_key] = {"names": {"fr": ROOT_NAME_FR, "en": ROOT_NAME_EN}, "order": 0, "id": ROOT_ID, "ark_id": "", "pactols_id": "", "aat_id": ""}
+    nodes[root_key] = {"names": {"en": ROOT_NAME_EN, "id": ROOT_NAME_ID, "fr": ROOT_NAME_FR}, "order": 0, "id": ROOT_ID, "ark_id": "", "pactols_id": "", "aat_id": ""}
     id_map = {root_key: ROOT_ID}
 
     # Get next ID
@@ -175,8 +204,8 @@ def build_sql(db, owner_user_id, nodes):
             "ON CONFLICT (id) DO UPDATE SET parent_id = EXCLUDED.parent_id, \"order\" = EXCLUDED.\"order\", "
             "ark_id = EXCLUDED.ark_id, pactols_id = EXCLUDED.pactols_id, aat_id = EXCLUDED.aat_id;"
         )
-        for lang in ("fr", "en"):
-            name = meta["names"].get(lang, meta["names"].get("fr", ""))
+        for lang in ("en", "id", "fr"):
+            name = meta["names"].get(lang, meta["names"].get("en", ""))
             statements.append(
                 "INSERT INTO charac_tr (charac_id, lang_isocode, name, description) "
                 f"VALUES ({node_id}, '{lang}', {sql_literal(name)}, '') "
@@ -193,14 +222,15 @@ def build_sql(db, owner_user_id, nodes):
 
 
 def main():
-    rows = read_csv(DATA_FR)
-    nodes = load_nodes(rows)
+    rows_by_lang = {"en": read_csv(DATA_EN), "id": read_csv(DATA_ID)}
+    nodes = load_nodes(rows_by_lang)
 
     for db in DATABASES:
+        ensure_lang(db)
         owner_user_id = get_owner_id(db)
         sql = build_sql(db, owner_user_id, nodes)
         sh(["docker", "exec", "-i", CONTAINER, "psql", "-v", "ON_ERROR_STOP=1", "-U", "postgres", "-d", db], stdin=sql)
-        print(f"[analyses-thesaurus:{db}] imported root='{ROOT_NAME_FR}' (id={ROOT_ID})")
+        print(f"[analyses-thesaurus:{db}] imported root='{ROOT_NAME_EN}' (id={ROOT_ID})")
 
 
 if __name__ == "__main__":
