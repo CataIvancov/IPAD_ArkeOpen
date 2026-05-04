@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""Import a site CSV into local ArkeOpen tables.
+
+The primary Airtable export still includes ``WEB_IMAGES``, but this importer
+also tolerates the 21-column combined schema where that column is absent.
+"""
 
 import csv
 import pathlib
@@ -38,6 +43,7 @@ KNOWLEDGE_TYPE_MAP = {
     "Airborne Survey": "prospected_aerial",
     "Foot survey": "prospected_pedestrian",
     "Probed": "surveyed",
+    "Excavated.": "dig",
     "Excavated": "dig",
 }
 OCCUPATION_MAP = {
@@ -179,7 +185,7 @@ def build_dataset(rows, charac_paths):
             "exceptional": normalize_bool(row["CHARAC_EXP"]),
             "bibliography": row["BIBLIOGRAPHY"].strip(),
             "comment": row["COMMENTS"].strip(),
-            "web_images": row["WEB_IMAGES"].strip(),
+            "web_images": row.get("WEB_IMAGES", "").strip(),
         }
         sites.append(site)
 

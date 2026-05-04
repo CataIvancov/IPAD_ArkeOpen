@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+"""Repair the 22-column drive-site export.
+
+This script is intentionally scoped to ``drive-sites-to-arkeogis.csv``, which
+still carries ``WEB_IMAGES``. The combined ``ipad-sites-combined.csv`` file now
+uses a separate 21-column schema and should be validated with
+``scripts/validate-ipad-sites-combined.py`` instead of this utility.
+"""
 
 import csv
 import re
