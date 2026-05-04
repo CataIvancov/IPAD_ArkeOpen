@@ -1,3 +1,5 @@
 {
-  "csvlint.separator": ";"
+  "files.associations": {
+    "*.csv": "csv (semicolon)"
+  }
 }
