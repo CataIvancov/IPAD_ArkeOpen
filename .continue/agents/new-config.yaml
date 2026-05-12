@@ -1,0 +1,14 @@
+{
+  "models": [
+    {
+      "title": "Qwen Coder",
+      "provider": "ollama",
+      "model": "qwen2.5-coder:7b"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Qwen Coder",
+    "provider": "ollama",
+    "model": "qwen2.5-coder:7b"
+  }
+}
