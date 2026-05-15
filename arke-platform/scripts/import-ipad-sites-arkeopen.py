@@ -181,6 +181,8 @@ def load_rows(path: pathlib.Path) -> list[dict[str, str]]:
 
         rows = []
         for line_no, values in enumerate(reader, start=2):
+            if len(values) > len(header):
+                values = values[: len(header) - 1] + ["; ".join(part.strip() for part in values[len(header) - 1:] if part.strip())]
             if len(values) != len(header):
                 raise RuntimeError(f"{path.name}: row {line_no} has {len(values)} columns; expected {len(header)}")
             row = {header[idx]: values[idx].strip() for idx in range(len(header))}
