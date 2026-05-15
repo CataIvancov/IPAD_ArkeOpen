@@ -1,0 +1,9 @@
+name: My Config
+version: 1.0.0
+schema: v1
+
+models:
+  - title: Groq Llama3
+    provider: groq
+    model: llama-3.3-70b-versatile
+    apiKey: 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
