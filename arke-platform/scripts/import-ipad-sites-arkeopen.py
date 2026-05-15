@@ -80,6 +80,10 @@ PATH_ALIASES = {
 
 UPPER_WORDS = {"ntt", "ipad"}
 
+COORDINATE_OVERRIDES = {
+    ("Sangiran", "Java"): (110.841, -7.443),
+}
+
 
 def sh(cmd: list[str], *, stdin: str | None = None) -> subprocess.CompletedProcess[str]:
     return subprocess.run(cmd, input=stdin, text=True, check=True, capture_output=True)
@@ -277,6 +281,12 @@ def resolve_coordinates(
     stats: Counter,
     source_name: str,
 ) -> tuple[float, float, str]:
+    first_row = site_rows[0]
+    override_key = (first_row["SITE_NAME"], first_row["LOCALISATION"])
+    if override_key in COORDINATE_OVERRIDES:
+        stats["coordinate_override_sites"] += 1
+        return *COORDINATE_OVERRIDES[override_key], "override"
+
     for row in site_rows:
         lon = parse_float(row["LONGITUDE"])
         lat = parse_float(row["LATITUDE"])
@@ -654,6 +664,7 @@ def print_summary(stats: Counter, files: list[pathlib.Path]) -> None:
     print(f"  source rows: {stats['source_rows']}")
     print(f"  sites built: {stats['sites_built']}")
     print(f"  charac truncation rows: {stats['charac_truncation_rows']}")
+    print(f"  coordinate override sites: {stats['coordinate_override_sites']}")
     print(f"  coordinate fallback sites (same file): {stats['coordinate_fallback_same_file_sites']}")
     print(f"  coordinate fallback sites (global locality): {stats['coordinate_fallback_global_sites']}")
     print(f"  coordinate fallback sites (POINT 0 0): {stats['coordinate_fallback_zero_sites']}")
@@ -673,6 +684,7 @@ def main() -> int:
     run_stats["source_rows"] = 0
     run_stats["sites_built"] = 0
     run_stats["charac_truncation_rows"] = 0
+    run_stats["coordinate_override_sites"] = 0
     run_stats["coordinate_fallback_same_file_sites"] = 0
     run_stats["coordinate_fallback_global_sites"] = 0
     run_stats["coordinate_fallback_zero_sites"] = 0
