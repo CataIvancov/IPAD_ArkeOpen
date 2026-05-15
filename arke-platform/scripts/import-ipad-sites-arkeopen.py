@@ -185,6 +185,20 @@ def coordinate_mode_rank(mode: str) -> int:
     return ranks.get(mode, -1)
 
 
+def coordinate_merge_key(longitude: float, latitude: float) -> tuple[int, int] | None:
+    if longitude == 0.0 and latitude == 0.0:
+        return None
+    return (round(longitude * 1_000_000), round(latitude * 1_000_000))
+
+
+def resource_family_from_path(path: str) -> str:
+    return path.split(" > ", 1)[0].strip()
+
+
+def site_resource_key(ranges: list[dict[str, object]]) -> tuple[str, ...]:
+    return tuple(sorted({resource_family_from_path(item["charac_path"]) for item in ranges}))
+
+
 def collect_source_files() -> list[pathlib.Path]:
     files = sorted(path for path in DATA_DIR.glob(FILE_GLOB) if path.name not in EXCLUDED_FILES)
     return files
@@ -412,7 +426,13 @@ def build_dataset(
                 "code": site_source_id,
                 "name": first_row["SITE_NAME"],
                 "locality": locality,
-                "dedupe_key": (normalize_dedupe_text(first_row["SITE_NAME"]), normalize_dedupe_text(locality)),
+                "resource_key": site_resource_key(site_ranges),
+                "dedupe_key": (
+                    normalize_dedupe_text(first_row["SITE_NAME"]),
+                    normalize_dedupe_text(locality),
+                    site_resource_key(site_ranges),
+                ),
+                "coordinate_merge_key": coordinate_merge_key(longitude, latitude),
                 "longitude": longitude,
                 "latitude": latitude,
                 "coordinate_mode": coordinate_mode,
@@ -535,6 +555,12 @@ def merge_site_records(canonical: dict[str, object], duplicate: dict[str, object
         canonical["coordinate_mode"] = duplicate["coordinate_mode"]
         canonical["locality"] = duplicate["locality"]
 
+    canonical["resource_key"] = site_resource_key(canonical["ranges"])
+    canonical["dedupe_key"] = (
+        normalize_dedupe_text(canonical["name"]),
+        normalize_dedupe_text(canonical["locality"]),
+        canonical["resource_key"],
+    )
     recompute_site_dates(canonical)
     stats["dedupe_merged_sites"] += 1
 
@@ -579,15 +605,21 @@ def recompute_dataset_fields(dataset: dict[str, object]) -> None:
 
 
 def merge_duplicate_sites(datasets: list[dict[str, object]], stats: Counter) -> None:
-    canonical_by_key: dict[tuple[str, str], dict[str, object]] = {}
+    canonical_by_key: dict[tuple[str, str, tuple[str, ...]], dict[str, object]] = {}
+    canonical_by_coord_key: dict[tuple[str, tuple[str, ...], tuple[int, int]], dict[str, object]] = {}
     dedupe_groups: Counter = Counter()
     for dataset in datasets:
         merged_sites = []
         for site in dataset["sites"]:
             key = site["dedupe_key"]
+            coordinate_key = site["coordinate_merge_key"]
             canonical = canonical_by_key.get(key)
+            if canonical is None and coordinate_key is not None:
+                canonical = canonical_by_coord_key.get((key[0], key[2], coordinate_key))
             if canonical is None:
                 canonical_by_key[key] = site
+                if coordinate_key is not None:
+                    canonical_by_coord_key[(key[0], key[2], coordinate_key)] = site
                 merged_sites.append(site)
                 continue
             merge_site_records(canonical, site, stats)
