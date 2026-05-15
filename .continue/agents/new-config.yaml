@@ -1,0 +1,9 @@
+models:
+  - name: CodeLlama Local
+    provider: ollama
+    model: codellama:7b
+
+tabAutocompleteModel:
+  name: CodeLlama Local
+  provider: ollama
+  model: codellama:7b
