@@ -170,6 +170,21 @@ def centroid(points: list[tuple[float, float]]) -> tuple[float, float]:
     )
 
 
+def normalize_dedupe_text(value: str) -> str:
+    return " ".join(normalize_ascii(value).lower().split())
+
+
+def coordinate_mode_rank(mode: str) -> int:
+    ranks = {
+        "override": 4,
+        "direct": 3,
+        "same_file": 2,
+        "global": 1,
+        "zero": 0,
+    }
+    return ranks.get(mode, -1)
+
+
 def collect_source_files() -> list[pathlib.Path]:
     files = sorted(path for path in DATA_DIR.glob(FILE_GLOB) if path.name not in EXCLUDED_FILES)
     return files
@@ -397,8 +412,10 @@ def build_dataset(
                 "code": site_source_id,
                 "name": first_row["SITE_NAME"],
                 "locality": locality,
+                "dedupe_key": (normalize_dedupe_text(first_row["SITE_NAME"]), normalize_dedupe_text(locality)),
                 "longitude": longitude,
                 "latitude": latitude,
+                "coordinate_mode": coordinate_mode,
                 "altitude": parse_float(first_row["ALTITUDE"]) or 0.0,
                 "centroid": normalize_bool(first_row["CITY_CENTROID"]) or coordinate_mode != "direct",
                 "occupation": normalize_occupation(first_row["OCCUPATION"]),
@@ -443,6 +460,7 @@ def build_dataset(
     return {
         "slug": slug,
         "title": title,
+        "file_index": file_index,
         "path": path,
         "name": dataset_name_from_slug(slug),
         "description": (
@@ -463,6 +481,127 @@ def build_dataset(
         "start_date": min(finite_starts) if finite_starts else -2578050,
         "end_date": max(finite_ends) if finite_ends else 1950,
     }
+
+
+def merge_descriptions(left: str, right: str) -> str:
+    chunks = []
+    seen = set()
+    for value in [left, right]:
+        for piece in [part.strip() for part in value.split("\n\n") if part.strip()]:
+            if piece not in seen:
+                seen.add(piece)
+                chunks.append(piece)
+    return "\n\n".join(chunks)
+
+
+def recompute_site_dates(site: dict[str, object]) -> None:
+    start_date1, start_date2, end_date1, end_date2 = build_site_date_span(site["ranges"])
+    site["start_date1"] = start_date1
+    site["start_date2"] = start_date2
+    site["end_date1"] = end_date1
+    site["end_date2"] = end_date2
+
+
+def range_signature(range_record: dict[str, object]) -> tuple[object, ...]:
+    return (
+        range_record["start_date1"],
+        range_record["start_date2"],
+        range_record["end_date1"],
+        range_record["end_date2"],
+        range_record["charac_id"],
+        range_record["knowledge_type"],
+        range_record["exceptional"],
+        range_record["bibliography"],
+        range_record["comment"],
+    )
+
+
+def merge_site_records(canonical: dict[str, object], duplicate: dict[str, object], stats: Counter) -> None:
+    existing_range_keys = {range_signature(item) for item in canonical["ranges"]}
+    for range_record in duplicate["ranges"]:
+        key = range_signature(range_record)
+        if key not in existing_range_keys:
+            canonical["ranges"].append(range_record)
+            existing_range_keys.add(key)
+
+    canonical["description"] = merge_descriptions(canonical["description"], duplicate["description"])
+    canonical["source_rows"].extend(duplicate["source_rows"])
+
+    if coordinate_mode_rank(duplicate["coordinate_mode"]) > coordinate_mode_rank(canonical["coordinate_mode"]):
+        canonical["longitude"] = duplicate["longitude"]
+        canonical["latitude"] = duplicate["latitude"]
+        canonical["altitude"] = duplicate["altitude"]
+        canonical["centroid"] = duplicate["centroid"]
+        canonical["coordinate_mode"] = duplicate["coordinate_mode"]
+        canonical["locality"] = duplicate["locality"]
+
+    recompute_site_dates(canonical)
+    stats["dedupe_merged_sites"] += 1
+
+
+def recompute_dataset_fields(dataset: dict[str, object]) -> None:
+    sites = dataset["sites"]
+    locality_points: dict[str, list[tuple[float, float]]] = defaultdict(list)
+    bbox_points: list[tuple[float, float]] = []
+    for site in sites:
+        locality_points[site["locality"]].append((site["longitude"], site["latitude"]))
+        if site["coordinate_mode"] != "zero":
+            bbox_points.append((site["longitude"], site["latitude"]))
+
+    city_map = OrderedDict()
+    for locality_index, locality in enumerate(sorted(locality_points), start=1):
+        lon, lat = centroid(locality_points[locality])
+        city_map[locality] = {
+            "geonameid": CITY_BASE + (dataset["file_index"] * CITY_FILE_STRIDE) + locality_index,
+            "name": locality,
+            "name_ascii": normalize_ascii(locality),
+            "longitude": lon,
+            "latitude": lat,
+        }
+
+    for site in sites:
+        site["city_geonameid"] = city_map[site["locality"]]["geonameid"]
+
+    finite_starts = [site["start_date1"] for site in sites if site["start_date1"] != UNDETERMINED_LEFT]
+    finite_ends = [site["end_date2"] for site in sites if site["end_date2"] != UNDETERMINED_RIGHT]
+    if bbox_points:
+        min_lon = min(lon for lon, _ in bbox_points)
+        max_lon = max(lon for lon, _ in bbox_points)
+        min_lat = min(lat for _, lat in bbox_points)
+        max_lat = max(lat for _, lat in bbox_points)
+    else:
+        min_lon = max_lon = min_lat = max_lat = 0.0
+
+    dataset["cities"] = list(city_map.values())
+    dataset["bbox"] = (min_lon, min_lat, max_lon, max_lat)
+    dataset["start_date"] = min(finite_starts) if finite_starts else -2578050
+    dataset["end_date"] = max(finite_ends) if finite_ends else 1950
+
+
+def merge_duplicate_sites(datasets: list[dict[str, object]], stats: Counter) -> None:
+    canonical_by_key: dict[tuple[str, str], dict[str, object]] = {}
+    dedupe_groups: Counter = Counter()
+    for dataset in datasets:
+        merged_sites = []
+        for site in dataset["sites"]:
+            key = site["dedupe_key"]
+            canonical = canonical_by_key.get(key)
+            if canonical is None:
+                canonical_by_key[key] = site
+                merged_sites.append(site)
+                continue
+            merge_site_records(canonical, site, stats)
+            dedupe_groups[key] += 1
+            print(
+                f"[dedupe-merge] {site['name']} / {site['locality']} "
+                f"{site['id']} -> {canonical['id']}"
+            )
+        dataset["sites"] = merged_sites
+
+    stats["dedupe_groups"] = len(dedupe_groups)
+    stats["sites_after_dedupe"] = sum(len(dataset["sites"]) for dataset in datasets)
+    for dataset in datasets:
+        recompute_dataset_fields(dataset)
 
 
 def ensure_support_rows() -> None:
@@ -663,6 +802,9 @@ def print_summary(stats: Counter, files: list[pathlib.Path]) -> None:
     print(f"  datasets updated: {stats['datasets_selected']}")
     print(f"  source rows: {stats['source_rows']}")
     print(f"  sites built: {stats['sites_built']}")
+    print(f"  dedupe groups: {stats['dedupe_groups']}")
+    print(f"  sites merged away: {stats['dedupe_merged_sites']}")
+    print(f"  sites after dedupe: {stats['sites_after_dedupe']}")
     print(f"  charac truncation rows: {stats['charac_truncation_rows']}")
     print(f"  coordinate override sites: {stats['coordinate_override_sites']}")
     print(f"  coordinate fallback sites (same file): {stats['coordinate_fallback_same_file_sites']}")
@@ -683,6 +825,9 @@ def main() -> int:
     run_stats["datasets_selected"] = 0
     run_stats["source_rows"] = 0
     run_stats["sites_built"] = 0
+    run_stats["dedupe_groups"] = 0
+    run_stats["dedupe_merged_sites"] = 0
+    run_stats["sites_after_dedupe"] = 0
     run_stats["charac_truncation_rows"] = 0
     run_stats["coordinate_override_sites"] = 0
     run_stats["coordinate_fallback_same_file_sites"] = 0
@@ -707,6 +852,8 @@ def main() -> int:
     for file_index, path in enumerate(files, start=1):
         dataset = build_dataset(path, file_index, file_rows[path], charac_paths, global_centroids, run_stats)
         datasets.append(dataset)
+
+    merge_duplicate_sites(datasets, run_stats)
 
     if len(files) != 40:
         raise RuntimeError(f"Expected 40 regional files, found {len(files)}")
