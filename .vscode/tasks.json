@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Import IPAD sites to ArkeOpen",
+      "type": "shell",
+      "command": "cd arke-platform && npm run import:ipad-sites:arkeopen",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "inAgents": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ArkeOpen services",
+      "type": "shell",
+      "command": "cd arke-platform && npm run server:up",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "inAgents": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ArkeOpen services",
+      "type": "shell",
+      "command": "cd arke-platform && npm run server:down",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "inAgents": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "View ArkeOpen server logs",
+      "type": "shell",
+      "command": "cd arke-platform && npm run server:logs",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "isBackground": true,
+      "inAgents": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Check upstream data",
+      "type": "shell",
+      "command": "cd arke-platform && npm run doctor:upstream-data",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "inAgents": true,
+      "problemMatcher": []
+    }
+  ]
+}

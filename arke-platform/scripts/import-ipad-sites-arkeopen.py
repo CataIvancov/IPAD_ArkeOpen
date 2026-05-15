@@ -13,8 +13,8 @@ DATA_DIR = ROOT / "data"
 CONTAINER = "arkeopenlocal-postgres"
 DB = "arkeopen"
 FILE_GLOB = "ipad-sites-*.csv"
-EXCLUDED_FILES = {"ipad-sites-organized.csv", "ipad-sites-combined.csv"}
-COLLECTION_NAME = "IPAD Sites (regional CSV imports)"
+EXCLUDED_FILES = {"ipad-sites-organized.csv"}
+COLLECTION_NAME = "IPAD Sites"
 LICENSE_NAME = "CC-BY-NC-ND-4.0"
 LICENSE_URL = "https://spdx.org/licenses/CC-BY-NC-ND-4.0.html#licenseText"
 COUNTRY_ID = 0
@@ -76,6 +76,33 @@ PATH_ALIASES = {
     "Archaeological Sites > Ceremonial site / Burial site / Habitation site":
         "Archaeological Sites > Open-air site",
     "Stationary Structures > Archaeological site": "Archaeological Sites",
+    "Analyses > Dating > Radiocarbon > Reference sample":
+        "Analyses > Dating > Radiocarbon",
+    # Deep paths (5+ levels) - truncate to 4 levels
+    "Human remains > Homo erectus > Cranial > Teeth > Incisor":
+        "Human remains > Homo erectus > Cranial > Teeth",
+    "Human remains > Homo erectus > Cranial > Teeth > Indeterminate":
+        "Human remains > Homo erectus > Cranial > Teeth",
+    "Human remains > Homo erectus > Cranial > Teeth > Molar":
+        "Human remains > Homo erectus > Cranial > Teeth",
+    "Human remains > Homo erectus > Postcranial > Lower limb > Femur":
+        "Human remains > Homo erectus > Postcranial > Lower limb",
+    "Portable Objects / Artefacts > Stone > Others > Others > Chert":
+        "Portable Objects / Artefacts > Stone > Others > Others",
+    "Portable Objects / Artefacts > Stone > Others > Others > Limestone":
+        "Portable Objects / Artefacts > Stone > Others > Others",
+    "Portable Objects / Artefacts > Stone > Others > Others > Other material":
+        "Portable Objects / Artefacts > Stone > Others > Others",
+    "Portable Objects / Artefacts > Stone > Raw material > Pigment > Ochre":
+        "Portable Objects / Artefacts > Stone > Raw material > Pigment",
+    "Portable Objects / Artefacts > Stone > Tools > Backed Microlith > Others":
+        "Portable Objects / Artefacts > Stone > Tools > Backed Microlith",
+    "Portable Objects / Artefacts > Stone > Tools > Flake > Chert":
+        "Portable Objects / Artefacts > Stone > Tools > Flake",
+    "Portable Objects / Artefacts > Stone > Tools > Maros Point > Others":
+        "Portable Objects / Artefacts > Stone > Tools > Maros Point",
+    "Stationary Structures > Rock art site / Petroglyph / Pictograph / Hand stencil > Undocumented > Undocumented > Burial":
+        "Stationary Structures > Rock art site / Petroglyph / Pictograph / Hand stencil > Undocumented > Undocumented",
 }
 
 UPPER_WORDS = {"ntt", "ipad"}
@@ -220,6 +247,17 @@ def load_rows(path: pathlib.Path) -> list[dict[str, str]]:
                 raise RuntimeError(f"{path.name}: row {line_no} has {len(values)} columns; expected {len(header)}")
             row = {header[idx]: values[idx].strip() for idx in range(len(header))}
             row["_line_no"] = str(line_no)
+            # Skip rows without coordinates (as per user requirement)
+            lon = row.get("LONGITUDE", "").strip()
+            lat = row.get("LATITUDE", "").strip()
+            if not lon or not lat:
+                print(f"[skip-no-coords] {path.name}:{line_no} {row.get('SITE_SOURCE_ID', '?')} {row.get('SITE_NAME', '?')}")
+                continue
+            # Skip rows with unsupported characteristic roots (Analyses not in thesaurus)
+            main_charac = row.get("MAIN_CHARAC", "").strip()
+            if main_charac == "Analyses":
+                print(f"[skip-unsupported-charac] {path.name}:{line_no} {row.get('SITE_SOURCE_ID', '?')} {row.get('SITE_NAME', '?')} (Analyses not in thesaurus)")
+                continue
             rows.append(row)
     return rows
 
