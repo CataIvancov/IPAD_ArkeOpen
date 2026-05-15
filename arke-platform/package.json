@@ -37,6 +37,7 @@
     "import:lorraine-medieval-sites": "python3 ./scripts/import-lorraine-medieval-sites.py",
     "import:enserune-inscriptions": "python3 ./scripts/import-enserune-inscriptions.py",
     "import:airtable-site-only-v4": "python3 ./scripts/import-airtable-site-only-v4.py",
+    "import:ipad-sites:arkeopen": "python3 ./scripts/import-ipad-sites-arkeopen.py",
     "drive:inventory": "python3 ./scripts/google-drive-inventory.py",
     "drive:download-pdfs": "python3 ./scripts/google-drive-download-pdfs.py",
     "drive:extract-pdf-text": "python3 ./scripts/extract-pdf-text.py",
