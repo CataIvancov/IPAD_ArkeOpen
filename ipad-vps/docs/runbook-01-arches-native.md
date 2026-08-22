@@ -47,6 +47,15 @@ network.host: 127.0.0.1
 discovery.type: single-node
 xpack.security.enabled: false
 YML
+```
+
+**Cap the heap (important on an 8 GB box).** By default Elasticsearch sizes its heap from total RAM and can grab several GB. Pin it to 1 GB for this dev box:
+
+```bash
+sudo tee /etc/elasticsearch/jvm.options.d/heap.options >/dev/null <<'OPTS'
+-Xms1g
+-Xmx1g
+OPTS
 sudo systemctl enable --now elasticsearch
 sleep 20
 curl -s http://127.0.0.1:9200 | head -20
@@ -92,7 +101,7 @@ python manage.py setup_db          # creates schema + loads defaults (confirm na
 python manage.py createsuperuser
 ```
 
-Frontend assets (Arches 8 builds the UI with a Node toolchain):
+Frontend assets (Arches 8 builds the UI with a Node toolchain). **On 8 GB, free up memory first** — stop the ArkeOpen Docker stack during this build (`cd /opt/ipad/arkeopen-repo/arke-platform/server && docker compose down`), then build:
 
 ```bash
 npm install

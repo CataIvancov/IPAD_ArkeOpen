@@ -2,12 +2,14 @@
 
 Base setup shared by both stacks. Run these **yourself over SSH**; paste output back if anything errors.
 
-**Assumptions**
+**Assumptions (matched to the actual VPS)**
 
-- Ubuntu 24.04 LTS, single VPS
+- Biznet Neo Lite MM 8.8: **8 GB RAM, 8 vCPU, 60 GB disk**, Ubuntu 24.04 LTS
 - Public IP: `103.197.188.213` (referred to below as `VPS_IP`)
 - You log in as sudo user `CataIvancov`, whose public key is already in `~/.ssh/authorized_keys`
-- One 16 GB box hosting both Arches (dev) and ArkeOpen
+- One box hosting both Arches (dev) and ArkeOpen
+
+> **8 GB is tight for both stacks at once.** It works for development if you (a) add swap, (b) cap the Elasticsearch heap (Runbook 01), and (c) build the frontends **one stack at a time** — stop the ArkeOpen Docker containers while building Arches, and vice versa. Keeping media on Google Drive keeps the 60 GB disk comfortable.
 
 ## 0.1 Connect
 
@@ -44,12 +46,12 @@ While there's no domain/HTTPS yet, prefer restricting to your own IP instead of 
 # sudo ufw allow from YOUR.HOME.IP.ADDR to any port 8000 proto tcp
 ```
 
-## 0.4 Swap (safety margin for asset builds)
+## 0.4 Swap (required on 8 GB)
 
-The Arches frontend build is memory-hungry. On a 16 GB box this is optional, but a swap file avoids OOM kills during `npm`/webpack builds:
+The Arches/ArkeOpen frontend builds are memory-hungry and can spike to several GB. On this 8 GB box a swap file is **required** to avoid OOM kills during `npm`/webpack builds:
 
 ```bash
-sudo fallocate -l 4G /swapfile
+sudo fallocate -l 8G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile

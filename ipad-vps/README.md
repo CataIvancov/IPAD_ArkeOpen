@@ -47,4 +47,12 @@ Run these on the VPS yourself; the Cloud Agent cannot SSH into the box. Assumes 
 | Version | Official **8.1.3** | Current ArkeOpen (GitLab) tree |
 | RAM | 8–16 GB | 4–8 GB |
 
-One box for both: plan for **16 GB RAM**. Two smaller VPS is cleaner if the budget allows.
+## Actual VPS: Biznet Neo Lite MM 8.8
+
+Target box is **8 GB RAM, 8 vCPU, 60 GB disk, Ubuntu 24.04**. That is enough for **development of both stacks**, but 8 GB is tight to run them both at full load simultaneously. The runbooks therefore require three mitigations on this box:
+
+1. **8 GB swap** (Runbook 00) to absorb build spikes.
+2. **Elasticsearch heap capped to 1 GB** (Runbook 01).
+3. **Build one stack at a time** — stop the ArkeOpen Docker containers while building Arches, and vice versa.
+
+Media on Google Drive keeps the 60 GB disk comfortable. 8 vCPU is not a bottleneck.
