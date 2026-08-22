@@ -1,0 +1,19 @@
+{
+  "name": "Arke Platform",
+  "install": "bash .cursor/install.sh",
+  "terminals": [
+    {
+      "name": "arkeoserver",
+      "command": "cd arke-platform && npm --prefix server/arkeoserver run dev"
+    },
+    {
+      "name": "web-app (arkeopen)",
+      "command": "cd arke-platform && npm --prefix web-app run dev:arkeopen -- --host"
+    },
+    {
+      "name": "web-admin (arkeogis)",
+      "command": "cd arke-platform && npm --prefix web-admin run dev:arkeogis -- --host"
+    }
+  ],
+  "ports": [5173, 5174, 40100]
+}
