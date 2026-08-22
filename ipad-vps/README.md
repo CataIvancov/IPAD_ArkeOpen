@@ -27,6 +27,16 @@ These are **two stacks**, not one product. They do **not** share a database or a
 | [`docs/shared-host.md`](docs/shared-host.md) | What the two stacks can and cannot share on one box |
 | [`docs/google-drive-storage.md`](docs/google-drive-storage.md) | Keeping bulky media on Google Drive instead of the VPS |
 
+### Install runbooks (copy-paste, run over your own SSH)
+
+Run these on the VPS yourself; the Cloud Agent cannot SSH into the box. Assumes Ubuntu 24.04, single 16 GB VPS, sudo user `CataIvancov`, public IP `103.197.188.213`.
+
+| Step | File |
+| --- | --- |
+| 0. Base server prep (updates, firewall, nginx, Node) | [`docs/runbook-00-server-prep.md`](docs/runbook-00-server-prep.md) |
+| 1. Arches 8.1.3 native (no Docker), DB `arches_ipad` | [`docs/runbook-01-arches-native.md`](docs/runbook-01-arches-native.md) |
+| 2. ArkeOpen/ArkeoGIS (Docker for PostGIS + Hasura), DBs `arkeopen`/`arkeogis` | [`docs/runbook-02-arkeopen.md`](docs/runbook-02-arkeopen.md) |
+
 ## Sizing at a glance
 
 | | Arches (development) | ArkeOpen / ArkeoGIS |
