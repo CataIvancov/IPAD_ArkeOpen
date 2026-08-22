@@ -2,7 +2,9 @@
 
 Bring up the ArkeOpen public portal. Databases `arkeopen` + `arkeogis` run in a **containerized PostGIS**; Hasura runs in Docker too. The React frontends and nginx run on the host. Arches from Runbook 01 is untouched and uses a **separate** host PostgreSQL.
 
-> Reminder: in `IPAD_ArkeOpen`, `arkeopen-upstream` is a broken gitlink (no `.gitmodules`). The real ArkeOpen app source is on GitLab (`gitlab.huma-num.fr/arkeogis/arkeopen`) and in your Google Drive. The repo's own `arke-platform/server/docker-compose.yaml` is self-contained for the DB + Hasura layer, so you can bring up data services from this repo even before the upstream frontends are vendored in.
+> **Source of truth = your Google Drive `arkeopen-upstream`.** The Drive copy carries essential IPAD-specific development modifications for your ArkeOpen instance. The clean GitLab tree (`gitlab.huma-num.fr/arkeogis/arkeopen`) is only a **reference base** for comparison/updates — deploying it directly would lose your customizations. In `IPAD_ArkeOpen`, `arkeopen-upstream` is a broken gitlink (no `.gitmodules`), so it does not carry your code either. The repo's own `arke-platform/server/docker-compose.yaml` is self-contained for the DB + Hasura layer, so data services can come up before the frontends are in place.
+>
+> Known extras observed in the Drive tree (from the earlier assessment; confirm against the actual folder): a GeoServer service in the compose file, GeoServer log-helper npm scripts, and an `import:ipad-sites:arkeopen` script. Your modified compose may therefore differ from the repo's.
 
 ## 2.1 Install Docker Engine (for the DB + Hasura layer only)
 
@@ -18,22 +20,48 @@ newgrp docker
 docker --version && docker compose version
 ```
 
-## 2.2 Get the ArkeOpen source
+## 2.2 Get the ArkeOpen source (your modified Drive tree)
 
-Clone the repo (or your fork) and the upstream app:
+Clone the repo, then bring in **your modified `arkeopen-upstream` from Google Drive** (not the clean GitLab tree). The `arke-platform/` scripts expect the app at `../arkeopen-upstream`, so it sits next to the checkout.
 
 ```bash
 cd /opt/ipad
 git clone https://github.com/CataIvancov/IPAD_ArkeOpen.git arkeopen-repo
-# Real app source (frontends + server) from GitLab:
-git clone https://gitlab.huma-num.fr/arkeogis/arkeopen.git arkeopen-upstream
 ```
 
-The repo's `arke-platform/` expects the upstream apps at `../arkeopen-upstream`. Placing `arkeopen-upstream` next to the checkout (as above) matches the `npm --prefix ../arkeopen-upstream/...` scripts.
+Choose **one** way to place your modified `arkeopen-upstream` at `/opt/ipad/arkeopen-upstream`:
+
+**Option A — vendor it into GitHub first (recommended, durable).** On your Mac (which can read the Drive folder): copy the Drive `arkeopen-upstream` into a clone of `IPAD_ArkeOpen`, delete `node_modules/` and `dist/`, remove the broken submodule gitlink, commit, and push. Then the VPS just clones your modified source from GitHub and the broken submodule is fixed for good:
+
+```bash
+# on the VPS, once it is pushed to GitHub:
+cd /opt/ipad
+git clone https://github.com/CataIvancov/IPAD_ArkeOpen.git arkeopen-repo
+ln -s arkeopen-repo/arkeopen-upstream arkeopen-upstream   # or clone a repo that has it at root
+```
+
+**Option B — copy straight from Drive to the VPS with rclone.** Configure a Google Drive remote once, then pull the folder, excluding build artifacts:
+
+```bash
+sudo -v ; curl https://rclone.org/install.sh | sudo bash
+rclone config          # create a remote named "gdrive" (Google Drive; authorize in a browser)
+rclone copy "gdrive:arke-platform/arkeopen-upstream" /opt/ipad/arkeopen-upstream \
+  --exclude "node_modules/**" --exclude "dist/**" --progress
+```
+
+**Reference base (optional, for diffing/updates only — do NOT deploy this):**
+
+```bash
+git clone https://gitlab.huma-num.fr/arkeogis/arkeopen.git /opt/ipad/arkeopen-clean
+# compare your mods vs upstream, e.g.:
+# diff -ruq /opt/ipad/arkeopen-clean /opt/ipad/arkeopen-upstream | grep -v node_modules
+```
+
+Whichever option you use, the frontends and server come from **your** `arkeopen-upstream`, so your IPAD modifications are preserved.
 
 ## 2.3 Bring up PostGIS + Hasura
 
-Using the repo's self-contained compose (pinned `postgis/postgis:16-3.4` + `hasura/graphql-engine:v2.44.0`):
+**If your modified `arkeopen-upstream/server` has its own `docker-compose` (e.g. with GeoServer), use that one instead** — it reflects your instance. Otherwise fall back to the repo's self-contained compose (pinned `postgis/postgis:16-3.4` + `hasura/graphql-engine:v2.44.0`) shown below:
 
 ```bash
 cd /opt/ipad/arkeopen-repo/arke-platform/server
